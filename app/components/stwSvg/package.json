@@ -1,0 +1,6 @@
+{
+    "name": "csSvg",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./csSvg.directive.js"
+}

@@ -1,0 +1,193 @@
+/**
+ * Bar (Headers and Footers)
+ * --------------------------------------------------
+ */
+
+.stw-header {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+  width: 100%;
+  height: 50px;
+  /** border-width: 1px will actually create 2 device pixels on retina **/
+  /** this nifty trick sets an actual 1px border on hi-res displays **/
+  background-size: 0;
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  &.white {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  &.transparent {
+    background-color: transparent;
+    .navigation {
+      border: none;
+      color: white;
+    }
+  }
+  &.cyan {
+    background-color: cyan;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.stw-bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 9;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 100%;
+  height: 55px;
+  border-width: 0;
+  border-style: solid;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  /* border-width: 1px will actually create 2 device pixels on retina */
+  /* this nifty trick sets an actual 1px border on hi-res displays */
+  background-size: 0;
+  .title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    margin: 5px;
+    min-width: 30px;
+    height: 43px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 44px;
+    &.title-left {
+      text-align: left;
+    }
+    &.title-right {
+      text-align: right;
+    }
+    a {
+      color: inherit;
+    }
+  }
+  &.stw-bar-clear {
+    border: none;
+    background: none;
+    color: #000;
+    .button, .title {
+      color: #000;
+    }
+  }
+  &.stw-bar-white {
+    border: none;
+    background: none;
+    color: white;
+    .button, .title {
+      color: white;
+    }
+  }
+  &.stw-bar-blue {
+    background-color: #00b9ff;
+    border-bottom: 0;
+    .title, .button {
+      color: white;
+    }
+  }
+  .button {
+    z-index: 1;
+    padding: 0 8px;
+    min-width: initial;
+    min-height: 31px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 32px;
+    &.button-icon:before, .icon:before, &.icon:before, &.icon-left:before, &.icon-right:before {
+      padding-right: 2px;
+      padding-left: 2px;
+      font-size: 20px;
+      line-height: 32px;
+    }
+    &.button-icon {
+      font-size: 17px;
+      .icon:before, &:before, &.icon-left:before, &.icon-right:before {
+        vertical-align: top;
+        font-size: 32px;
+        line-height: 32px;
+      }
+    }
+  }
+  &.stw-bar-light {
+    border-color: #ddd;
+    background-color: white;
+    background-image: linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
+    color: #444;
+  }
+}
+
+.stw-bar-header {
+  top: 0;
+  border-top-width: 0;
+  border-bottom-width: 1px;
+}
+
+.stw-bar-footer {
+  position: absolute;
+  bottom: 0;
+  border-top-width: 1px;
+  border-bottom-width: 0;
+  background-position: top;
+  height: 44px;
+}
+
+.stw-subheader {
+  top: 44px;
+  display: block;
+  height: 44px;
+}
+
+.stw-subfooter {
+  bottom: 44px;
+  display: block;
+  height: 44px;
+}
+
+.stw-nav-bar-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9;
+}

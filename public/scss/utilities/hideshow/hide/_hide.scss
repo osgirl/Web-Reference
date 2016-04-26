@@ -1,0 +1,27 @@
+.hide{
+  display: none !important;
+}
+
+.hide-s{
+  @include breakpoint($s) {
+    display: none !important;
+  }
+}
+
+.hide-m {
+  @include breakpoint($m) {
+    display: none !important;
+  }
+}
+
+.hide-l {
+  @include breakpoint($l) {
+    display: none !important;
+  }
+}
+
+.hide-xl {
+  @include breakpoint($xl) {
+    display: none !important;
+  }
+}

@@ -1,0 +1,215 @@
+@import "colours";
+
+//Whitespace Keys
+$whitespace-keys: (
+        'p' : 'padding',
+        'm' : 'margin',
+        'a' : '',
+        'v' : ('-top', '-bottom'),
+        'h' : ('-left', '-right'),
+        't' : '-top',
+        'r' : '-right',
+        'b' : '-bottom',
+        'l' : '-left'
+);
+
+//Whitespace Sizes
+$whitespace-sizes: (
+        'n' : 0,
+        'xxs': 5px,
+        'xs': 10px,
+        's' : 15px,
+        'm' : 20px,
+        'l' : 25px,
+        'xl' : 30px,
+        'xxl' : 35px
+);
+
+$max-width : 1280px;
+
+$xs: max-width 320px;
+$s: 321px;
+$m: 691px;
+$l: 1024px;
+$xl: 1280px;
+
+// Grids
+// -------------------------------
+
+$grid-padding-width:              10px !default;
+$grid-responsive-sm-break:        567px !default;  // smaller than landscape phone
+$grid-responsive-md-break:        767px !default;  // smaller than portrait tablet
+$grid-responsive-lg-break:        1023px !default; // smaller than landscape tablet
+
+
+// Font Weight Variables
+$font-weight-hairline: 100;
+$font-weight-light: 300;
+$font-weight-medium: 500;
+
+// Font Weight Variables
+
+$font-mobile-size-small: 14px;
+$font-mobile-size-base: 16px;
+$font-mobile-size-middle: 20px;
+$font-mobile-size-mid-large: 28px;
+$font-mobile-size-large: 30px;
+$font-mobile-size-xlarge: 40px;
+
+$font-tablet-size-base: 18px;
+$font-tablet-size-large: 40px;
+$font-tablet-size-xlarge: 60px;
+
+// Font Line Height Variables
+
+$font-mobile-line-height-small: 17px;
+$font-mobile-line-height-base: 20px;
+$font-mobile-line-height-middle: 24px;
+$font-mobile-line-height-mid-large: 34px;
+$font-mobile-line-height-large: 36px;
+$font-mobile-line-height-xlarge: 48px;
+
+$font-tablet-line-height-base: 22px;
+$font-tablet-line-height-large: 48px;
+$font-tablet-line-height-xlarge: 72px;
+
+// Font Stacks
+$font-family-sans-serif:           '-apple-system', "Helvetica Neue", "Roboto", "Segoe UI", sans-serif !default;
+
+$font-family-light-sans-serif:    '-apple-system', "HelveticaNeue-Light", "Roboto-Light", "Segoe UI-Light", sans-serif-light !default;
+$font-family-serif:               serif !default;
+$font-family-monospace:           monospace !default;
+
+$font-family-base:                $font-family-sans-serif !default;
+$font-size-base:                  14px !default;
+$font-size-large:                 18px !default;
+$font-size-small:                 11px !default;
+
+$line-height-base:                1.428571429 !default; // 20/14
+$line-height-computed:            floor($font-size-base * $line-height-base) !default; // ~20px
+$line-height-large:               1.33 !default;
+$line-height-small:               1.5 !default;
+
+$headings-font-family:            $font-family-base !default;
+$headings-font-weight:            500 !default;
+$headings-line-height:            1.2 !default;
+
+// Z-Index
+$z-index-crust: -1;
+$z-index-ground: 10;
+$z-index-sky: 20;
+$z-index-space: 30;
+
+// Form Elements
+// Text Inputs
+
+$form-input-font-size-mobile:30px;
+$form-input-font-size-tablet:40px;
+
+$button-border-size: 2px;
+
+//corner-radius
+$button-border-radius: 5px;
+$panel-border-radius: 5px;
+$input-border-radius: 0px;
+
+//stwHeader
+$stw-header-mobile-height: 50px;
+$stw-header-tablet-height: 100px;
+
+$stw-header-mobile-padding: 150px / 2;
+$stw-header-tablet-padding: 230px / 2;
+
+$stw-menu-animation-time: 444ms;
+$mobile-menu-icon-size: 39px;
+
+
+// Colors
+// -------------------------------
+
+
+// Base
+// -------------------------------
+
+$base-background-color:           #fff !default;
+$base-color:                      #000 !default;
+
+$link-color:                      $color_blue_lagoon !default;
+$link-hover-color:                darken($link-color, 15%) !default;
+
+$content-padding:                 10px !default;
+
+$padding-base-vertical:           6px !default;
+$padding-base-horizontal:         12px !default;
+
+$padding-large-vertical:          10px !default;
+$padding-large-horizontal:        16px !default;
+
+$padding-small-vertical:          5px !default;
+$padding-small-horizontal:        10px !default;
+
+$border-radius-base:              4px !default;
+$border-radius-large:             6px !default;
+$border-radius-small:             3px !default;
+
+$border-colour-primary: $color_blue_stone;
+
+
+// Content
+// -------------------------------
+
+$scroll-refresh-icon-color:       #666666 !default;
+
+
+// Item Editing
+// -------------------------------
+
+$item-edit-transition-duration:   250ms !default;
+$item-edit-transition-function:   ease-in-out !default;
+
+$item-remove-transition-duration:   300ms !default;
+$item-remove-transition-function:   ease-in !default;
+$item-remove-descendents-transition-function:  cubic-bezier(.25,.81,.24,1) !default;
+
+$item-left-edit-left:             8px !default;  // item's left side edit's "left" property
+
+$item-right-edit-open-width:      50px !default;
+$item-left-edit-open-width:       50px !default;
+
+$item-delete-icon-size:           24px !default;
+$item-delete-icon-color:          $white !default;
+
+$item-reorder-icon-size:          32px !default;
+$item-reorder-icon-color:         $black25 !default;
+
+
+// Lists
+// -------------------------------
+
+$list-header-bg:                  transparent !default;
+$list-header-color:               #222 !default;
+$list-header-padding:             5px 15px !default;
+$list-header-margin-top:          20px !default;
+
+
+// Cards
+// -------------------------------
+
+$card-header-bg:                  #F5F5F5 !default;
+$card-body-bg:                    #fff !default;
+$card-footer-bg:                  #F5F5F5 !default;
+
+$card-padding:                    10px !default;
+$card-border-width:               1px !default;
+
+$card-border-color:               #ccc !default;
+$card-border-radius:              2px !default;
+$card-box-shadow:                 0 1px 3px rgba(0, 0, 0, .3) !default;
+
+
+// Forms
+// -------------------------------
+
+$input-height-base:               ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
+$input-height-large:              (floor($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
+$input-height-small:              (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;

@@ -1,0 +1,27 @@
+/* badges with icons, or just plain badges
+
+    <a href="#!" class="collection-item">Alan<span class="badge">1</span></a>
+
+*/
+
+span.badge {
+  min-width: 3rem;
+  padding: 0 6px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: inherit;
+  color: #757575;
+  position: absolute;
+  right: 15px;
+  box-sizing: border-box;
+  &.new {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #26a69a;
+    border-radius: 2px;
+    &:after {
+      content: " new";
+    }
+  }
+}

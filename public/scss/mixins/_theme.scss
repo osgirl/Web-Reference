@@ -1,0 +1,13 @@
+@mixin theme($component, $theme-object) {
+  @each $theme_name,$theme in $theme-object {
+    .#{$theme_name} {
+      @each $panel_name, $panel in $theme {
+        .#{$component}-#{$panel_name} {
+          @each $property, $value in $panel {
+            #{$property}: #{$value};
+          }
+        }
+      }
+    }
+  }
+}

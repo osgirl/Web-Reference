@@ -1,0 +1,3 @@
+@function spacing($size-name) {
+  @return map-get($whitespace-sizes, $size-name);
+}

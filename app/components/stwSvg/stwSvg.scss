@@ -1,0 +1,92 @@
+[cs-svg] {
+    display: inline-block;
+
+    .icon-state-hover {
+        display: none;
+    }
+
+    .desktop &:hover,
+    .desktop a:hover & ,
+    .active & {
+        .icon-state-normal {
+            display: none;
+        }
+        .icon-state-hover {
+            display: block;
+        }
+    }
+
+}
+
+.dash-direction-background {
+    fill: transparent;
+    opacity: 0.6;
+}
+
+.expander {
+
+     .desktop .panel-with-state:hover & {
+         .icon-state-normal {
+             display: none;
+         }
+         .icon-state-hover {
+             display: block;
+         }
+     }
+     .accordian_open & {
+
+         .icon-state-normal {
+             display: none;
+         }
+         .icon-state-hover {
+             display: block;
+         }
+     }
+ }
+
+.cs-input-darkbg{
+    .icon-state-normal{
+        display: block;
+    }
+
+    .icon-state-hover{
+        display: none;
+    }
+
+    &:hover{
+        .icon-state-normal{
+            display: none !important;
+        }
+
+        .icon-state-hover{
+            display: block !important;
+        }
+    }
+}
+
+.dashboard-icon {
+    .dashboard-icon-group {
+        display: none;
+
+        .alpha &.dashboard-alpha, .default &.dashboard-alpha {
+            display: block;
+        }
+
+        .beta &.dashboard-beta {
+            display: block;
+        }
+
+        .delta &.dashboard-delta {
+            display: block;
+        }
+
+        .epsilon &.dashboard-epsilon {
+            display: block;
+        }
+
+        .gamma &.dashboard-gamma {
+            display: block;
+        }
+    }
+
+}

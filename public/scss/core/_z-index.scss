@@ -1,0 +1,17 @@
+@import "variables";
+
+.z-crust {
+  z-index: $z-index-crust;
+}
+
+.z-ground {
+  z-index: $z-index-ground;
+}
+
+.z-sky {
+  z-index: $z-index-sky;
+}
+
+.z-space {
+  z-index: $z-index-space;
+}

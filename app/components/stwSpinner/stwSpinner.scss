@@ -1,0 +1,20 @@
+.stw-spinner {
+  .loader {
+    display: block;
+    opacity: 1;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -15px auto 0 -15px;
+    color: black;
+
+    svg {
+      height: 100%;
+      width: 100%;
+      fill: currentcolor;
+      animation: spin 1s linear infinite;
+    }
+  }
+}

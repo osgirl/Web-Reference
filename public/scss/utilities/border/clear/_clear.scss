@@ -1,0 +1,21 @@
+.border-clear {
+  border-bottom: none;
+}
+
+@include breakpoint($m) {
+  .border-clear-m{
+    border-bottom: none;
+  }
+}
+
+@include breakpoint($l) {
+  .border-clear-l {
+    border-bottom: none;
+  }
+}
+
+@include breakpoint($xl) {
+  .border-clear-xl {
+    border-bottom: none;
+  }
+}

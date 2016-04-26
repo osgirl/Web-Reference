@@ -1,0 +1,32 @@
+$whitespace-locations: (a, v, h, t, r, b, l);
+$whitespace-types: (p, m);
+
+@each $name, $size in $whitespace-sizes {
+    @each $type in $whitespace-types {
+        @each $location in $whitespace-locations {
+            .space-#{$type}#{$location}#{$name} {
+                @each $location-option in map-get($whitespace-keys, $location) {
+                    #{map-get($whitespace-keys, $type)}#{$location-option}: $size !important;
+                }
+            }
+        }
+    }
+}
+
+.space-s-pan {
+    @include breakpoint($s) {
+        padding: 0px;
+    }
+
+    @include breakpoint($m) {
+        padding: 0px 10px;
+    }
+}
+
+.space-xs-pan {
+    padding: 0px !important;
+
+    @include breakpoint($m) {
+        padding: 0px 10px !important;
+    }
+}

@@ -1,0 +1,119 @@
+@import "./imports";
+
+.stw-context-menu-right {
+
+    transition: 300ms ease all;
+    right: -300px;
+    left: auto !important;
+
+    .menu_user {
+        margin-left: 35px;
+        margin-top: 7px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #868686;
+    }
+
+    &.ng-enter.ng-enter-active {
+        top: 0;
+        transform: translateX(-300px);
+        transform: translateY(0) translateX(-300px);
+        transform: translate3d(-300px, 0, 0);
+    }
+
+    &.ng-enter {
+        display: block;
+        transform: translateX(0);
+        transform: translateY(0) translateX(0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    &.slide-in-right {
+        display: block;
+        transform: translateX(-300px);
+        transform: translateY(0) translateX(-300px);
+        transform: translate3d(-300px, 0, 0);
+    }
+
+    &.ng-leave.ng-leave-active {
+        transform: translateX(0);
+        transform: translateY(0) translateX(0);
+        transform: translate3d(0, 0, 0);
+    }
+    &.ng-leave {
+        display: block;
+        transform: translateX(-300px);
+        transform: translateY(0) translateX(-300px);
+        transform: translate3d(-300px, 0, 0);
+    }
+
+    .menu-footer {
+        padding-left: 0;
+
+        .menu-primary__item {
+            margin: 0 0 10px 0;
+        }
+    }
+
+    .menu-pie {
+        position: relative;
+        height: 5em;
+        width: 5em;
+        margin-left: 10px;
+
+        .main-score-info, .circle-timers, .circle-summary, .circle-help, .circle-background-wrapper {
+            display: none;
+        }
+
+        svg {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        .circle-score-inner {
+            &:after {
+                border: 2px solid rgba(153, 153, 153, 0.15);
+            }
+        }
+        .circle {
+            &:after {
+                border: 1px solid rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .circle-crop {
+            position: absolute;
+        }
+
+        .circle-position {
+            transform: translate3d(0, 0, 0);
+        }
+
+        .circle-score .circle-gauge .gauge-background {
+            opacity: 0;
+        }
+
+        .circle-score {
+            left: auto;
+            margin-left: 0px;
+            width: 100%;
+            height: 100%;
+            margin-top: auto;
+            position: relative;
+            top: inherit;
+            @include breakpoint($m) {
+                font-size: 12px;
+            }
+        }
+
+        .circle-score .circle-gauge {
+            position: relative;
+        }
+
+        .circle-number {
+            font-weight: 300;
+            font-size: 2.5em;
+        }
+    }
+
+}

@@ -1,0 +1,172 @@
+@import "../mixins/grid-flex", "_variables.scss";
+
+/**
+ * STW Grid - uses flex box to keep with current standards
+ * (with 5 breakpoint definitions " xs = (320px), s = (321px), m = (691px), l = (1024px), xl = (1280px) ")
+ * --------------------------------------------------
+ */
+.stw-container {
+  margin: 0 auto;
+  max-width: $max-width;
+  @include flex(1);
+  width: 90%;
+  .stw-row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+}
+
+.stw-section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  &.no-pad {
+    padding: 0;
+  }
+  &.no-pad-bot {
+    padding-bottom: 0;
+  }
+  &.no-pad-top {
+    padding-top: 0;
+  }
+}
+
+.stw-row {
+  @include display-flex();
+  padding: ($grid-padding-width / 2);
+  width: 100%;
+}
+
+.stw-row-wrap {
+  @include flex-wrap(wrap);
+}
+
+.stw-row-no-padding {
+  padding: 0;
+
+  > .stw-col {
+    padding: 0;
+  }
+}
+
+.stw-row + .stw-row {
+  margin-top: ($grid-padding-width / 2) * -1;
+  padding-top: 0;
+}
+
+.stw-col {
+  @include flex(1);
+  display: block;
+  padding: ($grid-padding-width / 2);
+  width: 100%;
+}
+
+
+/* Vertically Align stw-columns */
+/* .stw-row-* vertically aligns every .stw-col in the .stw-row */
+.stw-row-top {
+  @include align-items(flex-start);
+}
+.stw-row-bottom {
+  @include align-items(flex-end);
+}
+.stw-row-center {
+  @include align-items(center);
+}
+.stw-row-stretch {
+  @include align-items(stretch);
+}
+.stw-row-baseline {
+  @include align-items(baseline);
+}
+
+/* .stw-col-* vertically aligns an individual .stw-col */
+.stw-col-top {
+  @include align-self(flex-start);
+}
+.stw-col-bottom {
+  @include align-self(flex-end);
+}
+.stw-col-center {
+  @include align-self(center);
+}
+
+/* stw-column Offsets */
+.stw-col-offset-10 {
+  margin-left: 10%;
+}
+.stw-col-offset-20 {
+  margin-left: 20%;
+}
+.stw-col-offset-25 {
+  margin-left: 25%;
+}
+.stw-col-offset-33, .stw-col-offset-34 {
+  margin-left: 33.3333%;
+}
+.stw-col-offset-50 {
+  margin-left: 50%;
+}
+.stw-col-offset-66, .stw-col-offset-67 {
+  margin-left: 66.6666%;
+}
+.stw-col-offset-75 {
+  margin-left: 75%;
+}
+.stw-col-offset-80 {
+  margin-left: 80%;
+}
+.stw-col-offset-90 {
+  margin-left: 90%;
+}
+
+
+.stw-col-10 {
+  @include flex(0, 0, 10%);
+  max-width: 10%;
+}
+.stw-col-20 {
+  @include flex(0, 0, 20%);
+  max-width: 20%;
+}
+.stw-col-25 {
+  @include flex(0, 0, 25%);
+  max-width: 25%;
+}
+.stw-col-33, .stw-col-34 {
+  @include flex(0, 0, 33.3333%);
+  max-width: 33.3333%;
+}
+.stw-col-40 {
+  @include flex(0, 0, 40%);
+  max-width: 40%;
+}
+.stw-col-50 {
+  @include flex(0, 0, 50%);
+  max-width: 50%;
+}
+.stw-col-60 {
+  @include flex(0, 0, 60%);
+  max-width: 60%;
+}
+.stw-col-66, .stw-col-67 {
+  @include flex(0, 0, 66.6666%);
+  max-width: 66.6666%;
+}
+.stw-col-75 {
+  @include flex(0, 0, 75%);
+  max-width: 75%;
+}
+.stw-col-80 {
+  @include flex(0, 0, 80%);
+  max-width: 80%;
+}
+.stw-col-90 {
+  @include flex(0, 0, 90%);
+  max-width: 90%;
+}
+
+@include responsive-grid-break('extra-small', $xs);
+@include responsive-grid-break('small', $s);
+@include responsive-grid-break('medium', $m);
+@include responsive-grid-break('large', $l);
+@include responsive-grid-break('xlarge', $xl);

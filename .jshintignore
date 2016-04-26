@@ -1,0 +1,6 @@
+hooks/**
+node_modules/**
+plugins/**
+platforms/**
+www/**
+public/bower_components/**

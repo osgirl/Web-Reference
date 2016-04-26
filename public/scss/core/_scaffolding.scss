@@ -1,0 +1,256 @@
+@import "../imports";
+
+/**
+ * Scaffolding
+ * --------------------------------------------------
+ */
+
+* {
+  @include box-sizing(border-box);
+  &:before, &:after {
+    @include box-sizing(border-box);
+  }
+}
+
+html {
+  overflow: hidden;
+  @include touch-callout();
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+
+body, .stw-body {
+  @include touch-callout();
+  @include font-smoothing(antialiased);
+  @include text-size-adjust();
+  @include tap-highlight-transparent();
+  @include user-select(none);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  color: $base-color;
+  word-wrap: break-word;
+  font-size: $font-size-base;
+  font-family: $font-family-sans-serif;
+  line-height: $line-height-base;
+  text-rendering: optimizeLegibility;
+  -webkit-backface-visibility: hidden;
+  -webkit-user-drag: none;
+  -ms-content-zooming: none;
+}
+
+body {
+  &.grade-b, &.grade-c {
+    text-rendering: auto;
+  }
+}
+
+.stw-content {
+  position: relative;
+}
+
+.stw-scroll-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  margin-top: -1px;
+  padding-top: 1px;
+  margin-bottom: -1px;
+  width: auto;
+  height: auto;
+}
+
+.stw-menu .stw-scroll-content.stw-scroll-content-false {
+  z-index: 11;
+}
+
+.stw-scroll-view {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-top: -1px;
+}
+
+/**
+ * Scroll is the scroll view component available for complex and custom
+ * scroll view functionality.
+ */
+
+.stw-scroll {
+  @include touch-callout();
+  @include text-size-adjust();
+  @include tap-highlight-transparent();
+  @include user-select(none);
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+}
+
+/**
+ * Set ms-viewport to prevent MS "page squish" and allow fluid scrolling
+ * https://msdn.microsoft.com/en-us/library/ie/hh869615(v=vs.85).aspx
+ */
+@-ms-viewport {
+  width: device-width;
+}
+
+.stw-scroll-bar {
+  position: absolute;
+  z-index: 9999;
+}
+
+.ng-animate .stw-scroll-bar {
+  visibility: hidden;
+}
+
+.stw-scroll-bar-h {
+  right: 2px;
+  bottom: 3px;
+  left: 2px;
+  height: 3px;
+  .stw-scroll-bar-indicator {
+    height: 100%;
+  }
+}
+
+.stw-scroll-bar-v {
+  top: 2px;
+  right: 3px;
+  bottom: 2px;
+  width: 3px;
+  .stw-scroll-bar-indicator {
+    width: 100%;
+  }
+}
+
+.stw-scroll-bar-indicator {
+  position: absolute;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  @include transition(opacity 0.3s linear);
+  &.stw-scroll-bar-fade-out {
+    opacity: 0;
+  }
+}
+
+.stw-overflow-scroll {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  .stw-scroll {
+    position: static;
+    height: 100%;
+    @include transform(translate3d(0, 0, 0));
+  }
+}
+
+.stw-pane {
+  @include transform(translate3d(0, 0, 0));
+  @include transition-duration(0ms);
+  z-index: 1;
+}
+
+.stw-view {
+  z-index: 1;
+}
+
+.stw-pane, .stw-view {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.stw-view-container {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/**
+ * Specific to content use if you want a layout that
+ * isn't full width.
+ */
+.stw-content-container {
+  margin: 0 auto;
+  max-width: $max-width;
+  width: 90%;
+  padding: 0;
+  .stw-row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+}
+
+@include breakpoint($l) {
+  .stw-content-container {
+    @include flex(0, 0, 85%);
+    width: 85%;
+  }
+}
+
+@include breakpoint($xl) {
+  .stw-content-container {
+    @include flex(0, 0, 70%);
+    width: 70%;
+  }
+}
+
+.stw-section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  &.no-pad {
+    padding: 0;
+  }
+  &.no-pad-bot {
+    padding-bottom: 0;
+  }
+  &.no-pad-top {
+    padding-top: 0;
+  }
+}
+
+.stw-row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.has-stw-header {
+  top: 50px;
+}
+
+.stw-has-header-image, .stw-no-header {
+  top: 0;
+}
+
+.stw-has-sub--header {
+  top: 100px;
+}
+
+.stw-has-footer {
+  bottom: 50px;
+}

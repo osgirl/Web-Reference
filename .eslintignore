@@ -1,0 +1,3 @@
+**/*.spec.js
+header.js
+public/bower_components/**/*.*

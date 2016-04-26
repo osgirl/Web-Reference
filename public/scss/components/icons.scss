@@ -1,0 +1,30 @@
+/* Icons that are based on Material Design Icons,
+** the html is parsed as an icon so the name of the icon goes in-between the tag as content
+
+    <i class="material-icon">cloud</i>
+
+*/
+
+i {
+  line-height: inherit;
+  &.left {
+    float: left;
+    margin-right: 15px;
+  }
+  &.right {
+    float: right;
+    margin-left: 15px;
+  }
+  &.tiny {
+    font-size: 1rem;
+  }
+  &.small {
+    font-size: 2rem;
+  }
+  &.medium {
+    font-size: 4rem;
+  }
+  &.large {
+    font-size: 6rem;
+  }
+}

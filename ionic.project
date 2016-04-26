@@ -1,0 +1,7 @@
+{
+  "name": "severn-trent-mobile-seed",
+  "app_id": "",
+    "gulpStartupTasks": [
+      "watch"
+    ]
+}

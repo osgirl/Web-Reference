@@ -1,0 +1,21 @@
+.left {
+  text-align: left;
+}
+
+@include breakpoint($m) {
+  .left-m {
+    text-align: left !important;
+  }
+}
+
+@include breakpoint($l) {
+  .left-l {
+    text-align: left !important;
+  }
+}
+
+@include breakpoint($xl) {
+  .left-xl {
+    text-align: left !important;
+  }
+}

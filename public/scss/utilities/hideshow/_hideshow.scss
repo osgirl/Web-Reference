@@ -1,0 +1,88 @@
+.hide, .is-hidden {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.show-inline {
+    display: inline-block !important;
+}
+
+.show-inline-s {
+    @include breakpoint($s) {
+        display: inline-block !important;
+    }
+}
+
+
+.show-inline-m {
+    @include breakpoint($m) {
+        display: inline-block !important;
+    }
+}
+
+.invisable {
+    visibility: hidden;
+}
+
+.hide-xs {
+    @include breakpoint($xs) {
+        display: none !important;
+    }
+}
+
+.show-xs {
+    @include breakpoint($xs) {
+        display: block !important;
+    }
+}
+
+.hide-s {
+    @include breakpoint($s) {
+        display: none !important;
+    }
+}
+
+.show-s {
+    @include breakpoint($s) {
+        display: block !important;
+    }
+}
+
+.hide-m {
+    @include breakpoint($m) {
+        display: none !important;
+    }
+}
+
+.show-m {
+    @include breakpoint($m) {
+        display: block !important;
+    }
+}
+
+.hide-l {
+    @include breakpoint($l) {
+        display: none !important;
+    }
+}
+
+.show-l {
+    @include breakpoint($l) {
+        display: block !important;
+    }
+}
+
+.hide-xl {
+    @include breakpoint($xl) {
+        display: none !important;
+    }
+}
+
+.show-xl {
+    @include breakpoint($xl) {
+        display: block !important;
+    }
+}

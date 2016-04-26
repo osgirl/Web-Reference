@@ -1,0 +1,97 @@
+@import "variables", "../mixins/colours";
+
+// Headings, Text Sizes
+h1,
+.h1 {
+  font: $font-header-stack;
+  font-weight: $font-weight-hairline;
+
+  font-size: $font-mobile-size-xlarge;
+  line-height: $font-mobile-line-height-xlarge;
+  margin-bottom: 15px;
+}
+
+h2,
+.h2 {
+  font: $font-header-stack;
+  font-weight: $font-weight-hairline;
+
+  font-size: $font-mobile-size-large;
+  line-height: $font-mobile-line-height-large;
+  margin-bottom: 15px;
+}
+
+h3,
+.h3 {
+  font: $font-base-stack;
+  font-weight: $font-weight-medium;
+
+  font-size: $font-mobile-size-mid-large;
+  line-height: $font-mobile-line-height-mid-large;
+  margin-bottom: 15px;
+}
+
+h4,
+.h4 {
+  font: $font-base-stack;
+  font-weight: $font-weight-medium;
+
+  font-size: $font-mobile-size-middle;
+  line-height: $font-mobile-line-height-middle;
+  margin-bottom: 15px;
+}
+
+small,
+.text-small {
+  font-size: $font-mobile-size-small;
+}
+
+.text-caps {
+  text-transform: capitalize;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-lower {
+  text-transform: lowercase;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.text-light {
+  color: color('shades', 'white');
+}
+
+.text-dark {
+  color: color('shades', 'dark');
+}
+
+.weight-light {
+  font-weight: 100;
+}
+
+.weight-bold,
+strong {
+  font-weight: $font-weight-medium;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  .no-touch &:hover {
+    text-decoration: none;
+  }
+  &:active, &:focus {
+    outline: none;
+  }
+}

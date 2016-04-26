@@ -1,0 +1,20 @@
+.navbar:before{
+  // Load up the themes
+  @each $theme in $theme-list {
+    .#{$theme} & {
+      background-image: url(../csBackground/images/#{$theme}-mobile.jpg);
+      @include breakpoint($m){
+          background-image: url(../csBackground/images/#{$theme}.jpg);
+      }
+    }
+  }
+}
+
+.navbar-content {
+  // Load up the themes
+  @each $theme in $theme-list {
+    .#{$theme} & {
+      border-top-color: color($theme, 'base');
+    }
+  }
+}

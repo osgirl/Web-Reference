@@ -1,0 +1,21 @@
+.show-inline {
+  display: inline-block !important;
+}
+
+.show-inline-m {
+  @include breakpoint($m) {
+    display: inline-block !important;
+  }
+}
+
+.show-inline-l {
+  @include breakpoint($l) {
+    display: inline-block !important;
+  }
+}
+
+.show-inline-xl {
+  @include breakpoint($xl) {
+    display: inline-block !important;
+  }
+}

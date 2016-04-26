@@ -1,0 +1,69 @@
+@import "imports";
+
+.stw-contextual-help-trigger,
+.stw-context-menu-bottom{
+    .background_solid & {
+        .indicators {
+            color: black;
+        }
+        .dash-direction-background {
+            fill: white;
+            opacity: 1;
+        }
+    }
+}
+
+.stw-contextual-help-trigger {
+    position: fixed;
+    width: 44px;
+    z-index: 50;
+    height: 44px;
+    bottom: 20px;
+    pointer-events: none;
+    left: 3%;
+
+
+    &.hide-helper {
+        display: none;
+    }
+
+    .help-trigger-icon, .help-trigger-icon_close {
+        width: 44px;
+        height: 44px;
+        position: absolute;
+        left: 4%;
+        margin: 0;
+        pointer-events: all;
+        //transform: translate3d(0,0,0);
+    }
+
+    .help-trigger-icon_close {
+        display: none;
+    }
+}
+
+//.slide_content_up {
+//    .help-trigger-icon {
+//        display: none;
+//    }
+//    .help-trigger-icon_close {
+//        display: block;
+//    }
+//}
+
+//.slide-menu-up, .slide-menu-left, .slide-menu-right {
+//    .stw-contextual-help-trigger {
+//        visibility: hidden;
+//        opacity: 0;
+//    }
+//}
+//
+//.slide-menu-up, .slide-menu-left, .slide-menu-right {
+//    &.slide-home .stw-contextual-help-trigger {
+//        display: block;
+//        opacity:1;
+//        transition:opacity 0.222s;
+//        transition-delay: 0.5s;
+//        visibility: visible;
+//    }
+//}

@@ -1,0 +1,173 @@
+<div class="stw-scroll-content has-stw-header stw-overflow-scroll" ng-controller="CardsController as cards">
+  <div class="stw-scroll">
+    <div class="stw-content-container">
+      <div class="stw-row">
+
+        <div class="col s12 m9 l10">
+
+          <!-- Cards Section-->
+          <div id="basic" class="stw-section">
+            <p class="caption">Cards are a convenient means of displaying content composed of different types of
+              objects. They’re also well-suited for presenting similar objects whose size or supported actions can vary
+              considerably, like photos with captions of variable length.</p>
+
+            <div class="stw-row">
+              <div class="col s12 m6">
+                <h2 class="h2 flow-text">Basic Card</h2>
+                <!-- Basic Card -->
+                <div class="card red lighten-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">Card Title</span>
+                    <p>I am a very simple card. I am good at containing small bits of
+                      information. I am convenient
+                      because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action white-text text-lighten-1">
+                    <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <h2 class="h2 flow-text">Image Card</h2>
+                <!-- Image Card -->
+                <div class="card">
+                  <div class="card-image">
+                    <img ng-src="{{cards.image1}}" class="full-image">
+                    <span class="card-title">Card Title</span>
+                  </div>
+                  <div class="card-content">
+                    <p class="">I am a very simple card. I am good at containing small bits of information. I am
+                      convenient
+                      because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="sizes" class="stw-section">
+            <div class="stw-row">
+              <!-- Small Card -->
+              <div class="col s12">
+                <h2 class="header flow-text">Card Sizes</h2>
+                <p class="caption">If you want to have uniformly sized cards, you can use our premade size classes. Just
+                  add the size class in addition to the card class. </p>
+              </div>
+            </div>
+            <div class="stw-row">
+              <div class="col s12 m6">
+                <h4 class="light">Small</h4>
+                <div class="card small">
+                  <div class="card-image">
+                    <img ng-src="{{cards.image3}}" class="full-image">
+                    <span class="card-title">Card Title</span>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                      because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <h4 class="light">Small with colour</h4>
+                <div class="card small grey lighten-2">
+                  <div class="card-image">
+                    <img ng-src="{{cards.image4}}">
+                    <span class="card-title">Card Title</span>
+                  </div>
+                  <div class="card-content blue-grey-text">
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                      because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="stw-row">
+              <div class="col s12 m7">
+                <h4 class="light">Medium</h4>
+                <div class="card medium">
+                  <div class="card-image">
+                    <img ng-src="{{cards.image1}}">
+                    <span class="card-title">Card Title</span>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                      because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m5">
+                <br><br>
+                <p class="caption light">
+                  The Medium Card limits the height of the card to 400px.
+                </p>
+              </div>
+            </div>
+
+            <div class="stw-row">
+              <div class="col s12 m8">
+                <h4 class="light">Large</h4>
+                <div class="card large">
+                  <div class="card-image">
+                    <img ng-src="{{cards.image3}}">
+                    <span class="card-title">Card Title</span>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                      because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4">
+                <br><br>
+                <p class="caption">
+                  The Large Card limits the height of the card to 500px.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="panel" class="stw-section">
+            <div class="stw-row">
+              <!-- Card Panel -->
+              <div class="col s12 m5">
+                <h2 class="header">Card Panel</h2>
+                <div class="card-panel teal"><span class="white-text">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.</span>
+                </div>
+              </div>
+              <div class="col s12 m7">
+                <br><br><br><br>
+                <p class="caption">
+                  For a simpler card with less markup, try using a card panel which just has padding and a shadow effect
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

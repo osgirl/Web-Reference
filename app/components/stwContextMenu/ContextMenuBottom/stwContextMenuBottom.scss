@@ -1,0 +1,51 @@
+.stw-context-menu-bottom {
+
+    transition: 300ms ease all;
+    bottom: -300px;
+    top: auto;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 300px;
+
+    .help-trigger-icon_close {
+        position: absolute;
+        top: -60px;
+        left: 3%;
+        margin-left: 0;
+    }
+
+    &.ng-enter.ng-enter-active {
+        transform: translateY(-300px);
+        transform: translateY(-300px) translateX(0);
+        transform: translate3d(0, -300px, 0);
+    }
+
+    &.ng-enter {
+        display: block;
+        transform: translateX(0);
+        transform: translateY(0) translateX(0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    &.slide-in-bottom {
+        display: block;
+        transform: translateX(0);
+        transform: translateY(-300px) translateX(0);
+        transform: translate3d(0, -300px, 0);
+        overflow: initial;
+    }
+
+    &.ng-leave.ng-leave-active {
+        transform: translateX(0);
+        transform: translateY(0) translateX(0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    &.ng-leave {
+        display: block;
+        transform: translateY(-300px);
+        transform: translateY(-300px) translateX(0);
+        transform: translate3d(0, -300px, 0);
+    }
+}

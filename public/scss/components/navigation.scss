@@ -1,0 +1,40 @@
+/**
+ * Navigation
+ * --------------------------------------------------
+ */
+
+.stw-navigation {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  .flex-item {
+    line-height: 24px;
+    color: white;
+    font-weight: bold;
+    list-style: none;
+
+    a {
+      padding: 0.5rem;
+      max-width: 240px;
+      font-weight: bold;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+
+      &:focus, &:hover {
+        line-height: 25px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.transparent .stw-navigation .flex-item a {
+  color: white;
+  &:hover {
+    text-decoration: none;
+  }
+}

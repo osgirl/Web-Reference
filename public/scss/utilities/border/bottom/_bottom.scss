@@ -1,0 +1,21 @@
+.border-bottom {
+  border-bottom: 1px solid $border-colour-primary;
+}
+
+@include breakpoint($m) {
+  .border-bottom-m{
+    border-bottom: 1px solid $border-colour-primary;
+  }
+}
+
+@include breakpoint($l) {
+  .border-bottom-l {
+    border-bottom: 1px solid $border-colour-primary;
+  }
+}
+
+@include breakpoint($xl) {
+  .border-bottom-xl {
+    border-bottom: 1px solid $border-colour-primary;
+  }
+}

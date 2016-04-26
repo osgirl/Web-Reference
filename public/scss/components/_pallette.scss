@@ -1,0 +1,1576 @@
+@import "../core/colours";
+
+/* Full colours pallette with various tones and depths use on any element
+
+<div class="cyan">
+    <p class="blue-text lighten-4">This is example text,</p>
+</div>
+
+* Colours available are:
+
+*/
+
+.red {
+  background-color: $color_red_orange !important;
+  &.lighten-5 {
+    background-color: $color_fair_pink !important;
+  }
+  &.lighten-4 {
+    background-color: $color_pastel_pink !important;
+  }
+  &.lighten-3 {
+    background-color: $color_sea_pink !important;
+  }
+  &.lighten-2 {
+    background-color: $color_sunglo !important;
+  }
+  &.lighten-1 {
+    background-color: $color_carnation !important;
+  }
+  &.darken-1 {
+    background-color: $color_cinnabar !important;
+  }
+  &.darken-2 {
+    background-color: $color_persian_red !important;
+  }
+  &.darken-3 {
+    background-color: $color_persian_red !important;
+  }
+  &.darken-4 {
+    background-color: $color_thunderbird !important;
+  }
+  &.accent-1 {
+    background-color: $color_geraldine !important;
+  }
+  &.accent-2 {
+    background-color: $color_carnation !important;
+  }
+  &.accent-3 {
+    background-color: $color_torch_red !important;
+  }
+  &.accent-4 {
+    background-color: $color_guardsman_red !important;
+  }
+}
+.red-text {
+  color: $color_red_orange !important;
+  &.text-lighten-5 {
+    color: $color_fair_pink !important;
+  }
+  &.text-lighten-4 {
+    color: $color_pastel_pink !important;
+  }
+  &.text-lighten-3 {
+    color: $color_sea_pink !important;
+  }
+  &.text-lighten-2 {
+    color: $color_sunglo !important;
+  }
+  &.text-lighten-1 {
+    color: $color_carnation !important;
+  }
+  &.text-darken-1 {
+    color: $color_cinnabar !important;
+  }
+  &.text-darken-2 {
+    color: $color_persian_red !important;
+  }
+  &.text-darken-3 {
+    color: $color_persian_red !important;
+  }
+  &.text-darken-4 {
+    color: $color_thunderbird !important;
+  }
+  &.text-accent-1 {
+    color: $color_geraldine !important;
+  }
+  &.text-accent-2 {
+    color: $color_carnation !important;
+  }
+  &.text-accent-3 {
+    color: $color_torch_red !important;
+  }
+  &.text-accent-4 {
+    color: $color_guardsman_red !important;
+  }
+}
+.pink {
+  background-color: $color_razzmatazz !important;
+  &.lighten-5 {
+    background-color: $color_carousel_pink !important;
+  }
+  &.lighten-4 {
+    background-color: $color_cotton_candy !important;
+  }
+  &.lighten-3 {
+    background-color: $color_mauvelous !important;
+  }
+  &.lighten-2 {
+    background-color: $color_brink_pink !important;
+  }
+  &.lighten-1 {
+    background-color: $color_violet_red !important;
+  }
+  &.darken-1 {
+    background-color: $color_razzmatazz !important;
+  }
+  &.darken-2 {
+    background-color: $color_maroon_flush !important;
+  }
+  &.darken-3 {
+    background-color: $color_jazzberry_jam !important;
+  }
+  &.darken-4 {
+    background-color: $color_disco !important;
+  }
+  &.accent-1 {
+    background-color: $color_tickle_me_pink !important;
+  }
+  &.accent-2 {
+    background-color: $color_violet_red !important;
+  }
+  &.accent-3 {
+    background-color: $color_razzmatazz !important;
+  }
+  &.accent-4 {
+    background-color: $color_lipstick !important;
+  }
+}
+.pink-text {
+  color: $color_razzmatazz !important;
+  &.text-lighten-5 {
+    color: $color_carousel_pink !important;
+  }
+  &.text-lighten-4 {
+    color: $color_cotton_candy !important;
+  }
+  &.text-lighten-3 {
+    color: $color_mauvelous !important;
+  }
+  &.text-lighten-2 {
+    color: $color_brink_pink !important;
+  }
+  &.text-lighten-1 {
+    color: $color_violet_red !important;
+  }
+  &.text-darken-1 {
+    color: $color_razzmatazz !important;
+  }
+  &.text-darken-2 {
+    color: $color_maroon_flush !important;
+  }
+  &.text-darken-3 {
+    color: $color_jazzberry_jam !important;
+  }
+  &.text-darken-4 {
+    color: $color_disco !important;
+  }
+  &.text-accent-1 {
+    color: $color_tickle_me_pink !important;
+  }
+  &.text-accent-2 {
+    color: $color_violet_red !important;
+  }
+  &.text-accent-3 {
+    color: $color_razzmatazz !important;
+  }
+  &.text-accent-4 {
+    color: $color_lipstick !important;
+  }
+}
+.purple {
+  background-color: $color_violet_eggplant !important;
+  &.lighten-5 {
+    background-color: $color_amour !important;
+  }
+  &.lighten-4 {
+    background-color: $color_french_lilac !important;
+  }
+  &.lighten-3 {
+    background-color: $color_light_wisteria !important;
+  }
+  &.lighten-2 {
+    background-color: $color_fuchsia_pink !important;
+  }
+  &.lighten-1 {
+    background-color: $color_fuchsia_pink !important;
+  }
+  &.darken-1 {
+    background-color: $color_violet_eggplant !important;
+  }
+  &.darken-2 {
+    background-color: $color_seance !important;
+  }
+  &.darken-3 {
+    background-color: $color_seance !important;
+  }
+  &.darken-4 {
+    background-color: $color_daisy_bush !important;
+  }
+  &.accent-1 {
+    background-color: $color_lavender_magenta !important;
+  }
+  &.accent-2 {
+    background-color: $color_pink_flamingo !important;
+  }
+  &.accent-3 {
+    background-color: $color_magenta_fuchsia !important;
+  }
+  &.accent-4 {
+    background-color: $color_electric_violet !important;
+  }
+}
+.purple-text {
+  color: $color_violet_eggplant !important;
+  &.text-lighten-5 {
+    color: $color_amour !important;
+  }
+  &.text-lighten-4 {
+    color: $color_french_lilac !important;
+  }
+  &.text-lighten-3 {
+    color: $color_light_wisteria !important;
+  }
+  &.text-lighten-2 {
+    color: $color_fuchsia_pink !important;
+  }
+  &.text-lighten-1 {
+    color: $color_fuchsia_pink !important;
+  }
+  &.text-darken-1 {
+    color: $color_violet_eggplant !important;
+  }
+  &.text-darken-2 {
+    color: $color_seance !important;
+  }
+  &.text-darken-3 {
+    color: $color_seance !important;
+  }
+  &.text-darken-4 {
+    color: $color_daisy_bush !important;
+  }
+  &.text-accent-1 {
+    color: $color_lavender_magenta !important;
+  }
+  &.text-accent-2 {
+    color: $color_pink_flamingo !important;
+  }
+  &.text-accent-3 {
+    color: $color_magenta_fuchsia !important;
+  }
+  &.text-accent-4 {
+    color: $color_electric_violet !important;
+  }
+}
+.deep-purple {
+  background-color: $color_purple_heart !important;
+  &.lighten-5 {
+    background-color: $color_athens_gray !important;
+  }
+  &.lighten-4 {
+    background-color: $color_prelude !important;
+  }
+  &.lighten-3 {
+    background-color: $color_cold_purple !important;
+  }
+  &.lighten-2 {
+    background-color: $color_lilac_bush !important;
+  }
+  &.lighten-1 {
+    background-color: $color_fuchsia_blue !important;
+  }
+  &.darken-1 {
+    background-color: $color_purple_heart !important;
+  }
+  &.darken-2 {
+    background-color: $color_daisy_bush !important;
+  }
+  &.darken-3 {
+    background-color: $color_daisy_bush !important;
+  }
+  &.darken-4 {
+    background-color: $color_blue_gem !important;
+  }
+  &.accent-1 {
+    background-color: $color_dull_lavender !important;
+  }
+  &.accent-2 {
+    background-color: $color_medium_purple !important;
+  }
+  &.accent-3 {
+    background-color: $color_electric_violet !important;
+  }
+  &.accent-4 {
+    background-color: $color_electric_violet !important;
+  }
+}
+.deep-purple-text {
+  color: $color_purple_heart !important;
+  &.text-lighten-5 {
+    color: $color_athens_gray !important;
+  }
+  &.text-lighten-4 {
+    color: $color_prelude !important;
+  }
+  &.text-lighten-3 {
+    color: $color_cold_purple !important;
+  }
+  &.text-lighten-2 {
+    color: $color_lilac_bush !important;
+  }
+  &.text-lighten-1 {
+    color: $color_fuchsia_blue !important;
+  }
+  &.text-darken-1 {
+    color: $color_purple_heart !important;
+  }
+  &.text-darken-2 {
+    color: $color_daisy_bush !important;
+  }
+  &.text-darken-3 {
+    color: $color_daisy_bush !important;
+  }
+  &.text-darken-4 {
+    color: $color_blue_gem !important;
+  }
+  &.text-accent-1 {
+    color: $color_dull_lavender !important;
+  }
+  &.text-accent-2 {
+    color: $color_medium_purple !important;
+  }
+  &.text-accent-3 {
+    color: $color_electric_violet !important;
+  }
+  &.text-accent-4 {
+    color: $color_electric_violet !important;
+  }
+}
+.indigo {
+  background-color: $color_cerulean_blue !important;
+  &.lighten-5 {
+    background-color: $color_athens_gray !important;
+  }
+  &.lighten-4 {
+    background-color: $color_periwinkle_gray !important;
+  }
+  &.lighten-3 {
+    background-color: $color_wistful !important;
+  }
+  &.lighten-2 {
+    background-color: $color_ship_cove !important;
+  }
+  &.lighten-1 {
+    background-color: $color_indigo !important;
+  }
+  &.darken-1 {
+    background-color: $color_governor_bay !important;
+  }
+  &.darken-2 {
+    background-color: $color_sapphire !important;
+  }
+  &.darken-3 {
+    background-color: $color_bay_of_many !important;
+  }
+  &.darken-4 {
+    background-color: $color_jacksons_purple !important;
+  }
+  &.accent-1 {
+    background-color: $color_portage !important;
+  }
+  &.accent-2 {
+    background-color: $color_royal_blue !important;
+  }
+  &.accent-3 {
+    background-color: $color_royal_blue !important;
+  }
+  &.accent-4 {
+    background-color: $color_royal_blue !important;
+  }
+}
+.indigo-text {
+  color: $color_cerulean_blue !important;
+  &.text-lighten-5 {
+    color: $color_athens_gray !important;
+  }
+  &.text-lighten-4 {
+    color: $color_periwinkle_gray !important;
+  }
+  &.text-lighten-3 {
+    color: $color_wistful !important;
+  }
+  &.text-lighten-2 {
+    color: $color_ship_cove !important;
+  }
+  &.text-lighten-1 {
+    color: $color_indigo !important;
+  }
+  &.text-darken-1 {
+    color: $color_governor_bay !important;
+  }
+  &.text-darken-2 {
+    color: $color_sapphire !important;
+  }
+  &.text-darken-3 {
+    color: $color_bay_of_many !important;
+  }
+  &.text-darken-4 {
+    color: $color_jacksons_purple !important;
+  }
+  &.text-accent-1 {
+    color: $color_portage !important;
+  }
+  &.text-accent-2 {
+    color: $color_royal_blue !important;
+  }
+  &.text-accent-3 {
+    color: $color_royal_blue !important;
+  }
+  &.text-accent-4 {
+    color: $color_royal_blue !important;
+  }
+}
+.blue {
+  background-color: $color_dodger_blue !important;
+  &.lighten-5 {
+    background-color: $color_pattens_blue !important;
+  }
+  &.lighten-4 {
+    background-color: $color_sail !important;
+  }
+  &.lighten-3 {
+    background-color: $color_cornflower !important;
+  }
+  &.lighten-2 {
+    background-color: $color_malibu !important;
+  }
+  &.lighten-1 {
+    background-color: $color_picton_blue !important;
+  }
+  &.darken-1 {
+    background-color: $color_curious_blue !important;
+  }
+  &.darken-2 {
+    background-color: $color_mariner !important;
+  }
+  &.darken-3 {
+    background-color: $color_denim !important;
+  }
+  &.darken-4 {
+    background-color: $color_tory_blue !important;
+  }
+  &.accent-1 {
+    background-color: $color_jordy_blue !important;
+  }
+  &.accent-2 {
+    background-color: $color_cornflower_blue !important;
+  }
+  &.accent-3 {
+    background-color: $color_dodger_blue !important;
+  }
+  &.accent-4 {
+    background-color: $color_royal_blue !important;
+  }
+}
+.blue-text {
+  color: $color_dodger_blue !important;
+  &.text-lighten-5 {
+    color: $color_pattens_blue !important;
+  }
+  &.text-lighten-4 {
+    color: $color_sail !important;
+  }
+  &.text-lighten-3 {
+    color: $color_cornflower !important;
+  }
+  &.text-lighten-2 {
+    color: $color_malibu !important;
+  }
+  &.text-lighten-1 {
+    color: $color_picton_blue !important;
+  }
+  &.text-darken-1 {
+    color: $color_curious_blue !important;
+  }
+  &.text-darken-2 {
+    color: $color_mariner !important;
+  }
+  &.text-darken-3 {
+    color: $color_denim !important;
+  }
+  &.text-darken-4 {
+    color: $color_tory_blue !important;
+  }
+  &.text-accent-1 {
+    color: $color_jordy_blue !important;
+  }
+  &.text-accent-2 {
+    color: $color_cornflower_blue !important;
+  }
+  &.text-accent-3 {
+    color: $color_dodger_blue !important;
+  }
+  &.text-accent-4 {
+    color: $color_royal_blue !important;
+  }
+}
+.light-blue {
+  background-color: $color_cerulean !important;
+  &.lighten-5 {
+    background-color: $color_pattens_blue !important;
+  }
+  &.lighten-4 {
+    background-color: $color_sail !important;
+  }
+  &.lighten-3 {
+    background-color: $color_malibu !important;
+  }
+  &.lighten-2 {
+    background-color: $color_picton_blue !important;
+  }
+  &.lighten-1 {
+    background-color: $color_picton_blue !important;
+  }
+  &.darken-1 {
+    background-color: $color_cerulean !important;
+  }
+  &.darken-2 {
+    background-color: $color_lochmara !important;
+  }
+  &.darken-3 {
+    background-color: $color_lochmara !important;
+  }
+  &.darken-4 {
+    background-color: $color_endeavour !important;
+  }
+  &.accent-1 {
+    background-color: $color_malibu !important;
+  }
+  &.accent-2 {
+    background-color: $color_picton_blue !important;
+  }
+  &.accent-3 {
+    background-color: $color_dodger_blue !important;
+  }
+  &.accent-4 {
+    background-color: $color_azure_radiance !important;
+  }
+}
+.light-blue-text {
+  color: $color_cerulean !important;
+  &.text-lighten-5 {
+    color: $color_pattens_blue !important;
+  }
+  &.text-lighten-4 {
+    color: $color_sail !important;
+  }
+  &.text-lighten-3 {
+    color: $color_malibu !important;
+  }
+  &.text-lighten-2 {
+    color: $color_picton_blue !important;
+  }
+  &.text-lighten-1 {
+    color: $color_picton_blue !important;
+  }
+  &.text-darken-1 {
+    color: $color_cerulean !important;
+  }
+  &.text-darken-2 {
+    color: $color_lochmara !important;
+  }
+  &.text-darken-3 {
+    color: $color_lochmara !important;
+  }
+  &.text-darken-4 {
+    color: $color_endeavour !important;
+  }
+  &.text-accent-1 {
+    color: $color_malibu !important;
+  }
+  &.text-accent-2 {
+    color: $color_picton_blue !important;
+  }
+  &.text-accent-3 {
+    color: $color_dodger_blue !important;
+  }
+  &.text-accent-4 {
+    color: $color_azure_radiance !important;
+  }
+}
+.cyan {
+  background-color: $color_robins_egg_blue !important;
+  &.lighten-5 {
+    background-color: $color_pattens_blue !important;
+  }
+  &.lighten-4 {
+    background-color: $color_charlotte !important;
+  }
+  &.lighten-3 {
+    background-color: $color_spray !important;
+  }
+  &.lighten-2 {
+    background-color: $color_viking !important;
+  }
+  &.lighten-1 {
+    background-color: $color_scooter !important;
+  }
+  &.darken-1 {
+    background-color: $color_pacific_blue !important;
+  }
+  &.darken-2 {
+    background-color: $color_bondi_blue !important;
+  }
+  &.darken-3 {
+    background-color: $color_blue_lagoon !important;
+  }
+  &.darken-4 {
+    background-color: $color_blue_stone !important;
+  }
+  &.accent-1 {
+    background-color: $color_anakiwa !important;
+  }
+  &.accent-2 {
+    background-color: $color_cyan_aqua !important;
+  }
+  &.accent-3 {
+    background-color: $color_cyan_aqua !important;
+  }
+  &.accent-4 {
+    background-color: $color_cerulean !important;
+  }
+}
+.cyan-text {
+  color: $color_robins_egg_blue !important;
+  &.text-lighten-5 {
+    color: $color_pattens_blue !important;
+  }
+  &.text-lighten-4 {
+    color: $color_charlotte !important;
+  }
+  &.text-lighten-3 {
+    color: $color_spray !important;
+  }
+  &.text-lighten-2 {
+    color: $color_viking !important;
+  }
+  &.text-lighten-1 {
+    color: $color_scooter !important;
+  }
+  &.text-darken-1 {
+    color: $color_pacific_blue !important;
+  }
+  &.text-darken-2 {
+    color: $color_bondi_blue !important;
+  }
+  &.text-darken-3 {
+    color: $color_blue_lagoon !important;
+  }
+  &.text-darken-4 {
+    color: $color_blue_stone !important;
+  }
+  &.text-accent-1 {
+    color: $color_anakiwa !important;
+  }
+  &.text-accent-2 {
+    color: $color_cyan_aqua !important;
+  }
+  &.text-accent-3 {
+    color: $color_cyan_aqua !important;
+  }
+  &.text-accent-4 {
+    color: $color_cerulean !important;
+  }
+}
+.teal {
+  background-color: $color_gossamer !important;
+  &.lighten-5 {
+    background-color: $color_apple_green !important;
+  }
+  &.lighten-4 {
+    background-color: $color_powder_blue !important;
+  }
+  &.lighten-3 {
+    background-color: $color_monte_carlo !important;
+  }
+  &.lighten-2 {
+    background-color: $color_puerto_rico !important;
+  }
+  &.lighten-1 {
+    background-color: $color_jungle_green !important;
+  }
+  &.darken-1 {
+    background-color: $color_teal !important;
+  }
+  &.darken-2 {
+    background-color: $color_pine_green !important;
+  }
+  &.darken-3 {
+    background-color: $color_watercourse !important;
+  }
+  &.darken-4 {
+    background-color: $color_aqua_deep !important;
+  }
+  &.accent-1 {
+    background-color: $color_ice_cold !important;
+  }
+  &.accent-2 {
+    background-color: $color_aquamarine !important;
+  }
+  &.accent-3 {
+    background-color: $color_turquoise !important;
+  }
+  &.accent-4 {
+    background-color: $color_caribbean_green !important;
+  }
+}
+.teal-text {
+  color: $color_gossamer !important;
+  &.text-lighten-5 {
+    color: $color_apple_green !important;
+  }
+  &.text-lighten-4 {
+    color: $color_powder_blue !important;
+  }
+  &.text-lighten-3 {
+    color: $color_monte_carlo !important;
+  }
+  &.text-lighten-2 {
+    color: $color_puerto_rico !important;
+  }
+  &.text-lighten-1 {
+    color: $color_jungle_green !important;
+  }
+  &.text-darken-1 {
+    color: $color_teal !important;
+  }
+  &.text-darken-2 {
+    color: $color_pine_green !important;
+  }
+  &.text-darken-3 {
+    color: $color_watercourse !important;
+  }
+  &.text-darken-4 {
+    color: $color_aqua_deep !important;
+  }
+  &.text-accent-1 {
+    color: $color_ice_cold !important;
+  }
+  &.text-accent-2 {
+    color: $color_aquamarine !important;
+  }
+  &.text-accent-3 {
+    color: $color_turquoise !important;
+  }
+  &.text-accent-4 {
+    color: $color_caribbean_green !important;
+  }
+}
+.green {
+  background-color: $color_apple !important;
+  &.lighten-5 {
+    background-color: $color_gin !important;
+  }
+  &.lighten-4 {
+    background-color: $color_sea_mist !important;
+  }
+  &.lighten-3 {
+    background-color: $color_moss_green !important;
+  }
+  &.lighten-2 {
+    background-color: $color_de_york !important;
+  }
+  &.lighten-1 {
+    background-color: $color_fern !important;
+  }
+  &.darken-1 {
+    background-color: $color_apple !important;
+  }
+  &.darken-2 {
+    background-color: $color_goblin !important;
+  }
+  &.darken-3 {
+    background-color: $color_forest_green !important;
+  }
+  &.darken-4 {
+    background-color: $color_parsley !important;
+  }
+  &.accent-1 {
+    background-color: $color_madang !important;
+  }
+  &.accent-2 {
+    background-color: $color_bermuda !important;
+  }
+  &.accent-3 {
+    background-color: $color_spring_green !important;
+  }
+  &.accent-4 {
+    background-color: $color_malachite !important;
+  }
+}
+.green-text {
+  color: $color_apple !important;
+  &.text-lighten-5 {
+    color: $color_gin !important;
+  }
+  &.text-lighten-4 {
+    color: $color_sea_mist !important;
+  }
+  &.text-lighten-3 {
+    color: $color_moss_green !important;
+  }
+  &.text-lighten-2 {
+    color: $color_de_york !important;
+  }
+  &.text-lighten-1 {
+    color: $color_fern !important;
+  }
+  &.text-darken-1 {
+    color: $color_apple !important;
+  }
+  &.text-darken-2 {
+    color: $color_goblin !important;
+  }
+  &.text-darken-3 {
+    color: $color_forest_green !important;
+  }
+  &.text-darken-4 {
+    color: $color_parsley !important;
+  }
+  &.text-accent-1 {
+    color: $color_madang !important;
+  }
+  &.text-accent-2 {
+    color: $color_bermuda !important;
+  }
+  &.text-accent-3 {
+    color: $color_spring_green !important;
+  }
+  &.text-accent-4 {
+    color: $color_malachite !important;
+  }
+}
+.light-green {
+  background-color: $color_sushi !important;
+  &.lighten-5 {
+    background-color: $color_feta !important;
+  }
+  &.lighten-4 {
+    background-color: $color_beryl_green !important;
+  }
+  &.lighten-3 {
+    background-color: $color_sprout !important;
+  }
+  &.lighten-2 {
+    background-color: $color_feijoa !important;
+  }
+  &.lighten-1 {
+    background-color: $color_olivine !important;
+  }
+  &.darken-1 {
+    background-color: $color_sushi !important;
+  }
+  &.darken-2 {
+    background-color: $color_apple !important;
+  }
+  &.darken-3 {
+    background-color: $color_vida_loca !important;
+  }
+  &.darken-4 {
+    background-color: $color_dell !important;
+  }
+  &.accent-1 {
+    background-color: $color_reef !important;
+  }
+  &.accent-2 {
+    background-color: $color_conifer !important;
+  }
+  &.accent-3 {
+    background-color: $color_chartreuse !important;
+  }
+  &.accent-4 {
+    background-color: $color_lima !important;
+  }
+}
+.light-green-text {
+  color: $color_sushi !important;
+  &.text-lighten-5 {
+    color: $color_feta !important;
+  }
+  &.text-lighten-4 {
+    color: $color_beryl_green !important;
+  }
+  &.text-lighten-3 {
+    color: $color_sprout !important;
+  }
+  &.text-lighten-2 {
+    color: $color_feijoa !important;
+  }
+  &.text-lighten-1 {
+    color: $color_olivine !important;
+  }
+  &.text-darken-1 {
+    color: $color_sushi !important;
+  }
+  &.text-darken-2 {
+    color: $color_apple !important;
+  }
+  &.text-darken-3 {
+    color: $color_vida_loca !important;
+  }
+  &.text-darken-4 {
+    color: $color_dell !important;
+  }
+  &.text-accent-1 {
+    color: $color_reef !important;
+  }
+  &.text-accent-2 {
+    color: $color_conifer !important;
+  }
+  &.text-accent-3 {
+    color: $color_chartreuse !important;
+  }
+  &.text-accent-4 {
+    color: $color_lima !important;
+  }
+}
+.lime {
+  background-color: $color_pear !important;
+  &.lighten-5 {
+    background-color: $color_hint_of_yellow !important;
+  }
+  &.lighten-4 {
+    background-color: $color_tusk !important;
+  }
+  &.lighten-3 {
+    background-color: $color_primrose !important;
+  }
+  &.lighten-2 {
+    background-color: $color_manz !important;
+  }
+  &.lighten-1 {
+    background-color: $color_wattle !important;
+  }
+  &.darken-1 {
+    background-color: $color_key_lime_pie !important;
+  }
+  &.darken-2 {
+    background-color: $color_citron !important;
+  }
+  &.darken-3 {
+    background-color: $color_citron !important;
+  }
+  &.darken-4 {
+    background-color: $color_pacifika !important;
+  }
+  &.accent-1 {
+    background-color: $color_honeysuckle !important;
+  }
+  &.accent-2 {
+    background-color: $color_golden_fizz !important;
+  }
+  &.accent-3 {
+    background-color: $color_electric_lime !important;
+  }
+  &.accent-4 {
+    background-color: $color_inch_worm !important;
+  }
+}
+.lime-text {
+  color: $color_pear !important;
+  &.text-lighten-5 {
+    color: $color_hint_of_yellow !important;
+  }
+  &.text-lighten-4 {
+    color: $color_tusk !important;
+  }
+  &.text-lighten-3 {
+    color: $color_primrose !important;
+  }
+  &.text-lighten-2 {
+    color: $color_manz !important;
+  }
+  &.text-lighten-1 {
+    color: $color_wattle !important;
+  }
+  &.text-darken-1 {
+    color: $color_key_lime_pie !important;
+  }
+  &.text-darken-2 {
+    color: $color_citron !important;
+  }
+  &.text-darken-3 {
+    color: $color_citron !important;
+  }
+  &.text-darken-4 {
+    color: $color_pacifika !important;
+  }
+  &.text-accent-1 {
+    color: $color_honeysuckle !important;
+  }
+  &.text-accent-2 {
+    color: $color_golden_fizz !important;
+  }
+  &.text-accent-3 {
+    color: $color_electric_lime !important;
+  }
+  &.text-accent-4 {
+    color: $color_inch_worm !important;
+  }
+}
+.yellow {
+  background-color: $color_golden_fizz !important;
+  &.lighten-5 {
+    background-color: $color_chilean_heath !important;
+  }
+  &.lighten-4 {
+    background-color: $color_beeswax !important;
+  }
+  &.lighten-3 {
+    background-color: $color_picasso !important;
+  }
+  &.lighten-2 {
+    background-color: $color_paris_daisy !important;
+  }
+  &.lighten-1 {
+    background-color: $color_candy_corn !important;
+  }
+  &.darken-1 {
+    background-color: $color_bright_sun !important;
+  }
+  &.darken-2 {
+    background-color: $color_saffron !important;
+  }
+  &.darken-3 {
+    background-color: $color_sea_buckthorn !important;
+  }
+  &.darken-4 {
+    background-color: $color_ecstasy !important;
+  }
+  &.accent-1 {
+    background-color: $color_dolly !important;
+  }
+  &.accent-2 {
+    background-color: $yellow !important;
+  }
+  &.accent-3 {
+    background-color: $color_turbo !important;
+  }
+  &.accent-4 {
+    background-color: $color_gold !important;
+  }
+}
+.yellow-text {
+  color: $color_golden_fizz !important;
+  &.text-lighten-5 {
+    color: $color_chilean_heath !important;
+  }
+  &.text-lighten-4 {
+    color: $color_beeswax !important;
+  }
+  &.text-lighten-3 {
+    color: $color_picasso !important;
+  }
+  &.text-lighten-2 {
+    color: $color_paris_daisy !important;
+  }
+  &.text-lighten-1 {
+    color: $color_candy_corn !important;
+  }
+  &.text-darken-1 {
+    color: $color_bright_sun !important;
+  }
+  &.text-darken-2 {
+    color: $color_saffron !important;
+  }
+  &.text-darken-3 {
+    color: $color_sea_buckthorn !important;
+  }
+  &.text-darken-4 {
+    color: $color_ecstasy !important;
+  }
+  &.text-accent-1 {
+    color: $color_dolly !important;
+  }
+  &.text-accent-2 {
+    color: $yellow !important;
+  }
+  &.text-accent-3 {
+    color: $color_turbo !important;
+  }
+  &.text-accent-4 {
+    color: $color_gold !important;
+  }
+}
+.amber {
+  background-color: $color_amber !important;
+  &.lighten-5 {
+    background-color: $color_solitaire !important;
+  }
+  &.lighten-4 {
+    background-color: $color_buttermilk !important;
+  }
+  &.lighten-3 {
+    background-color: $color_salomie !important;
+  }
+  &.lighten-2 {
+    background-color: $color_mustard !important;
+  }
+  &.lighten-1 {
+    background-color: $color_sunglow !important;
+  }
+  &.darken-1 {
+    background-color: $color_selective_yellow !important;
+  }
+  &.darken-2 {
+    background-color: $orange_peel !important;
+  }
+  &.darken-3 {
+    background-color: $color_pizazz !important;
+  }
+  &.darken-4 {
+    background-color: $color_blaze_orange !important;
+  }
+  &.accent-1 {
+    background-color: $color_kournikova !important;
+  }
+  &.accent-2 {
+    background-color: $color_bright_sun !important;
+  }
+  &.accent-3 {
+    background-color: $color_amber !important;
+  }
+  &.accent-4 {
+    background-color: $color_yellow_sea !important;
+  }
+}
+.amber-text {
+  color: $color_amber !important;
+  &.text-lighten-5 {
+    color: $color_solitaire !important;
+  }
+  &.text-lighten-4 {
+    color: $color_buttermilk !important;
+  }
+  &.text-lighten-3 {
+    color: $color_salomie !important;
+  }
+  &.text-lighten-2 {
+    color: $color_mustard !important;
+  }
+  &.text-lighten-1 {
+    color: $color_sunglow !important;
+  }
+  &.text-darken-1 {
+    color: $color_selective_yellow !important;
+  }
+  &.text-darken-2 {
+    color: $orange_peel !important;
+  }
+  &.text-darken-3 {
+    color: $color_pizazz !important;
+  }
+  &.text-darken-4 {
+    color: $color_blaze_orange !important;
+  }
+  &.text-accent-1 {
+    color: $color_kournikova !important;
+  }
+  &.text-accent-2 {
+    color: $color_bright_sun !important;
+  }
+  &.text-accent-3 {
+    color: $color_amber !important;
+  }
+  &.text-accent-4 {
+    color: $color_yellow_sea !important;
+  }
+}
+.orange {
+  background-color: $color_california !important;
+  &.lighten-5 {
+    background-color: $color_sazerac !important;
+  }
+  &.lighten-4 {
+    background-color: $color_frangipani !important;
+  }
+  &.lighten-3 {
+    background-color: $color_chardonnay !important;
+  }
+  &.lighten-2 {
+    background-color: $color_texas_rose !important;
+  }
+  &.lighten-1 {
+    background-color: $color_sea_buckthorn !important;
+  }
+  &.darken-1 {
+    background-color: $color_pizazz !important;
+  }
+  &.darken-2 {
+    background-color: $color_chilean_fire !important;
+  }
+  &.darken-3 {
+    background-color: $color_clementine !important;
+  }
+  &.darken-4 {
+    background-color: $color_trinidad !important;
+  }
+  &.accent-1 {
+    background-color: $color_grandis !important;
+  }
+  &.accent-2 {
+    background-color: $color_yellow_orange !important;
+  }
+  &.accent-3 {
+    background-color: $color_pizazz !important;
+  }
+  &.accent-4 {
+    background-color: $color_blaze_orange !important;
+  }
+}
+.orange-text {
+  color: $color_california !important;
+  &.text-lighten-5 {
+    color: $color_sazerac !important;
+  }
+  &.text-lighten-4 {
+    color: $color_frangipani !important;
+  }
+  &.text-lighten-3 {
+    color: $color_chardonnay !important;
+  }
+  &.text-lighten-2 {
+    color: $color_texas_rose !important;
+  }
+  &.text-lighten-1 {
+    color: $color_sea_buckthorn !important;
+  }
+  &.text-darken-1 {
+    color: $color_pizazz !important;
+  }
+  &.text-darken-2 {
+    color: $color_chilean_fire !important;
+  }
+  &.text-darken-3 {
+    color: $color_clementine !important;
+  }
+  &.text-darken-4 {
+    color: $color_trinidad !important;
+  }
+  &.text-accent-1 {
+    color: $color_grandis !important;
+  }
+  &.text-accent-2 {
+    color: $color_yellow_orange !important;
+  }
+  &.text-accent-3 {
+    color: $color_pizazz !important;
+  }
+  &.text-accent-4 {
+    color: $color_blaze_orange !important;
+  }
+}
+.deep-orange {
+  background-color: $color_flamingo !important;
+  &.lighten-5 {
+    background-color: $color_linen !important;
+  }
+  &.lighten-4 {
+    background-color: $color_romantic !important;
+  }
+  &.lighten-3 {
+    background-color: $color_mona_lisa !important;
+  }
+  &.lighten-2 {
+    background-color: $color_salmon !important;
+  }
+  &.lighten-1 {
+    background-color: $color_burning_orange !important;
+  }
+  &.darken-1 {
+    background-color: $color_pomegranate !important;
+  }
+  &.darken-2 {
+    background-color: $color_pomegranate !important;
+  }
+  &.darken-3 {
+    background-color: $color_grenadier !important;
+  }
+  &.darken-4 {
+    background-color: $color_rust !important;
+  }
+  &.accent-1 {
+    background-color: $color_vivid_tangerine !important;
+  }
+  &.accent-2 {
+    background-color: $color_burning_orange !important;
+  }
+  &.accent-3 {
+    background-color: $color_vermilion !important;
+  }
+  &.accent-4 {
+    background-color: $color_grenadier !important;
+  }
+}
+.deep-orange-text {
+  color: $color_flamingo !important;
+  &.text-lighten-5 {
+    color: $color_linen !important;
+  }
+  &.text-lighten-4 {
+    color: $color_romantic !important;
+  }
+  &.text-lighten-3 {
+    color: $color_mona_lisa !important;
+  }
+  &.text-lighten-2 {
+    color: $color_salmon !important;
+  }
+  &.text-lighten-1 {
+    color: $color_burning_orange !important;
+  }
+  &.text-darken-1 {
+    color: $color_pomegranate !important;
+  }
+  &.text-darken-2 {
+    color: $color_pomegranate !important;
+  }
+  &.text-darken-3 {
+    color: $color_grenadier !important;
+  }
+  &.text-darken-4 {
+    color: $color_rust !important;
+  }
+  &.text-accent-1 {
+    color: $color_vivid_tangerine !important;
+  }
+  &.text-accent-2 {
+    color: $color_burning_orange !important;
+  }
+  &.text-accent-3 {
+    color: $color_vermilion !important;
+  }
+  &.text-accent-4 {
+    color: $color_grenadier !important;
+  }
+}
+.brown {
+  background-color: $color_roman_coffee !important;
+  &.lighten-5 {
+    background-color: $color_cararra !important;
+  }
+  &.lighten-4 {
+    background-color: $color_swirl !important;
+  }
+  &.lighten-3 {
+    background-color: $color_nomad !important;
+  }
+  &.lighten-2 {
+    background-color: $color_pharlap !important;
+  }
+  &.lighten-1 {
+    background-color: $color_cement !important;
+  }
+  &.darken-1 {
+    background-color: $color_ferra !important;
+  }
+  &.darken-2 {
+    background-color: $color_millbrook !important;
+  }
+  &.darken-3 {
+    background-color: $color_rock !important;
+  }
+  &.darken-4 {
+    background-color: $color_english_walnut !important;
+  }
+}
+.brown-text {
+  color: $color_roman_coffee !important;
+  &.text-lighten-5 {
+    color: $color_cararra !important;
+  }
+  &.text-lighten-4 {
+    color: $color_swirl !important;
+  }
+  &.text-lighten-3 {
+    color: $color_nomad !important;
+  }
+  &.text-lighten-2 {
+    color: $color_pharlap !important;
+  }
+  &.text-lighten-1 {
+    color: $color_cement !important;
+  }
+  &.text-darken-1 {
+    color: $color_ferra !important;
+  }
+  &.text-darken-2 {
+    color: $color_millbrook !important;
+  }
+  &.text-darken-3 {
+    color: $color_rock !important;
+  }
+  &.text-darken-4 {
+    color: $color_english_walnut !important;
+  }
+}
+.blue-grey {
+  background-color: $color_smalt_blue !important;
+  &.lighten-5 {
+    background-color: $color_athens_gray !important;
+  }
+  &.lighten-4 {
+    background-color: $color_iron !important;
+  }
+  &.lighten-3 {
+    background-color: $color_tower_gray !important;
+  }
+  &.lighten-2 {
+    background-color: $color_cascade !important;
+  }
+  &.lighten-1 {
+    background-color: $color_gothic !important;
+  }
+  &.darken-1 {
+    background-color: $color_cutty_sark !important;
+  }
+  &.darken-2 {
+    background-color: $color_fiord !important;
+  }
+  &.darken-3 {
+    background-color: $color_limed_spruce !important;
+  }
+  &.darken-4 {
+    background-color: $color_outer_space !important;
+  }
+}
+.blue-grey-text {
+  color: $color_smalt_blue !important;
+  &.text-lighten-5 {
+    color: $color_athens_gray !important;
+  }
+  &.text-lighten-4 {
+    color: $color_iron !important;
+  }
+  &.text-lighten-3 {
+    color: $color_tower_gray !important;
+  }
+  &.text-lighten-2 {
+    color: $color_cascade !important;
+  }
+  &.text-lighten-1 {
+    color: $color_gothic !important;
+  }
+  &.text-darken-1 {
+    color: $color_cutty_sark !important;
+  }
+  &.text-darken-2 {
+    color: $color_fiord !important;
+  }
+  &.text-darken-3 {
+    color: $color_limed_spruce !important;
+  }
+  &.text-darken-4 {
+    color: $color_outer_space !important;
+  }
+}
+.grey {
+  background-color: $color_star_dust !important;
+  &.lighten-5 {
+    background-color: $alabaster !important;
+  }
+  &.lighten-4 {
+    background-color: $color_wild_sand !important;
+  }
+  &.lighten-3 {
+    background-color: $color_gallery !important;
+  }
+  &.lighten-2 {
+    background-color: $color_bon_jour !important;
+  }
+  &.lighten-1 {
+    background-color: $color_silver !important;
+  }
+  &.darken-1 {
+    background-color: $color_tapa !important;
+  }
+  &.darken-2 {
+    background-color: $color_storm_dust !important;
+  }
+  &.darken-3 {
+    background-color: $color_cape_cod !important;
+  }
+  &.darken-4 {
+    background-color: $color_log_cabin !important;
+  }
+}
+.grey-text {
+  color: $color_star_dust !important;
+  &.text-lighten-5 {
+    color: $alabaster !important;
+  }
+  &.text-lighten-4 {
+    color: $color_wild_sand !important;
+  }
+  &.text-lighten-3 {
+    color: $color_gallery !important;
+  }
+  &.text-lighten-2 {
+    color: $color_bon_jour !important;
+  }
+  &.text-lighten-1 {
+    color: $color_silver !important;
+  }
+  &.text-darken-1 {
+    color: $color_tapa !important;
+  }
+  &.text-darken-2 {
+    color: $color_storm_dust !important;
+  }
+  &.text-darken-3 {
+    color: $color_cape_cod !important;
+  }
+  &.text-darken-4 {
+    color: $color_log_cabin !important;
+  }
+}
+.shades {
+  &.black {
+    background-color: $black !important;
+  }
+  &.white {
+    background-color: $white !important;
+  }
+  &.transparent {
+    background-color: transparent !important;
+  }
+}
+.shades-text {
+  &.text-black {
+    color: $black !important;
+  }
+  &.text-white {
+    color: $white !important;
+  }
+  &.text-transparent {
+    color: transparent !important;
+  }
+}
+.black {
+  background-color: $black !important;
+}
+.black-text {
+  color: $black !important;
+}
+.white {
+  background-color: $white !important;
+}
+.white-text {
+  color: $white !important;
+}
+.transparent {
+  background-color: transparent !important;
+}
+.transparent-text {
+  color: transparent !important;
+}

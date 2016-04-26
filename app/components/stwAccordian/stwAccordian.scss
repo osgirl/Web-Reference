@@ -1,0 +1,15 @@
+@import "./imports";
+
+[stw-accordian]{
+  cursor: pointer;
+}
+
+.accordion_content{
+  display:none;
+
+  .accordian_open & {
+    display: block;
+    padding-left: 2rem;
+
+  }
+}

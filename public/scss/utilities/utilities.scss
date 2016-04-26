@@ -1,0 +1,21 @@
+@import "./core/variables";
+@import "./core/colours";
+@import "./mixins/breakpoint";
+@import "./mixins/spacing";
+@import "affix/affix",
+"alignment/alignment",
+"border/border",
+"clearfix/clearfix",
+"hideshow/hideshow",
+"rotate/rotate",
+"whitespace/whitespace";
+
+.faded-text {
+    opacity: 0.5 !important;
+}
+
+.atlwdg-popup {
+    .mobile & {
+        width: 100%;
+    }
+}

@@ -1,0 +1,21 @@
+.center {
+  text-align: center;
+}
+
+@include breakpoint($m) {
+  .center-m {
+    text-align: center;
+  }
+}
+
+@include breakpoint($l) {
+  .center-l {
+    text-align: center;
+  }
+}
+
+@include breakpoint($xl) {
+  .center-xl {
+    text-align: center;
+  }
+}

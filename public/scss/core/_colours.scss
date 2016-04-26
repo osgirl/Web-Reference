@@ -1,0 +1,379 @@
+// Base
+$white: white;
+$black: black;
+$transparent: transparent;
+
+// Transparent Blacks
+$black85: rgba(0, 0, 0, 0.85);
+$black75: rgba(0, 0, 0, 0.75);
+$black65: rgba(0, 0, 0, 0.65);
+$black50: rgba(0, 0, 0, 0.50);
+$black25: rgba(0, 0, 0, 0.25);
+
+// Transparent Whites
+$white85: rgba(255, 255, 255, 0.85);
+$white75: rgba(255, 255, 255, 0.75);
+$white50: rgba(255, 255, 255, 0.50);
+$white25: rgba(255, 255, 255, 0.25);
+
+// Primary (warm)
+$cool-grey: rgba(61, 63, 68, 1);
+$purple: rgba(135, 24, 154, 1);
+$magenta: rgba(230, 0, 126, 1);
+$mustard: rgba(255, 182, 20, 1);
+$yellow: rgba(255, 237, 20, 1);
+
+// Primary (cool)
+$white: rgba(255, 255, 255, 1);
+$cyan: rgba(0, 159, 227, 1);
+$warm-green: rgba(0, 173, 152, 1);
+$green: rgba(0, 149, 60, 1);
+$lime-green: rgba(205, 218, 0, 1);
+
+// Brand Colour set (logo), locked and can only use for the logo
+$logo-reflex-blue: rgba(0, 21, 135, 1);
+$logo-green: $green;
+
+$color-default: (
+        "lighten-1": lighten(#FFFFFF, 0%),
+        "base": #dfdfa2,
+        "darken-1": #929474
+);
+
+$color-alpha: (
+        "lighten-1": lighten(#FFCC9C, 10%),
+        "base": #FFCC9C,
+        "darken-1": darken(#FFCC9C, 10%)
+);
+
+$color-beta: (
+        "lighten-1": lighten(#F7DF71, 10%),
+        "base": #F7DF71,
+        "darken-1": darken(#F7DF71, 10%)
+);
+
+$color-delta: (
+        "lighten-1": lighten(#C0F074, 10%),
+        "base": #C0F074,
+        "darken-1": darken(#C0F074, 10%)
+);
+
+$color-gamma: (
+        "lighten-1": lighten(#76E8A9, 10%),
+        "base": #76E8A9,
+        "darken-1": darken(#76E8A9, 10%)
+);
+
+$color-epsilon: (
+        "lighten-1": lighten(#A4E1EB, 10%),
+        "base": #A4E1EB,
+        "darken-1": darken(#A4E1EB, 10%)
+);
+
+// Primary (warm)
+$purple: (
+        "lighten-1": lighten(rgba(135, 24, 154, 1), 10%),
+        "base": rgba(135, 24, 154, 1),
+        "darken-1": darken(rgba(135, 24, 154, 1), 10%)
+);
+
+$magenta: (
+        "lighten-1": lighten(rgba(230, 0, 126, 1), 10%),
+        "base": rgba(230, 0, 126, 1),
+        "darken-1": darken(rgba(230, 0, 126, 1), 10%)
+);
+
+$mustard: (
+        "lighten-1": lighten(rgba(255, 182, 20, 1), 10%),
+        "base": rgba(255, 182, 20, 1),
+        "darken-1": darken(rgba(255, 182, 20, 1), 10%)
+);
+
+$yellow: (
+        "lighten-1": lighten(rgba(255, 237, 20, 1), 10%),
+        "base": rgba(255, 237, 20, 1),
+        "darken-1": darken(rgba(255, 237, 20, 1), 10%)
+);
+
+// Primary (cool)
+$cyan: (
+        "lighten-1": lighten(rgba(0, 159, 227, 1), 10%),
+        "base": rgba(0, 159, 227, 1),
+        "darken-1": darken(rgba(0, 159, 227, 1), 10%)
+);
+
+$warm-green: (
+        "lighten-1": lighten(rgba(0, 173, 152, 1), 10%),
+        "base": rgba(0, 173, 152, 1),
+        "darken-1": darken(rgba(0, 173, 152, 1), 10%)
+);
+
+$green: (
+        "lighten-1" : lighten(rgba(0, 149, 60, 1), 10%),
+        "base" : rgba(0, 149, 60, 1),
+        "darken-1" : darken(rgba(0, 149, 60, 1), 10%)
+);
+
+$lime-green: (
+        "lighten-1" : lighten(rgba(205, 218, 0, 1), 10%),
+        "base" : rgba(205, 218, 0, 1),
+        "darken-1" : darken(rgba(205, 218, 0, 1), 10%)
+);
+
+$grey: (
+        "lighten-5": #fafafa,
+        "lighten-4": #f5f5f5,
+        "lighten-3": #eeeeee,
+        "lighten-2": #e0e0e0,
+        "lighten-1": #bdbdbd,
+        "base": #9e9e9e,
+        "darken-1": #757575,
+        "darken-2": #616161,
+        "darken-3": #424242,
+        "darken-4": #212121
+);
+
+$shades: (
+        "black": #000000,
+        "dark": #5A6470,
+        "white" : #FFFFFF,
+        "transparent" : transparent
+);
+
+$colors: (
+        "grey": $grey,
+        "shades": $shades,
+        "default": $color-default,
+        "alpha": $color-alpha,
+        "beta": $color-beta,
+        "delta": $color-delta,
+        "gamma": $color-gamma,
+        "epsilon": $color-epsilon
+);
+
+$branding: (
+        "purple": $purple,
+        "magenta": $magenta,
+        "mustard": $mustard,
+        "yellow": $yellow,
+        "cyan": $cyan,
+        "warm-green": $warm-green,
+        "green": $green,
+        "light-green": $lime-green
+);
+
+// colours (based on Google Colour Palette),
+// these are the variations we could have from the branding colours above
+$color_fair_pink: #ffebee;
+$color_pastel_pink: #ffcdd2;
+$color_sea_pink: #ef9a9a;
+$color_sunglo: #e57373;
+$color_carnation: #ef5350;
+$color_red_orange: #f44336;
+$color_cinnabar: #e53935;
+$color_persian_red: #d32f2f;
+$color_thunderbird: #b71c1c;
+$color_geraldine: #ff8a80;
+$color_torch_red: #ff1744;
+$color_guardsman_red: #d50000;
+$color_carousel_pink: #fce4ec;
+$color_cotton_candy: #f8bbd0;
+$color_mauvelous: #f48fb1;
+$color_brink_pink: #f06292;
+$color_violet_red: #ec407a;
+$color_razzmatazz: #e91e63;
+$color_maroon_flush: #c2185b;
+$color_jazzberry_jam: #ad1457;
+$color_disco: #880e4f;
+$color_tickle_me_pink: #ff80ab;
+$color_lipstick: #c51162;
+$color_amour: #f3e5f5;
+$color_french_lilac: #e1bee7;
+$color_light_wisteria: #ce93d8;
+$color_fuchsia_pink: #ba68c8;
+$color_violet_eggplant: #9c27b0;
+$color_seance: #7b1fa2;
+$color_daisy_bush: #4a148c;
+$color_lavender_magenta: #ea80fc;
+$color_pink_flamingo: #e040fb;
+$color_magenta_fuchsia: #d500f9;
+$color_electric_violet: #a0f;
+$color_athens_gray: #ede7f6;
+$color_prelude: #d1c4e9;
+$color_cold_purple: #b39ddb;
+$color_lilac_bush: #9575cd;
+$color_fuchsia_blue: #7e57c2;
+$color_purple_heart: #673ab7;
+$color_blue_gem: #311b92;
+$color_dull_lavender: #b388ff;
+$color_medium_purple: #7c4dff;
+$color_periwinkle_gray: #c5cae9;
+$color_wistful: #9fa8da;
+$color_ship_cove: #7986cb;
+$color_indigo: #5c6bc0;
+$color_cerulean_blue: #3f51b5;
+$color_governor_bay: #3949ab;
+$color_sapphire: #303f9f;
+$color_bay_of_many: #283593;
+$color_jacksons_purple: #1a237e;
+$color_portage: #8c9eff;
+$color_royal_blue: #536dfe;
+$color_pattens_blue: #e3f2fd;
+$color_sail: #bbdefb;
+$color_cornflower: #90caf9;
+$color_malibu: #64b5f6;
+$color_picton_blue: #42a5f5;
+$color_dodger_blue: #2196f3;
+$color_curious_blue: #1e88e5;
+$color_mariner: #1976d2;
+$color_denim: #1565c0;
+$color_tory_blue: #0d47a1;
+$color_jordy_blue: #82b1ff;
+$color_cornflower_blue: #448aff;
+$color_cerulean: #03a9f4;
+$color_lochmara: #0288d1;
+$color_endeavour: #01579b;
+$color_azure_radiance: #0091ea;
+$color_charlotte: #b2ebf2;
+$color_spray: #80deea;
+$color_viking: #4dd0e1;
+$color_scooter: #26c6da;
+$color_robins_egg_blue: #00bcd4;
+$color_pacific_blue: #00acc1;
+$color_bondi_blue: #0097a7;
+$color_blue_lagoon: #00838f;
+$color_blue_stone: #006064;
+$color_anakiwa: #84ffff;
+$color_cyan_aqua: #18ffff;
+$color_apple_green: #e0f2f1;
+$color_powder_blue: #b2dfdb;
+$color_monte_carlo: #80cbc4;
+$color_puerto_rico: #4db6ac;
+$color_jungle_green: #26a69a;
+$color_gossamer: #009688;
+$color_teal: #00897b;
+$color_pine_green: #00796b;
+$color_watercourse: #00695c;
+$color_aqua_deep: #004d40;
+$color_ice_cold: #a7ffeb;
+$color_aquamarine: #64ffda;
+$color_turquoise: #1de9b6;
+$color_caribbean_green: #00bfa5;
+$color_gin: #e8f5e9;
+$color_sea_mist: #c8e6c9;
+$color_moss_green: #a5d6a7;
+$color_de_york: #81c784;
+$color_fern: #66bb6a;
+$color_apple: #4caf50;
+$color_goblin: #388e3c;
+$color_forest_green: #2e7d32;
+$color_parsley: #1b5e20;
+$color_madang: #b9f6ca;
+$color_bermuda: #69f0ae;
+$color_spring_green: #00e676;
+$color_malachite: #00c853;
+$color_feta: #f1f8e9;
+$color_beryl_green: #dcedc8;
+$color_sprout: #c5e1a5;
+$color_feijoa: #aed581;
+$color_olivine: #9ccc65;
+$color_sushi: #8bc34a;
+$color_vida_loca: #558b2f;
+$color_dell: #33691e;
+$color_reef: #ccff90;
+$color_conifer: #b2ff59;
+$color_chartreuse: #76ff03;
+$color_lima: #64dd17;
+$color_hint_of_yellow: #f9fbe7;
+$color_tusk: #f0f4c3;
+$color_primrose: #e6ee9c;
+$color_manz: #dce775;
+$color_wattle: #d4e157;
+$color_pear: #cddc39;
+$color_key_lime_pie: #c0ca33;
+$color_citron: #afb42b;
+$color_pacifika: #827717;
+$color_honeysuckle: #f4ff81;
+$color_golden_fizz: #eeff41;
+$color_electric_lime: #c6ff00;
+$color_inch_worm: #aeea00;
+$color_chilean_heath: #fffde7;
+$color_beeswax: #fff9c4;
+$color_picasso: #fff59d;
+$color_paris_daisy: #fff176;
+$color_candy_corn: #ffee58;
+$color_bright_sun: #fdd835;
+$color_saffron: #fbc02d;
+$color_sea_buckthorn: #f9a825;
+$color_ecstasy: #f57f17;
+$color_dolly: #ffff8d;
+$yellow: #ff0;
+$color_turbo: #ffea00;
+$color_gold: #ffd600;
+$color_solitaire: #fff8e1;
+$color_buttermilk: #ffecb3;
+$color_salomie: #ffe082;
+$color_mustard: #ffd54f;
+$color_sunglow: #ffca28;
+$color_amber: #ffc107;
+$color_selective_yellow: #ffb300;
+$orange_peel: #ffa000;
+$color_pizazz: #ff8f00;
+$color_blaze_orange: #ff6f00;
+$color_kournikova: #ffe57f;
+$color_yellow_sea: #ffab00;
+$color_sazerac: #fff3e0;
+$color_frangipani: #ffe0b2;
+$color_chardonnay: #ffcc80;
+$color_texas_rose: #ffb74d;
+$color_california: #ff9800;
+$color_chilean_fire: #f57c00;
+$color_clementine: #ef6c00;
+$color_trinidad: #e65100;
+$color_grandis: #ffd180;
+$color_yellow_orange: #ffab40;
+$color_linen: #fbe9e7;
+$color_romantic: #ffccbc;
+$color_mona_lisa: #ffab91;
+$color_salmon: #ff8a65;
+$color_burning_orange: #ff7043;
+$color_flamingo: #ff5722;
+$color_pomegranate: #f4511e;
+$color_grenadier: #d84315;
+$color_rust: #bf360c;
+$color_vivid_tangerine: #ff9e80;
+$color_vermilion: #ff3d00;
+$color_cararra: #efebe9;
+$color_swirl: #d7ccc8;
+$color_nomad: #bcaaa4;
+$color_pharlap: #a1887f;
+$color_cement: #8d6e63;
+$color_roman_coffee: #795548;
+$color_ferra: #6d4c41;
+$color_millbrook: #5d4037;
+$color_rock: #4e342e;
+$color_english_walnut: #3e2723;
+$color_iron: #cfd8dc;
+$color_tower_gray: #b0bec5;
+$color_cascade: #90a4ae;
+$color_gothic: #78909c;
+$color_smalt_blue: #607d8b;
+$color_cutty_sark: #546e7a;
+$color_fiord: #455a64;
+$color_limed_spruce: #37474f;
+$color_outer_space: #263238;
+$alabaster: #fafafa;
+$color_wild_sand: #f5f5f5;
+$color_gallery: #eee;
+$color_bon_jour: #e0e0e0;
+$color_silver: #bdbdbd;
+$color_star_dust: #9e9e9e;
+$color_tapa: #757575;
+$color_storm_dust: #616161;
+$color_cape_cod: #424242;
+$color_log_cabin: #212121;
+$black: #000;
+$white: #fff;
+
+// Alerts
+$danger: $color_persian_red;
