@@ -1,20 +1,20 @@
 <div class="stw-scroll-content has-stw-header stw-overflow-scroll"
-     ng-controller="ButtonsController as buttons">
+     ng-controller="coloursController as colours">
   <div class="stw-scroll">
     <div class="stw-content">
       <!-- All content that's guttered goes into here -->
       <div class="stw-content-container">
         <div class="stw-row">
-          <div class="col s12 m12 l12">
+          <div class="col">
             <div class="card-panel">
-              <h2 class="flow-text text-center">The Buttons Components</h2>
+              <h2 class="flow-text text-center">{{colours.title}}</h2>
             </div>
           </div>
         </div>
-        <div class="stw-row">
-          <div class="col l4 m4 s12">
+        <div class="stw-row medium stw-row__gutter">
+          <div class="stw-col blue">
 	          <h4 class="light flow-text">Flat Button</h4>
-            <div class="card">
+            <div class="card-panel">
               <div class="card-content">
                 <p>The Flat Button</p>
               </div>
@@ -25,27 +25,14 @@
               </div>
             </div>
           </div>
-          <div class="col l4 m4 s12">
+          <div class="stw-col yellow">
 	          <h4 class="light flow-text">Floating Button</h4>
-	          <div class="card">
+	          <div class="card-panel">
               <div class="card-content">
                 <p>The Floating Button</p>
               </div>
               <div class="card-action">
                 <button class="button-floating button-large blue white-text">
-                  <i class="material-icons">check</i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col l4 m4 s12">
-	          <h4 class="light flow-text">Large Button</h4>
-	          <div class="card">
-              <div class="card-content">
-                <p>The Large Button</p>
-              </div>
-              <div class="card-action text-center">
-                <button class="button button-large purple white-text stretch">
                   <i class="material-icons">check</i>
                 </button>
               </div>

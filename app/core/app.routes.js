@@ -1,16 +1,11 @@
 'use strict';
 
-function routeConfig($stateProvider, $urlRouterProvider) {
-	$stateProvider
-		.state( 'app', {
-			url       : '/app',
-			abstract  : true,
-			controller: 'AppController'
-		} );
+function routeConfig($urlRouterProvider, $compileProvider) {
 
-	/** default route is any other url is given **/
-	$urlRouterProvider.otherwise( '/' );
+	$urlRouterProvider.otherwise('/');
+	$compileProvider.debugInfoEnabled(false);
+
 }
 
-routeConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
+routeConfig.$inject = ['$urlRouterProvider', '$compileProvider'];
 export default routeConfig;

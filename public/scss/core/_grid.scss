@@ -34,6 +34,38 @@
   @include display-flex();
   padding: ($grid-padding-width / 2);
   width: 100%;
+
+  &.stw-row__gutter {
+    margin: -1em 0 1em -1em;
+
+    > .stw-col {
+      padding:1em 0 0 1em;
+    }
+
+    @at-root #{&}__element {
+    }
+
+    @at-root #{&}--large {
+      margin: -1.5em 0 1.5em -1.5em;
+
+      > .stw-col {
+        padding: 1.5em 0 0 1.5em;
+      }
+    }
+
+    @at-root #{&}--xl {
+      margin: -2em 0 2em -2em;
+
+      > .stw-col {
+        padding: 2em 0 0 2em;
+      }
+    }
+  }
+
+  > .stw-col {
+    padding: 1em 0 0 1em;
+  }
+
 }
 
 .stw-row-wrap {
@@ -165,8 +197,8 @@
   max-width: 90%;
 }
 
-@include responsive-grid-break('extra-small', $xs);
-@include responsive-grid-break('small', $s);
-@include responsive-grid-break('medium', $m);
-@include responsive-grid-break('large', $l);
-@include responsive-grid-break('xlarge', $xl);
+@include responsive-grid-break('.extra-small', $xs);
+@include responsive-grid-break('.small', $s);
+@include responsive-grid-break('.medium', $m);
+@include responsive-grid-break('.large', $l);
+@include responsive-grid-break('.xlarge', $xl);

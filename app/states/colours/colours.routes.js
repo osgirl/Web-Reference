@@ -5,10 +5,10 @@
 
 function routeConfig($stateProvider) {
 	$stateProvider
-		.state( 'buttons', {
-			url         : '/buttons',
-      template: require( './buttons.html' ),
-			controller  : 'ButtonsController',
+		.state( 'colours', {
+			url         : '/colours',
+			template    : require( './colours.html' ),
+			controller  : 'coloursController',
 			controllerAs: 'vm'
 		} );
 }

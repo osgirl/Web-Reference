@@ -5,12 +5,12 @@
 import routeConfig from './home.routes';
 import HomeController from './home.controller';
 
-let moduleName = 'styleguide.home';
+let moduleName = 'stw.home';
 
 angular.module( moduleName, [] )
 	.config( routeConfig )
 	.run( function ($log) {
-		$log.debug( 'styleguide.home - run' );
+		$log.debug( 'stw.home - run' );
 	} )
 	.controller( 'HomeController', HomeController );
 
