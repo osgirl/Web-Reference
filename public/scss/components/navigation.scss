@@ -1,3 +1,5 @@
+@import "./imports";
+
 /**
  * Navigation
  * --------------------------------------------------
@@ -6,7 +8,7 @@
 .stw-navigation {
   margin: 0;
   padding: 0;
-  display: flex;
+  display: flex(1);
   flex-wrap: wrap;
   justify-content: flex-end;
 
@@ -38,3 +40,5 @@
     text-decoration: none;
   }
 }
+
+@breakpoint($m)

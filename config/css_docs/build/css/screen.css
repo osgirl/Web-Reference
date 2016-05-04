@@ -1,0 +1,157 @@
+.docs_body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.2222222;
+    font-family: 'AktivGrotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+.docs_header {
+    background: #5A6470;
+    color: #b9c1c6;
+    padding: 25px 0;
+    position: relative;
+}
+
+.docs_header_title {
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.docs_header_navigation {
+    background: #515a65;
+}
+
+.docs_header_logo {
+    height: 20px;
+    fill: white;
+}
+
+.docs_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.docs_container_flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+    margin-top: 30px;
+}
+
+.docs_title {
+    float: right;
+    position: relative;
+    font-size: 14px;
+    font-family: sans-serif;
+    top: -9px;
+}
+
+.docs_stripe {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    z-index: 1;
+    display: block;
+    background: #A4E1EB;
+    bottom: 0;
+}
+
+.docs_side_menu {
+    max-width: 300px;
+    min-width: 200px;
+}
+
+.docs_main_content {
+}
+
+.docs_side_menu_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.docs_side_menu_list li {
+    margin: 0;
+    padding: 0;
+}
+
+.docs_side_menu_list a {
+    padding: 0 0 15px 0;
+    display: block;
+    color: #7B7B7B;
+}
+
+h1.styleguide {
+    font-size: 45px;
+    font-weight: 100;
+    padding: 0 0 10px;
+    margin: 0 0 15px;
+    line-height: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.section-nav {
+    list-style: none;
+    margin: 0;
+    display: block;
+    padding: 10px 0;
+}
+
+.section-nav li {
+    display: inline-block;
+}
+
+.section-nav a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    color: #777;
+    text-decoration: none;
+}
+
+.section-nav a:hover {
+    color: #4f4f4f;
+    text-decoration: underline;
+}
+
+table.styleguide {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.docs_header_navigation {
+    background: #515a65;
+}
+
+.docs_header_nav_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.docs_header_nav_list li{
+    display: inline-block;
+    padding:0 20px 0 0;
+}
+
+.docs_header_nav_list a{
+    display: inline-block;
+    color:white;
+    text-decoration: none;
+    padding:10px 0;
+}
