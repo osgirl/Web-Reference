@@ -3,12 +3,14 @@
 /** Load import Modules. */
 // import walkThroughModule from 'states/walkthrough/walkthrough.module';
 import homeModule from 'states/home/home.module';
+import codeDemos from 'states/codeDemos/codeDemos.module';
 
 /** Load custom components **/
 import stwHeader from './components/stwHeader/stwHeader.directive.js';
 import media from './components/stwMediaquery/stwMq.directive';
 import stwContextMenu from './components/stwContextMenu/stwContextMenu.module.js';
 import stwSpinner from './components/stwSpinner/stwSpinner.directive';
+import stwPrettify from './components/stwPrettify/stwPrettify.directive';
 import stwAccordion from './components/stwAccordian/stwAccordian.directive';
 
 /** Load app routes */
@@ -29,11 +31,13 @@ angular.module( moduleName, [
 		'ui.router',
 		'ngAnimate',
 		homeModule,
+		codeDemos,
 		stwHeader,
 		media,
 		stwContextMenu,
 		stwSpinner,
-		stwAccordion
+		stwAccordion,
+		stwPrettify
 	] )
 	/** Define default routes of the app */
 	.config( appRoutes )
