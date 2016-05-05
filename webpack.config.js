@@ -73,7 +73,8 @@ module.exports = {
 			PATHS.bower + 'ionic/js/ionic',
 			PATHS.bower + 'angular/angular',
 			PATHS.bower + 'angular-animate/angular-animate.js',
-			PATHS.bower + 'angular-ui-router/release/angular-ui-router.js'
+			PATHS.bower + 'angular-ui-router/release/angular-ui-router.js',
+			PATHS.bower + 'google-code-prettify/src/prettify.js'
 		],
 		app   : ['./app/bootstrap.js']
 	},

@@ -10,3 +10,5 @@ wwww/
 .sass-cache/
 .DS_Store
 .idea
+#to avoid committing npm-debug.log
+*.log

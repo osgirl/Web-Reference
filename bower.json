@@ -2,7 +2,8 @@
   "name": "Severn Trent Mobile Seed Project",
   "private": "true",
   "dependencies": {
-    "ionic": "driftyco/ionic-bower#1.2.4"
+    "ionic": "driftyco/ionic-bower#1.2.4",
+    "google-code-prettify": "^1.0.4"
   },
   "ignore": [
     "**/.*",

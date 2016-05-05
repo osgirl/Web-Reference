@@ -9,6 +9,7 @@ import stwHeader from './components/stwHeader/stwHeader.directive.js';
 import media from './components/stwMediaquery/stwMq.directive';
 import stwContextMenu from './components/stwContextMenu/stwContextMenu.module.js';
 import stwSpinner from './components/stwSpinner/stwSpinner.directive';
+import stwPrettify from './components/stwPrettify/stwPrettify.directive';
 import stwAccordion from './components/stwAccordian/stwAccordian.directive';
 
 /** Load app routes */
@@ -33,7 +34,8 @@ angular.module( moduleName, [
 		media,
 		stwContextMenu,
 		stwSpinner,
-		stwAccordion
+		stwAccordion,
+		stwPrettify
 	] )
 	/** Define default routes of the app */
 	.config( appRoutes )

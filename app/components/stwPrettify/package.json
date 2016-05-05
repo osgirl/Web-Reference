@@ -1,0 +1,6 @@
+{
+    "name": "stwPrettify",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./stwPrettify.directive.js"
+}
