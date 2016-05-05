@@ -17,34 +17,38 @@ let moduleName = 'styleguide.prettify.directive';
  * usage
  */
 function stwPrettify($log, prettifyService) {
-	//require Google Code Prettify's css
-	require('./stwPrettify.scss');
+    //require Google Code Prettify's css
+    require('./stwPrettify.scss');
 
-	//return the directive object for the directive in question.
-	return {
-		restrict   : 'A',
-		replace    : true,
-		link       : function (scope, element) {
-			if(element[0].tagName != 'PRE'){
-				$log.warn('stw-prettify: use the directive on a pre tag to preserve whitespace.', element);
-			}
+    //return the directive object for the directive in question.
+    return {
+        restrict: 'C',
+        replace: true,
+        link: function (scope, element) {
+            if (element[0].tagName != 'PRE') {
+                $log.warn('stw-prettify: use the directive on a pre tag to preserve whitespace.', element);
+            }
+            if(element.parent().hasClass('stw-prettify')){
+                $log.debug('Element is nested within another prettify element. Assuming demonstration of itself.')
+                return;
+            }
 
-			var htmlToPrettify = element.html();
-			var prettified = prettifyService.prettify(htmlToPrettify);
+            var htmlToPrettify = element.html();
+            var prettified = prettifyService.prettify(htmlToPrettify);
 
-			//todo: could do the templating better here. (Think more varied use, textarea and in place?).
-			element.replaceWith('<pre class="prettyprint">'+prettified+'</pre>');
-		}
-	};
+            //todo: could do the templating better here. (Think more varied use, textarea and in place?).
+            element.replaceWith('<pre class="prettyprint">' + prettified + '</pre>');
+        }
+    };
 }
 
 stwPrettify.$inject = ['$log', 'prettifyService'];
 
 
-angular.module( moduleName, [prettify] )
-	.directive( 'stwPrettify', stwPrettify )
-	.run( function ($log) {
-		$log.debug( moduleName + ' - run' );
-	} );
+angular.module(moduleName, [prettify])
+    .directive('stwPrettify', stwPrettify)
+    .run(function ($log) {
+        $log.debug(moduleName + ' - run');
+    });
 
 export default moduleName;

@@ -3,6 +3,8 @@
 /** Load import Modules. */
 // import walkThroughModule from 'states/walkthrough/walkthrough.module';
 import homeModule from 'states/home/home.module';
+import codeDemos from 'states/codeDemos/codeDemos.module';
+import cards from 'states/cards/cards.module';
 
 /** Load custom components **/
 import stwHeader from './components/stwHeader/stwHeader.directive.js';
@@ -30,6 +32,8 @@ angular.module( moduleName, [
 		'ui.router',
 		'ngAnimate',
 		homeModule,
+		codeDemos,
+		cards,
 		stwHeader,
 		media,
 		stwContextMenu,
