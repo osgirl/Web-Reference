@@ -29,8 +29,6 @@ function stwPrettify($log, prettifyService) {
             }
 
             var htmlToPrettify = element.html();
-            $log.debug('language', scope.language);
-            $log.debug('linenums', scope.linenums);
             var prettified = prettifyService.prettify(htmlToPrettify, scope.language, scope.linenums);
 
             //note: could do the templating better here. (Think more varied use, textarea and in place?).
