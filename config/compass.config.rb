@@ -4,14 +4,13 @@ if RUBY_VERSION > "1.9"
 end
 
 add_import_path "app/components/"
-add_import_path "public/vendor/bower/"
-add_import_path "public/vendor/bower/gridle/sass"
+add_import_path "public/vendor/bower_components/"
 
-css_dir = "dist/assets/css/"
+css_dir = "www/assets/css/"
 sass_dir = "public/scss/"
-fonts_dir = "dist/assets/fonts/"
+fonts_dir = "www/assets/fonts/"
 sprite_load_path = "public/images/sprites/"
-images_dir = "dist/assets/images/"
+images_dir = "www/assets/images/"
 
 relative_assets = true
 
