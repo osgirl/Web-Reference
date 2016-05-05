@@ -1,6 +1,6 @@
 'use strict';
 
-//todo: could be better? might get a bit messy, but the service is a direct dependency of this directive.
+//note: could be better? might get a bit messy, but the service is a direct dependency of this directive.
 import prettify from '../../services/prettify';
 
 let moduleName = 'styleguide.prettify.directive';
@@ -9,7 +9,6 @@ let moduleName = 'styleguide.prettify.directive';
  * note: could potentially make this live.
  *
  * Prettify Directive stw-prettify.
- * usage
  */
 function stwPrettify($log, prettifyService) {
     //require Google Code Prettify's css
@@ -34,7 +33,7 @@ function stwPrettify($log, prettifyService) {
             $log.debug('linenums', scope.linenums);
             var prettified = prettifyService.prettify(htmlToPrettify, scope.language, scope.linenums);
 
-            //todo: could do the templating better here. (Think more varied use, textarea and in place?).
+            //note: could do the templating better here. (Think more varied use, textarea and in place?).
             element.replaceWith('<pre class="prettyprint">' + prettified + '</pre>');
         }
     };
