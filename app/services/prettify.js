@@ -21,13 +21,13 @@ function PrettifyService($window){
     };
 
     //Note: language should be optional
-    function prettify(html, language){
+    function prettify(html, language, linenums){
         if(!html) return '';
 
         let reindented = reindent(html);
         let encoded = htmlEncode(reindented);
 
-        return $window.prettyPrintOne(encoded, language);
+        return $window.prettyPrintOne(encoded, language, linenums);
     }
 
     //Quick HTML Encode using the browser.
