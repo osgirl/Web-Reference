@@ -9,7 +9,7 @@ function routeConfig($stateProvider) {
 			url         : '/',
 			template    : require( './home.html' ),
 			controller  : 'HomeController',
-			controllerAs: 'vm'
+			controllerAs: 'home'
 		} );
 }
 
