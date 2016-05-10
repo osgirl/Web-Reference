@@ -1,7 +1,7 @@
 import routeConfig from './codeDemos.routes.js';
 import CodeDemosController from './codeDemos.controller.js';
 
-let moduleName = 'styleguide.codeDemos';
+let moduleName = 'stw.codeDemos';
 
 angular.module( moduleName, [] )
 	.config( routeConfig )

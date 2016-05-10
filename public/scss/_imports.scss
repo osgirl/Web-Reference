@@ -1,9 +1,7 @@
-@import "core/variables";
-@import "core/colours";
-
-@import "mixins/breakpoint";
-@import "mixins/mixins";
-
-@import "typography/typography";
-
-@import "utilities/utilities";
+@import "core/variables",
+ "core/colours",
+ "mixins/breakpoint",
+ "mixins/mixins",
+ "typography/typography",
+ "utilities/utilities",
+ "components/mq";

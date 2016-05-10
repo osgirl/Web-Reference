@@ -66,7 +66,6 @@ var PATHS = {
 };
 
 module.exports = {
-
 	cache        : true,
 	entry        : {
 		vendor: [

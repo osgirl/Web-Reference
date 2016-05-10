@@ -2,10 +2,12 @@
  * Buttons
  * --------------------------------------------------
  */
-button, .button-large, .button-flat {
+.button, .button-large, .button-flat {
   border: none;
   border-radius: 2px;
-  display: inline-block;
+  //display: inline-block;
+  @include display-flex();
+  @include flex(1);
   height: 36px;
   line-height: 36px;
   outline: 0;

@@ -4,13 +4,13 @@
 'use strict';
 
 function routeConfig($stateProvider) {
-	$stateProvider
-		.state( 'buttons', {
-			url         : '/buttons',
-      template: require( './buttons.html' ),
-			controller  : 'ButtonsController',
-			controllerAs: 'vm'
-		} );
+    $stateProvider
+        .state('buttons', {
+            url: '/buttons',
+            template: require('./buttons.html'),
+            controller: 'ButtonsController',
+            controllerAs: 'vm'
+        });
 }
 
 routeConfig.$inject = ['$stateProvider'];

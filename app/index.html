@@ -31,12 +31,10 @@
 	<stw-background></stw-background>
 	<stw-header></stw-header>
 
-	<div class="stw-view-container">
-		<!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
-		<stw-spinner></stw-spinner>
-		<div ng-if="!isRouteLoading" ui-view class="stw-pane"></div>
-		<context-menu-left></context-menu-left>
-	</div>
+	<!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+	<stw-spinner></stw-spinner>
+	<div ng-if="!isRouteLoading" ui-view class="stw-pane"></div>
+	<context-menu-left></context-menu-left>
 </div>
 <!-- End StyleGuide App  -->
 

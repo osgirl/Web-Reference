@@ -5,12 +5,12 @@
 import routeConfig from './buttons.routes';
 import ButtonsController from './buttons.controller';
 
-let moduleName = 'styleguide.buttons';
+let moduleName = 'stw.buttons';
 
 angular.module( moduleName, [] )
 	.config( routeConfig )
 	.run( function ($log) {
-		$log.debug( 'styleguide.buttons - run' );
+		$log.debug( 'stw.buttons - run' );
 	} )
 	.controller( 'ButtonsController', ButtonsController );
 

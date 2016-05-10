@@ -3,6 +3,7 @@
 /** Load import Modules. */
 // import walkThroughModule from 'states/walkthrough/walkthrough.module';
 import homeModule from 'states/home/home.module';
+import buttonsModule from 'states/buttons/buttons.module'
 import codeDemos from 'states/codeDemos/codeDemos.module';
 
 /** Load custom components **/
@@ -27,36 +28,37 @@ import AppController from './core/app.controller';
 let moduleName = 'stw';
 
 /** Main App module setter with module name injected */
-angular.module( moduleName, [
-		'ui.router',
-		'ngAnimate',
-		homeModule,
-		codeDemos,
-		stwHeader,
-		media,
-		stwContextMenu,
-		stwSpinner,
-		stwAccordion,
-		stwPrettify
-	] )
-	/** Define default routes of the app */
-	.config( appRoutes )
+angular.module(moduleName, [
+    'ui.router',
+    'ngAnimate',
+    homeModule,
+    buttonsModule,
+    codeDemos,
+    stwHeader,
+    media,
+    stwContextMenu,
+    stwSpinner,
+    stwAccordion,
+    stwPrettify
+])
+/** Define default routes of the app */
+    .config(appRoutes)
 
-	/** Add constants, holding version info and any configs */
-	.constant( 'version', require( '../package.json' ).version )
-	.constant( 'config', require( './app.config' ) )
+/** Add constants, holding version info and any configs */
+    .constant('version', require('../package.json').version)
+    .constant('config', require('./app.config'))
 
-	/** Add State Management */
-	.run( StateChangeStart )
-	.run( StateChangeSuccess )
-	.run( StateNotFound )
-	.run( StateChangeError )
+/** Add State Management */
+    .run(StateChangeStart)
+    .run(StateChangeSuccess)
+    .run(StateNotFound)
+    .run(StateChangeError)
 
-	/** pass import to the run function */
-	.run( AppRun )
+/** pass import to the run function */
+    .run(AppRun)
 
-	/** Add the default app controller */
-	.controller( 'AppController', AppController );
+/** Add the default app controller */
+    .controller('AppController', AppController);
 
 /** Main App export, this makes the module available */
 export default moduleName;

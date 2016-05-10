@@ -10,7 +10,8 @@
     "angular-ui-router": "latest"
   },
   "resolutions": {
-    "angular": "1.5.5"
+    "angular": "1.5.5",
+    "angular-animate": "^1.4.4"
   },
   "ignore": [
     "**/.*",

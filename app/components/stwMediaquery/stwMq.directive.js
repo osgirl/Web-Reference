@@ -7,9 +7,7 @@
 
 'use strict';
 
-require('./mq.scss');
-
-let moduleName = 'styleguide.mediaquery';
+let moduleName = 'stw.mediaquery';
 
 class MediaQuery {
 	constructor() {
@@ -22,7 +20,7 @@ class MediaQuery {
 angular.module( moduleName, [] )
 	.directive( 'media', () => new MediaQuery() )
 	.run( function ($log) {
-		$log.debug( 'styleguide.mediaquery directive - run' );
+		$log.debug( 'stw.mediaquery directive - run' );
 	} );
 
 MediaQuery.$inject = ['$log'];

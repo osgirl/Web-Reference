@@ -1,55 +1,58 @@
-@import "../imports";
 
 /**
  * Scaffolding
  * --------------------------------------------------
  */
 
-* {
+*,
+*:before,
+*:after {
   @include box-sizing(border-box);
-  &:before, &:after {
-    @include box-sizing(border-box);
-  }
 }
 
 html {
   overflow: hidden;
-  @include touch-callout();
   -ms-touch-action: pan-y;
   touch-action: pan-y;
 }
 
-body, .stw-body {
-  @include touch-callout();
+body,
+.stw-body {
+  @include touch-callout(none);
   @include font-smoothing(antialiased);
-  @include text-size-adjust();
+  @include text-size-adjust(none);
   @include tap-highlight-transparent();
   @include user-select(none);
+
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   overflow: hidden;
+
   margin: 0;
   padding: 0;
+
   color: $base-color;
   word-wrap: break-word;
   font-size: $font-size-base;
-  font-family: $font-family-sans-serif;
-  line-height: $line-height-base;
+  font-family: -apple-system;
+  font-family: $font-family-base;
+  line-height: $line-height-computed;
   text-rendering: optimizeLegibility;
   -webkit-backface-visibility: hidden;
   -webkit-user-drag: none;
   -ms-content-zooming: none;
 }
 
-body {
-  &.grade-b, &.grade-c {
-    text-rendering: auto;
-  }
+body.grade-b,
+body.grade-c {
+  // disable optimizeLegibility for low end devices
+  text-rendering: auto;
 }
 
 .stw-content {
+  // used for content areas not using the content directive
   position: relative;
 }
 
@@ -60,60 +63,70 @@ body {
   bottom: 0;
   left: 0;
   overflow: hidden;
+
+  // Hide the top border if any
   margin-top: -1px;
+
+  // Prevents any distortion of lines
   padding-top: 1px;
   margin-bottom: -1px;
+
   width: auto;
   height: auto;
 }
 
-.stw-menu .stw-scroll-content.stw-scroll-content-false {
-  z-index: 11;
+.menu .stw-scroll-content.stw-scroll-content-false{
+  z-index: $z-index-scroll-content-false;
 }
 
 .stw-scroll-view {
   position: relative;
   display: block;
   overflow: hidden;
+
+  &.overflow-stw-scroll {
+    position: relative;
+  }
+
+  &.stw-scroll-x { overflow-x: scroll; overflow-y: hidden; }
+  &.stw-scroll-y { overflow-x: hidden; overflow-y: scroll; }
+  &.stw-scroll-xy { overflow-x: scroll; overflow-y: scroll; }
+
+  // Hide the top border if any
   margin-top: -1px;
 }
 
 /**
- * Scroll is the scroll view component available for complex and custom
- * scroll view functionality.
+ * Scroll is the stw-scroll view component available for complex and custom
+ * stw-scroll view functionality.
  */
-
 .stw-scroll {
-  @include touch-callout();
-  @include text-size-adjust();
-  @include tap-highlight-transparent();
   @include user-select(none);
-  -webkit-transform-origin: left top;
-  transform-origin: left top;
+  @include touch-callout(none);
+  @include text-size-adjust(none);
+  @include transform-origin(left, top);
 }
-
 /**
  * Set ms-viewport to prevent MS "page squish" and allow fluid scrolling
  * https://msdn.microsoft.com/en-us/library/ie/hh869615(v=vs.85).aspx
  */
-@-ms-viewport {
-  width: device-width;
-}
+@-ms-viewport { width: device-width; }
 
+// Scroll bar styles
 .stw-scroll-bar {
   position: absolute;
-  z-index: 9999;
+  z-index: $z-index-scroll-bar;
 }
-
+// hide the stw-scroll-bar during animations
 .ng-animate .stw-scroll-bar {
   visibility: hidden;
 }
-
 .stw-scroll-bar-h {
   right: 2px;
   bottom: 3px;
   left: 2px;
   height: 3px;
+
   .stw-scroll-bar-indicator {
     height: 100%;
   }
@@ -124,17 +137,18 @@ body {
   right: 3px;
   bottom: 2px;
   width: 3px;
+
   .stw-scroll-bar-indicator {
     width: 100%;
   }
 }
-
 .stw-scroll-bar-indicator {
   position: absolute;
   border-radius: 4px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0,0,0,0.3);
   opacity: 1;
-  @include transition(opacity 0.3s linear);
+  @include transition(opacity .3s linear);
+
   &.stw-scroll-bar-fade-out {
     opacity: 0;
   }
@@ -144,29 +158,89 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+
+  // Make sure the scrollbar doesn't take up layout space on edge
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   position: absolute;
+
+  &.pane {
+    overflow-x: hidden;
+    overflow-y: stw-scroll;
+  }
+
   .stw-scroll {
     position: static;
     height: 100%;
-    @include transform(translate3d(0, 0, 0));
+    -webkit-transform: translate3d(0, 0, 0);   // fix iOS bug where relative children of scroller disapear while scrolling.  see: http://stackoverflow.com/questions/9807620/ipad-safari-scrolling-causes-html-elements-to-disappear-and-reappear-with-a-dela
+  }
+
+  &.keyboard-up:not(.keyboard-up-confirm) {
+    overflow: hidden;
   }
 }
 
+
+// Pad top/bottom of content so it doesn't hide behind .bar-title and .bar-tab.
+// Note: For these to work, content must come after both bars in the markup
+/* If you change these, change platform.scss as well */
+.has-stw-header {
+  top: $bar-height;
+}
+// Force no header
+.no-header {
+  top: 0;
+}
+
+.has-stw-subheader {
+  top: $bar-height + $bar-subheader-height;
+}
+.has-stw-tabs-top {
+  top: $bar-height + $tabs-height;
+}
+.has-stw-header.has-stw-subheader.has-stw-tabs-top {
+  top: $bar-height + $bar-subheader-height + $tabs-height;
+}
+
+.has-stw-footer {
+  bottom: $bar-footer-height;
+}
+.has-stw-subfooter {
+  bottom: $bar-footer-height + $bar-subfooter-height;
+}
+
+.has-stw-tabs,
+.bar-footer.has-stw-tabs {
+  bottom: $tabs-height;
+  &.pane{
+    bottom: $tabs-height;
+    height:auto;
+  }
+}
+
+.bar-subfooter.has-stw-tabs {
+  bottom: $tabs-height + $bar-footer-height;
+}
+
+.has-stw-footer.has-stw-tabs {
+  bottom: $tabs-height + $bar-footer-height;
+}
+
+// A full screen section with a solid background
 .stw-pane {
-  @include transform(translate3d(0, 0, 0));
-  @include transition-duration(0ms);
-  z-index: 1;
+  @include translate3d(0,0,0);
+  @include transition-duration(0);
+  z-index: $z-index-pane;
 }
-
 .stw-view {
-  z-index: 1;
+  z-index: $z-index-view;
 }
-
-.stw-pane, .stw-view {
+.stw-pane,
+.stw-view {
   position: absolute;
   top: 0;
   right: 0;
@@ -174,83 +248,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: $base-background-color;
   overflow: hidden;
 }
-
 .stw-view-container {
   position: absolute;
   display: block;
   width: 100%;
   height: 100%;
-}
-
-/**
- * Specific to content use if you want a layout that
- * isn't full width.
- */
-.stw-content-container {
-  margin: 0 auto;
-  max-width: $max-width;
-  width: 90%;
-  padding: 0;
-  .stw-row {
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
-  }
-}
-
-@include breakpoint($l) {
-  .stw-content-container {
-    @include flex(0, 0, 85%);
-    width: 85%;
-  }
-}
-
-@include breakpoint($xl) {
-  .stw-content-container {
-    @include flex(0, 0, 70%);
-    width: 70%;
-  }
-}
-
-.stw-section {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  &.no-pad {
-    padding: 0;
-  }
-  &.no-pad-bot {
-    padding-bottom: 0;
-  }
-  &.no-pad-top {
-    padding-top: 0;
-  }
-}
-
-.stw-row {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-.has-stw-header {
-  top: 50px;
-}
-
-.stw-has-header-image, .stw-no-header {
-  top: 0;
-}
-
-.stw-has-sub--header {
-  top: 100px;
-}
-
-.stw-has-footer {
-  bottom: 50px;
 }

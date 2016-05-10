@@ -6,9 +6,8 @@ function ButtonsController() {
 
 	let vm = this;
 
-	vm.navTitle = 'STW Styleguide Buttons';
-	vm.tester = 'Style Guide Buttons example';
-	vm.pageClass = 'stw-view-after';
+	vm.navTitle = 'STW Buttons';
+	vm.tester = 'Buttons example for our reference';
 
 }
 

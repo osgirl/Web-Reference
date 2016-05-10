@@ -1,82 +1,65 @@
+
 /**
  * Button Bar
  * --------------------------------------------------
  */
 
 .stw-button-bar {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -moz-box-flex: 1;
-  -moz-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  @include display-flex();
+  @include flex(1);
   width: 100%;
-}
 
-.stw-button-full {
-  height: 100%;
-}
-
-.stw-button-bar {
   &.stw-button-bar-inline {
     display: block;
     width: auto;
-    *zoom: 1;
-    &:before {
-      display: table;
-      content: "";
-      line-height: 0;
-    }
-    &:after {
-      display: table;
-      content: "";
-      line-height: 0;
-      clear: both;
-    }
+
+    @include clearfix();
+
     > .button {
       width: auto;
       display: inline-block;
       float: left;
     }
   }
-  > {
-    .button {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-      -moz-box-flex: 1;
-      -moz-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-      display: block;
-      overflow: hidden;
-      padding: 0 16px;
-      width: 0;
-      border-width: 1px 0px 1px 1px;
-      border-radius: 0;
-      text-align: center;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      &:before, .icon:before {
-        line-height: 44px;
-      }
-      &:first-child {
-        border-radius: 2px 0px 0px 2px;
-      }
-      &:last-child {
-        border-right-width: 1px;
-        border-radius: 0px 2px 2px 0px;
-      }
-    }
-    .button-small {
-      &:before, .icon:before {
-        line-height: 28px;
-      }
-    }
+}
+
+.stw-button-bar > .button {
+  @include display-flex();
+  @include flex(1);
+  display: block;
+
+  overflow: hidden;
+
+  padding: 0 16px;
+
+  width: 0;
+
+  border-width: 1px 0px 1px 1px;
+  border-radius: 0;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &:before,
+  .icon:before {
+    line-height: 44px;
+  }
+
+  &:first-child {
+    border-radius: $button-border-radius 0px 0px $button-border-radius;
+  }
+  &:last-child {
+    border-right-width: 1px;
+    border-radius: 0px $button-border-radius $button-border-radius 0px;
+  }
+  &:only-child {
+    border-radius: $button-border-radius;
+  }
+}
+
+.stw-button-bar > .button-small {
+  &:before,
+  .icon:before {
+    line-height: 28px;
   }
 }

@@ -1,27 +1,23 @@
+@import "./imports";
+
 /**
  * Bar (Headers and Footers)
  * --------------------------------------------------
  */
 
-.stw-header {
+.stw-header, [stw-header] {
   position: absolute;
   right: 0;
   left: 0;
   z-index: 100;
   padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
+  @include box-sizing(border-box);
+  @include display-flex();
+  @include flex-direction(row);
   -webkit-flex-flow: row wrap;
   justify-content: flex-end;
   width: 100%;
-  height: 50px;
+  height: $stw-header-mobile-height;
   /** border-width: 1px will actually create 2 device pixels on retina **/
   /** this nifty trick sets an actual 1px border on hi-res displays **/
   background-size: 0;
@@ -46,29 +42,33 @@
   }
 }
 
+@include breakpoint($l) {
+  .stw-bar > .stw-header {
+    height: $stw-header-tablet-height;
+  }
+}
+
+@include breakpoint($m) {
+  .stw-bar > .stw-header {
+    height: $stw-header-tablet-height;
+  }
+}
+
 .stw-bar {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
+  @include display-flex();
+  @include user-select(none);
+  @include box-sizing(border-box);
+
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+
   position: absolute;
   right: 0;
   left: 0;
   z-index: 9;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   padding: 5px;
   width: 100%;
-  height: 55px;
+  height: $stw-header-mobile-height;
   border-width: 0;
   border-style: solid;
   border-top: 1px solid transparent;

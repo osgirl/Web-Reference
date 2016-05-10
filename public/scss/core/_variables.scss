@@ -99,6 +99,12 @@ $z-index-crust: -1;
 $z-index-ground: 10;
 $z-index-sky: 20;
 $z-index-space: 30;
+$z-index-scroll-content-false:    11 !default;
+$z-index-menu-bar-header:         11 !default;
+$z-index-scroll-content-false:    11 !default;
+$z-index-popup:                   12 !default;
+$z-index-loading:                 13 !default;
+$z-index-scroll-bar:              9999 !default;
 
 // Form Elements
 // Text Inputs
