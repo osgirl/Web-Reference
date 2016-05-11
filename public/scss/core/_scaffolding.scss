@@ -1,4 +1,4 @@
-
+@import "./imports";
 /**
  * Scaffolding
  * --------------------------------------------------
@@ -36,19 +36,12 @@ body,
   color: $base-color;
   word-wrap: break-word;
   font-size: $font-size-base;
-  font-family: -apple-system;
   font-family: $font-family-base;
   line-height: $line-height-computed;
   text-rendering: optimizeLegibility;
   -webkit-backface-visibility: hidden;
   -webkit-user-drag: none;
   -ms-content-zooming: none;
-}
-
-body.grade-b,
-body.grade-c {
-  // disable optimizeLegibility for low end devices
-  text-rendering: auto;
 }
 
 .stw-content {
@@ -188,47 +181,23 @@ body.grade-c {
 // Pad top/bottom of content so it doesn't hide behind .bar-title and .bar-tab.
 // Note: For these to work, content must come after both bars in the markup
 /* If you change these, change platform.scss as well */
+
 .has-stw-header {
   top: $bar-height;
 }
-// Force no header
-.no-header {
+
+.stw-has-header-image, .stw-no-header {
   top: 0;
 }
 
-.has-stw-subheader {
-  top: $bar-height + $bar-subheader-height;
-}
-.has-stw-tabs-top {
-  top: $bar-height + $tabs-height;
-}
-.has-stw-header.has-stw-subheader.has-stw-tabs-top {
-  top: $bar-height + $bar-subheader-height + $tabs-height;
+.stw-has-sub--header {
+  top: floor($bar-height * 2);
 }
 
-.has-stw-footer {
-  bottom: $bar-footer-height;
-}
-.has-stw-subfooter {
-  bottom: $bar-footer-height + $bar-subfooter-height;
+.stw-has-footer {
+  bottom: $bar-height;
 }
 
-.has-stw-tabs,
-.bar-footer.has-stw-tabs {
-  bottom: $tabs-height;
-  &.pane{
-    bottom: $tabs-height;
-    height:auto;
-  }
-}
-
-.bar-subfooter.has-stw-tabs {
-  bottom: $tabs-height + $bar-footer-height;
-}
-
-.has-stw-footer.has-stw-tabs {
-  bottom: $tabs-height + $bar-footer-height;
-}
 
 // A full screen section with a solid background
 .stw-pane {
@@ -257,3 +226,66 @@ body.grade-c {
   width: 100%;
   height: 100%;
 }
+
+
+.stw-view-container {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/**
+ * Specific to content use if you want a layout that
+ * isn't full width.
+ */
+.stw-content-container {
+  margin: 0 auto;
+  max-width: $max-width;
+  width: 90%;
+  padding: 0;
+  .stw-row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+}
+
+@include breakpoint($l) {
+  .stw-content-container {
+    @include flex(0, 0, 85%);
+    width: 85%;
+  }
+}
+
+@include breakpoint($xl) {
+  .stw-content-container {
+    @include flex(0, 0, 70%);
+    width: 70%;
+  }
+}
+
+.stw-section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  &.no-pad {
+    padding: 0;
+  }
+  &.no-pad-bot {
+    padding-bottom: 0;
+  }
+  &.no-pad-top {
+    padding-top: 0;
+  }
+}
+
+.stw-row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+

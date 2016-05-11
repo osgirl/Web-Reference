@@ -105,6 +105,8 @@ $z-index-scroll-content-false:    11 !default;
 $z-index-popup:                   12 !default;
 $z-index-loading:                 13 !default;
 $z-index-scroll-bar:              9999 !default;
+$z-index-pane : 2 !default;
+$z-index-view : $z-index-pane;
 
 // Form Elements
 // Text Inputs
@@ -120,8 +122,11 @@ $panel-border-radius: 5px;
 $input-border-radius: 0px;
 
 //stwHeader
-$stw-header-mobile-height: 50px;
-$stw-header-tablet-height: 100px;
+$stw-header-mobile-height: 50px !default;
+$stw-header-tablet-height: 100px !default;
+$bar-subheader-height: $stw-header-mobile-height !default;
+$tabs-height : $stw-header-mobile-height !default;;
+
 
 $stw-header-mobile-padding: 150px / 2;
 $stw-header-tablet-padding: 230px / 2;
@@ -160,6 +165,10 @@ $border-radius-small:             3px !default;
 
 $border-colour-primary: $color_blue_stone;
 
+$bar-height: 50px !default;
+$bar-footer-height:               $bar-height !default;
+$bar-subheader-height:            $bar-height !default;
+$bar-subfooter-height:            $bar-height !default;
 
 // Content
 // -------------------------------
