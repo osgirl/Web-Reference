@@ -2,6 +2,7 @@
  * @ngdoc service
  * @name DataService
  * @function
+ * @return {Promise}
  *
  * @description
  * Gets the feed data from a data service
@@ -12,7 +13,7 @@ import faker from 'faker';
 
 /**
  * @ngdoc function
- * @name styleguide.faker:DataService
+ * @name stw.faker:DataService
  * @description
  * # DataService
  * Creates a service constructor with fake data from an external api

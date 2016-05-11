@@ -1,0 +1,91 @@
+<div class="stw-scroll-content has-stw-header stw-overflow-scroll"
+     ng-controller="coloursController as vm">
+	<div class="stw-scroll">
+		<div class="stw-container">
+			<h2 class="flow-text">Colour Palette</h2>
+
+			<div class="stw-row small medium"
+			     ng-repeat="colour in vm._colours">
+				<!-- Colours -->
+				<div class="stw-col">
+					<div ng-if="colour[0].Red">
+						<h3 class="flow-text">Red</h3>
+
+						<div class="stw-section"
+						     ng-repeat="value in colour[0].Red">
+							<h5 class="flow-text">{{value}}</h5>
+
+							<div class="card-panel"
+							     style="background-color: {{value}}"></div>
+						</div>
+					</div>
+				</div>
+				<div class="stw-col">
+					<div ng-if="colour[0].Blue">
+						<h3 class="flow-text">Blue</h3>
+
+						<div class="stw-section"
+						     ng-repeat="value in colour[0].Blue">
+							<h5 class="flow-text">{{value}}</h5>
+
+							<div class="card-panel"
+							     style="background-color: {{value}}"></div>
+						</div>
+					</div>
+				</div>
+				<div class="stw-col">
+					<div ng-if="colour[0].Yellow">
+						<h3 class="flow-text">Yellow</h3>
+
+						<div class="stw-section"
+						     ng-repeat="value in colour[0].Yellow">
+							<h5 class="flow-text">{{value}}</h5>
+
+							<div class="card-panel"
+							     style="background-color: {{value}}"></div>
+						</div>
+					</div>
+				</div>
+				<div class="stw-col">
+					<div ng-if="colour[0].Brown">
+						<h3 class="flow-text">Brown</h3>
+
+						<div class="stw-section"
+						     ng-repeat="value in colour[0].Brown">
+							<h5 class="flow-text">{{value}}</h5>
+
+							<div class="card-panel"
+							     style="background-color: {{value}}"></div>
+						</div>
+					</div>
+				</div>
+				<div class="stw-col">
+					<div ng-if="colour[0].Cyan">
+						<h3 class="flow-text">Cyan</h3>
+
+						<div class="stw-section"
+						     ng-repeat="value in colour[0].Cyan">
+							<h5 class="flow-text">{{value}}</h5>
+
+							<div class="card-panel"
+							     style="background-color: {{value}}"></div>
+						</div>
+					</div>
+				</div>
+				<div class="stw-col">
+					<div ng-if="colour[0].Green">
+						<h3 class="flow-text">Green</h3>
+
+						<div class="stw-section"
+						     ng-repeat="value in colour[0].Green">
+							<h5 class="flow-text">{{value}}</h5>
+
+							<div class="card-panel"
+							     style="background-color: {{value}}"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

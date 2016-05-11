@@ -1,7 +1,7 @@
 'use strict';
 
 //note: could be better? might get a bit messy, but the service is a direct dependency of this directive.
-import prettify from '../../services/prettify';
+import prettify from '../../services/prettify/prettify';
 
 let moduleName = 'styleguide.prettify.directive';
 

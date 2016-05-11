@@ -11,3 +11,6 @@ angular.element( document ).ready( function () {
 	angular.bootstrap( document, [stwSeed] );
 });
 
+//stwSeed.constant('ENV_CONFIG', __ENV_CONFIG__);
+
+

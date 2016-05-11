@@ -1,6 +1,6 @@
 /**
  * @ngdoc function
- * @name styleguide.localStorage:localStorage
+ * @name stw.localStorage:localStorage
  * @description
  * # localStorage
  * Creates a service constructor with defined methods

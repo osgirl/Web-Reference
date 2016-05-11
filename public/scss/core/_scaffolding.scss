@@ -1,4 +1,4 @@
-@import "./imports";
+@import "../imports";
 /**
  * Scaffolding
  * --------------------------------------------------
@@ -163,7 +163,7 @@ body,
 
   &.pane {
     overflow-x: hidden;
-    overflow-y: stw-scroll;
+    overflow-y: scroll;
   }
 
   .stw-scroll {
@@ -176,11 +176,6 @@ body,
     overflow: hidden;
   }
 }
-
-
-// Pad top/bottom of content so it doesn't hide behind .bar-title and .bar-tab.
-// Note: For these to work, content must come after both bars in the markup
-/* If you change these, change platform.scss as well */
 
 .has-stw-header {
   top: $bar-height;

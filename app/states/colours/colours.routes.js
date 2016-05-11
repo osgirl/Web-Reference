@@ -5,11 +5,11 @@
 
 function routeConfig($stateProvider) {
 	$stateProvider
-		.state( 'avatars', {
-			url         : '/avatars',
-			template    : require( './avatars.html' ),
-			controller  : 'AvatarsController',
-			controllerAs: 'avatars'
+		.state( 'colours', {
+			url         : '/colours',
+			template    : require( './colours.html' ),
+			controller  : 'coloursController',
+			controllerAs: 'vm'
 		} );
 }
 

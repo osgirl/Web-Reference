@@ -165,8 +165,8 @@
   max-width: 90%;
 }
 
-@include responsive-grid-break('extra-small', $xs);
-@include responsive-grid-break('small', $s);
-@include responsive-grid-break('medium', $m);
-@include responsive-grid-break('large', $l);
-@include responsive-grid-break('xlarge', $xl);
+@include responsive-grid-break('.extra-small', $xs);
+@include responsive-grid-break('.small', $s);
+@include responsive-grid-break('.medium', $m);
+@include responsive-grid-break('.large', $l);
+@include responsive-grid-break('.xlarge', $xl);

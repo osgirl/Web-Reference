@@ -1,6 +1,6 @@
 /**
  * @ngdoc function
- * @name styleguide.shortlists:shortlists
+ * @name stw.shortlists:shortlists
  * @description
  * # shortlists
  * Creates a service constructor with defined methods

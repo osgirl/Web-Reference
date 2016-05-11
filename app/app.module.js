@@ -4,6 +4,7 @@
 // import walkThroughModule from 'states/walkthrough/walkthrough.module';
 import homeModule from 'states/home/home.module';
 import buttonsModule from 'states/buttons/buttons.module'
+import coloursModule from 'states/colours/colours.module';
 import codeDemos from 'states/codeDemos/codeDemos.module';
 
 /** Load custom components **/
@@ -33,6 +34,7 @@ angular.module(moduleName, [
     'ngAnimate',
     homeModule,
     buttonsModule,
+	coloursModule,
     codeDemos,
     stwHeader,
     media,
