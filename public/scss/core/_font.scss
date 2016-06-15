@@ -1,0 +1,9 @@
+// Severn Trent Water Design System 1.0.0
+// scss-lint:disable SpaceAfterComma
+
+@include font-face(hairline-webfont, $font-weight-setting: $font-weight-light);
+//@include font-face(LightItalic,   italic, $font-weight-light);
+@include font-face(light-webfont, $font-weight-setting: $font-weight-regular);
+//@include font-face(Italic,        italic, $font-weight-regular);
+@include font-face(medium-webfont, $font-weight-setting: $font-weight-bold);
+//@include font-face(BoldItalic,    italic, $font-weight-bold);

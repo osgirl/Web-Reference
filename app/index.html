@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+	      content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title>{%= o.htmlWebpackPlugin.options.title || o.htmlWebpackPlugin.options.pkg.name || "Reference Project" %}</title>
+
+	<!-- auto generated css file (see webpack config for further reading ) -->
+	{% for (var css in o.htmlWebpackPlugin.files.css) { %}
+	<link href="{%=o.htmlWebpackPlugin.files.css[css] %}" rel="stylesheet">
+	{% } %}
+
+	<!-- Cordova only available on the Production build -->
+	<!-- This will always 404 on dev as cordova injects file on build, pulled in via cordova build/cordova run [platform] -->
+	{% if (o.htmlWebpackPlugin.options.release === 'prod') { %}
+	<script src="cordova.js"></script>
+	{% } %}
+
+</head>
+
+<body ng-controller="AppController as vm" class="stw-body ng-cloak" id="app">
+<!-- StyleGuide App  -->
+<!-- viewport indicator only available on the dev build -->
+{% if (o.htmlWebpackPlugin.options.release === 'prod') { %}
+<media></media>
+{% } %}
+<!-- End viewport Indicator -->
+<div class="stw-grid stw-grid--frame">
+	<stw-header></stw-header>
+	<!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+	<div ui-view class="stw-main"></div>
+</div>
+<context-menu-left></context-menu-left>
+
+<!-- End StyleGuide App  -->
+
+{% { %}
+<script src="{%=o.htmlWebpackPlugin.files.chunks['vendor'].entry %}"></script>
+<script src="{%=o.htmlWebpackPlugin.files.chunks['app'].entry %}"></script>
+{% } %}
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+$css-prefix: 'stw-';
+
+.#{$css-prefix}logo {
+  width: 3.9375rem;
+  height: 2.75rem;
+  text-indent: -9999em;
+  background: url('images/st-logo.svg') no-repeat;
+}
+
+.#{$css-prefix}context-menu--left {
+
+    transition: 300ms ease all;
+
+    &.ng-enter.ng-enter-active {
+        top: 0;
+        transform: translateX(0);
+        transform: translateZ(0) translateX(0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    &.ng-enter {
+        display: block;
+        transform: translateX(-300px);
+        transform: translateZ(0) translateX(-300px);
+        transform: translate3d(-300px, 0, 0);
+    }
+
+    &.slide-in-left {
+        display: block;
+        transform: translateX(0);
+        transform: translateZ(0) translateX(0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    &.ng-leave.ng-leave-active {
+        display: block;
+        transform: translateX(-300px);
+        transform: translateZ(0) translateX(-300px);
+        transform: translate3d(-300px, 0, 0);
+    }
+    &.ng-leave {
+        display: block;
+        transform: translateX(0);
+        transform: translateZ(0) translateX(0);
+        transform: translate3d(0, 0, 0);
+    }
+}

@@ -1,0 +1,110 @@
+<div class="stw-main stw-scroll-content stw-overflow-scroll">
+	<div class="stw-scroll">
+		<stw-masthead title="Breadcrumbs"></stw-masthead>
+		<div class="stw-content stw-p-around--xx-large stw-design stw-design-layout">
+			<!-- content goes here -->
+			<div class="stw-main-content stw-col stw-col--rule-right stw-size--1-of-1">
+				<p class="stw-text-introduction">Use breadcrumbs to note the path of a record and help the user to
+					navigate back to the parent.</p>
+				<section class="stw-m-bottom--xx-large stw-p-top--x-large"
+				         data-stw-status="dev-ready">
+					<h2 class="stw-text-heading--large stw-text-heading--callout stw-jump-anchor__container"
+					    type="h2"><span id="flavor-base"
+					                    class="stw-jump-anchor"
+					                    tabindex="-1"></span>Base<span class="stw-badge stw-m-left--medium stw-shrink-none stw-align-middle badge--dev-ready">dev ready</span>
+					</h2>
+					
+					<div class="stw-grid stw-wrap stw-grid--vertical-stretch"><h3 class="stw-assistive-text">
+						Preview</h3>
+						
+						<div class="stw-col stw-size--1-of-1 stw-component-example">
+							<div class="stw-scrollable--x stw-bleed">
+								<div class="preview">
+									<nav role="navigation">
+										<p id="bread-crumb-label" class="stw-assistive-text">You are here:</p>
+										<ol class="stw-breadcrumb stw-list--horizontal" aria-labelledby="bread-crumb-label">
+											<li class="stw-list__item stw-text-heading--label"><a href="#">Parent Entity</a></li>
+											<li class="stw-list__item stw-text-heading--label"><a href="#">Parent Record Name</a></li>
+										</ol>
+									</nav>
+								</div>
+							</div>
+							<h3 class="stw-assistive-text">Code</h3>
+							
+							<div class="stw-code--content stw-scrollable--x"><pre class=" language-markup"><code id="code-components-breadcrumbs-base"
+							                                                                                       class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>navigation<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>bread-crumb-label<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>You
+								are
+								here:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-breadcrumb <span class="token utility-class">stw-list--horizontal</span><span class="token punctuation">"</span></span> <span class="token attr-name">aria-labelledby</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>bread-crumb-label<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-list__item</span> <span class="token utility-class">stw-text-heading--label</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Parent
+								Entity<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-list__item</span> <span class="token utility-class">stw-text-heading--label</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Parent
+								Record
+								Name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span></code></pre>
+							</div>
+						</div>
+					</div>
+				</section>
+				<h3 id="overview"
+				    class="stw-text-heading--large stw-p-top--x-large">Component Overview</h3>
+				
+				<div><p>Breadcrumbs are typically constructed with an <code>ol</code> because their order matters. You
+					mark up breadcrumbs with classes from the horizontal list utility. When you add the <code>.stw-breadcrumb</code>
+					class, the separators are automatically generated.</p><h4 class="stw-text-heading--label">
+					Accessibility</h4>
+					
+					<p>Place the breadcrumb in a nav element with <code>role="navigation"</code>. The first element
+						inside is a paragraph element with the words “You are here.” Mark up the paragraph element with
+						the <code>.stw-assistive-text</code> class to visually hide it. It also requires an
+						<code>id</code> to associate it to the <code>ol</code> containing the
+						<code>aria-labelledby</code> attribute.</p></div>
+				<div class="stw-table--overview">
+					<div class="stw-text-longform stw-m-bottom--medium">
+						<h4 class="stw-p-top--xx-large stw-text-heading--label">Usage</h4>
+						
+						<div>This table gives you a quick overview of the STW CSS classes that can be applied to this
+							component.
+						</div>
+					</div>
+					<div class="stw-scrollable--x">
+						<table class="stw-table stw-table--bordered stw-max-medium-table--stacked stw-no-row-hover">
+							<thead>
+							<tr class="stw-text-heading--label">
+								<th class="stw-theme--shade">Class Name</th>
+								<th colspan="2"
+								    class="stw-theme--shade">Usage
+								</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-breadcrumb</code>
+									
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+									
+									<p><code>ol</code></p><strong>Outcome:</strong>
+									
+									<p>Initializes a breadcrumb component</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+									
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+									
+									<p>This class allows the <code>.stw-list__item</code> to display in the breadcrumb
+										style</p></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

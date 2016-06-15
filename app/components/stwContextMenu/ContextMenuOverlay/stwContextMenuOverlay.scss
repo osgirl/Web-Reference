@@ -1,0 +1,17 @@
+@import "./imports";
+
+.#{$css-prefix}context-menu-overlay {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    &.show-overlay {
+      background-color: $cool-grey;
+        display: block;
+      opacity: 0.5;
+      z-index: 3;
+    }
+}

@@ -1,0 +1,133 @@
+/* Simple card use card-panel or can be different style cards with images and buttons
+
+<div class="stw-creative-card">
+  <div class="stw-card--image">
+    <img src="images/sample-1.jpg">
+    <span class="stw-card--title">Card Title</span>
+  </div>
+  <div class="stw-card--content">
+    <p>I am a very simple card. I am good at containing __small bits of information. I am convenient because I require little markup to use effectively.</p>
+  </div>
+  <div class="stw-card--action">
+    <a href="#">This is a link</a>
+  </div>
+</div>
+
+*/
+
+.#{$css-prefix}card-panel {
+  transition: box-shadow .25s;
+  padding: 20px;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.#{$css-prefix}creative--card {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  transition: box-shadow .25s;
+  border-radius: 2px;
+
+  .card--title {
+    font-size: 24px;
+    font-weight: 300;
+    padding: {
+      top: 20px;
+      bottom: 20px;
+    }
+
+    &.activator {
+      cursor: pointer;
+    }
+  }
+  &__small, &__medium, &__large {
+    position: relative;
+  }
+  &__small .#{$css-prefix}card--image, &__medium .#{$css-prefix}card--image, &__large .#{$css-prefix}card--image {
+    max-height: 60%;
+    overflow: hidden;
+  }
+  &__small .#{$css-prefix}card--content, &__medium .#{$css-prefix}card--content, &__large .#{$css-prefix}card--content {
+    max-height: 40%;
+    overflow: hidden;
+  }
+  &__small .#{$css-prefix}card--action, &__medium .#{$css-prefix}card--action, &__large .#{$css-prefix}card--action {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: inherit;
+  }
+  &__small {
+    height: 300px;
+  }
+  &__medium {
+    height: 400px;
+  }
+  &__large {
+    height: 500px;
+  }
+  
+  &__image {
+    position: relative;
+    img {
+      display: block;
+      border-radius: 2px 2px 0 0;
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+    .card--title {
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 20px;
+    }
+  }
+  .card--content {
+    padding: 20px;
+    border-radius: 0 0 2px 2px;
+    p {
+      margin: 0;
+      color: inherit;
+    }
+    &__title {
+      line-height: 48px;
+    }
+  }
+  .card--action {
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 20px;
+    a:not(.btn):not(.btn-__large):not(.btn-floating) {
+      color: #ffab40;
+      margin-right: 20px;
+      transition: color .3s ease;
+      text-transform: uppercase;
+      &:hover {
+        color: #ffd8a6;
+      }
+    }
+  }
+  .card--reveal {
+    padding: 20px;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    overflow-y: auto;
+    top: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+    &__title {
+      cursor: pointer;
+      display: block;
+    }
+  }
+}

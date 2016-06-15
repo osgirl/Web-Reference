@@ -1,0 +1,29 @@
+.mq {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $black;
+  color: $white;
+  padding: 4px;
+  z-index: 110;
+}
+
+.mq-indicator{
+  position: absolute;
+  top: -999em;
+  left: -999em;
+
+  z-index: 1;
+
+  @include breakpoint($m) {
+    z-index: 2;
+  }
+
+  @include breakpoint($l) {
+    z-index: 3;
+  }
+
+  @include breakpoint($xl) {
+    z-index: 4;
+  }
+}

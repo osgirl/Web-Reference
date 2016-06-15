@@ -1,0 +1,15 @@
+$css-prefix : 'stw-';
+
+[#{$css-prefix}accordian], #{$css-prefix}accordian{
+  cursor: pointer;
+}
+
+.#{$css-prefix}accordion_content{
+  display:none;
+
+  .#{$css-prefix}accordian_open {
+    display: block;
+    padding-left: 2rem;
+
+  }
+}

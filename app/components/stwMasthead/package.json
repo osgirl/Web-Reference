@@ -1,0 +1,6 @@
+{
+    "name": "stwMasthead",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./stwMasthead.directive.js"
+}

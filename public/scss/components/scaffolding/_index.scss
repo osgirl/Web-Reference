@@ -1,0 +1,132 @@
+
+.#{$css-prefix}content {
+  // used for content areas not using the content directive
+  position: relative;
+}
+
+.#{$css-prefix}scroll-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+
+  // Hide the top border if any
+  margin-top: -1px;
+
+  // Prevents any distortion of lines
+  padding-top: 1px;
+  margin-bottom: -1px;
+
+  width: auto;
+  height: auto;
+}
+
+.menu .#{$css-prefix}scroll-content.#{$css-prefix}scroll-content-false {
+  z-index: 11;
+}
+
+.#{$css-prefix}scroll-view {
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  &.overflow-stw-scroll {
+    position: relative;
+  }
+
+  &.#{$css-prefix}scroll-x { overflow-x: scroll; overflow-y: hidden; }
+  &.#{$css-prefix}scroll-y { overflow-x: hidden; overflow-y: scroll; }
+  &.#{$css-prefix}scroll-xy { overflow-x: scroll; overflow-y: scroll; }
+
+  // Hide the top border if any
+  margin-top: -1px;
+}
+
+/**
+ * Scroll is the stw-scroll view component available for complex and custom
+ * stw-scroll view functionality.
+ */
+.#{$css-prefix}scroll {
+  @include user-select(none);
+  @include touch-callout(none);
+  @include text-size-adjust(none);
+  @include transform-origin(left, top);
+}
+
+/**
+ * Set ms-viewport to prevent MS "page squish" and allow fluid scrolling
+ * https://msdn.microsoft.com/en-us/library/ie/hh869615(v=vs.85).aspx
+ */
+@-ms-viewport { width: device-width; }
+
+.#{$css-prefix}overflow-scroll {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  // Make sure the scrollbar doesn't take up layout space on edge
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+
+  &.pane {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .#{$css-prefix}scroll {
+    position: static;
+    height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);   // fix iOS bug where relative children of scroller disapear while scrolling.  see: http://stackoverflow.com/questions/9807620/ipad-safari-scrolling-causes-html-elements-to-disappear-and-reappear-with-a-dela
+  }
+}
+
+.#{$css-prefix}has-header {
+  top: $bar-height;
+}
+
+.#{$css-prefix}has-header--image, .#{$css-prefix}no-header {
+  top: 0;
+}
+
+.#{$css-prefix}has-sub--header {
+  top: floor($bar-height * 2);
+}
+
+.#{$css-prefix}has-footer {
+  bottom: $bar-height;
+}
+
+// A full screen section with a solid background
+.#{$css-prefix}pane {
+  @include translate3d(0,0,0);
+  @include transition-duration(0);
+  z-index: 1;
+}
+.#{$css-prefix}view {
+  z-index: 1;
+}
+.#{$css-prefix}pane,
+.#{$css-prefix}view {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+.#{$css-prefix}view-container {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}

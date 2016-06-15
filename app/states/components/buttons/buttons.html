@@ -1,0 +1,780 @@
+<div class="stw-main stw-scroll-content stw-overflow-scroll">
+	<div class="stw-scroll">
+		<stw-masthead title="Buttons"></stw-masthead>
+		<div class="stw-content stw-grid stw-wrap stw-large-nowrap">
+			<div class="stw-main-content stw-col stw-col--rule-right stw-size--1-of-1">
+				<p class="stw-text-introduction">Create a button with a <code>button</code> or <code>a</code> element
+					to retain the native click function. Use a disabled attribute when a button can’t be clicked.</p>
+				<section class="stw-m-bottom--xx-large stw-p-top--x-large"
+				         data-stw-status="dev-ready"><h2
+						class="stw-text-heading--large stw-text-heading--callout stw-jump-anchor__container"
+						type="h2"><span id="flavor-base"
+				                        class="stw-jump-anchor"
+				                        tabindex="-1"></span>Base<span
+						class="stw-badge stw-m-left--medium stw-shrink-none stw-align-middle badge--dev-ready">dev ready</span>
+				</h2>
+
+					<div class="stw-grid stw-wrap stw-grid--vertical-stretch"><h3 class="stw-assistive-text">
+						Preview</h3>
+
+						<div class="stw-col stw-size--1-of-1 stw-component-example">
+							<div class="stw-scrollable--x stw-bleed">
+								<div class="demo-only">
+									<button class="stw-button">Button</button>
+								</div>
+							</div>
+							<h3 class="stw-assistive-text">Code</h3>
+
+							<div class="stw-code--content stw-scrollable--x">
+	                            <pre class=" language-markup"><code
+			                            id="code-components-buttons-base"
+			                            class=" language-markup"> <span class="token tag"><span
+			                            class="token tag"><span class="token punctuation">&lt;</span>button</span> <span
+			                            class="token attr-name">class</span><span class="token attr-value"><span
+			                            class="token punctuation">=</span><span class="token punctuation">"</span>stw-button<span
+			                            class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span
+			                            class="token tag"><span class="token tag"><span
+			                            class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+	                            </code>
+	                            </pre>
+							</div>
+							<div class="stw-text-longform"><p>The base <code>.stw-button</code> looks like a plain
+								text link. It removes all the styling of the native button. It’s typically used to
+								trigger a modal or display a “like” link. All button variations are built by adding
+								another class to <code>.stw-button</code>.</p>
+
+								<p>Add the <code>.stw-button--neutral</code> class to create a neutral button, which
+									has a white background and gray border.</p>
+
+								<p>Use a neutral icon button is for buttons with an icon on the left or right (not for
+									stateful buttons). Add the <code>.stw-button--neutral</code> class to <code>.stw-button</code>.
+								</p>
+
+								<p>The SVG inside receives the <code>.stw-button__icon</code> class. You can position
+									the icon on the right or the left using <code>.stw-button__icon--right</code> or
+									<code>.stw-button__icon--left</code> , which apply the correct amount of space
+									between the icon and the text.</p>
+
+								<p>To create the brand button, add the <code>.stw-button--brand</code> class to the
+									<code>.stw-button</code> class.</p>
+
+								<p>To create the destructive button, add the <code>.stw-button--destructive</code>
+									class to the <code>.stw-button</code> class.</p>
+
+								<p>Use the inverse button on dark backgrounds. Add the
+									<code>.stw-button--inverse</code> class to the <code>.stw-button</code> class.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="stw-m-bottom--xx-large stw-p-top--x-large"
+				         data-stw-status="dev-ready"><h2
+						class="stw-text-heading--large stw-text-heading--callout stw-jump-anchor__container"
+						type="h2"><span id="flavor-stateful"
+				                        class="stw-jump-anchor"
+				                        tabindex="-1"></span>Stateful<span
+						class="stw-badge stw-m-left--medium stw-shrink-none stw-align-middle badge--dev-ready">dev ready</span>
+				</h2>
+
+					<div class="stw-grid stw-wrap stw-grid--vertical-stretch"><h3 class="stw-assistive-text">
+						Preview</h3>
+
+						<div class="stw-col stw-size--1-of-1 stw-component-example">
+							<div class="stw-scrollable--x stw-bleed">
+								<div class="demo-only">
+									<button class="stw-button stw-button--neutral stw-not-selected grey lighten-1 white-text"
+									        aria-live="assertive">
+                                        <span class="stw-text-not-selected">
+	                                        <img src="svg/add.svg"
+	                                             class="stw-button__icon stw-button__icon--left"
+	                                             alt=""/>
+                                          Follow</span>
+									</button>
+								</div>
+							</div>
+							<h3 class="stw-assistive-text">Code</h3>
+
+							<div class="stw-code--content stw-scrollable--x">
+                                <pre class="stw-prettify"
+                                     aria-multiline="true">
+                                    <button class="stw-button stw-button--neutral stw-not-selected grey lighten-1 white-text"
+	                                        aria-live="assertive">
+                                        <span class="stw-text-not-selected">
+	                                        <img src="svg/add.svg"
+	                                             class="stw-button__icon stw-button__icon--left"
+	                                             alt=""/>
+                                          Follow</span>
+                                    </button>
+                                </pre>
+							</div>
+							<div class="stw-text-longform"><p>The stateful button requires the <code>.stw-button--neutral</code>
+								class in addition to the <code>.stw-button</code> class.</p>
+
+								<p>The stateful inverse button works just like the stateful button. It requires the
+									<code>.stw-button--inverse</code> class in addition to the
+									<code>.stw-button</code> class.</p>
+
+								<p>It uses the class <code>.stw-not-selected</code> in its initial state. When the user
+									activates the button, use JavaScript to toggle the class to
+									<code>.stw-is-selected</code>. The button contains three spans with classes that
+									hide or show the content of the spans based on the class on the button. Each span
+									contains text and a corresponding icon. The SVG will have the <code>.stw-button__icon--stateful</code>
+									class as well as the <code>.stw-button__icon--left</code> class setting the icon on
+									the left.</p>
+
+								<p>Stateful icons can be toggled on and off and retain their state. Like stateful
+									buttons, the initial state is <code>.stw-not-selected</code>, and JavaScript is
+									used to toggle it to <code>.stw-is-selected</code> when activated.</p>
+
+								<p></p><h4 class="stw-text-heading--label">Accessibility</h4>
+
+								<p></p>
+
+								<p>For accessibility, include the attribute <code>aria-live="assertive"</code> on the
+									button. The <code>aria-live="assertive"</code> attribute means the value of the
+									<code>&amp;lt;span&amp;gt;</code> inside the button will be spoken whenever it
+									changes.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="stw-m-bottom--xx-large stw-p-top--x-large"
+				         data-stw-status="dev-ready"><h2
+						class="stw-text-heading--large stw-text-heading--callout stw-jump-anchor__container"
+						type="h2"><span id="flavor-icon"
+				                        class="stw-jump-anchor"
+				                        tabindex="-1"></span>Icon<span
+						class="stw-badge stw-m-left--medium stw-shrink-none stw-align-middle badge--dev-ready">dev ready</span>
+				</h2>
+
+					<div class="stw-grid stw-wrap stw-grid--vertical-stretch"><h3 class="stw-assistive-text">
+						Preview</h3>
+
+						<div class="stw-col stw-size--1-of-1 stw-component-example">
+							<div class="stw-scrollable--x stw-bleed">
+								<div class="demo-only">
+									<button class="stw-button stw-button--icon red lighten-2">
+										<img src="svg/settings.svg"
+										     alt=""
+										     class="stw-button__icon"/>
+										<span class="stw-assistive-text">Settings</span>
+									</button>
+								</div>
+							</div>
+							<h3 class="stw-assistive-text">Code</h3>
+
+							<div class="stw-code--content stw-scrollable--x">
+								<pre class="stw-prettify">
+								<button class="stw-button stw-button--icon red lighten-2">
+									<img src="svg/settings.svg"
+									     alt=""
+									     class="stw-button__icon"/>
+									<span class="stw-assistive-text">Settings</span>
+								</button>
+								</pre>
+							</div>
+
+							<div class="stw-text-longform"><p>The various button icons vary in the amount of space they
+								use on the page. Some have background colors, and some are transparent.</p>
+								<ul>
+									<li><code>.stw-button--icon-bare</code> does not take up the 36px height that a
+										normal button does. Although you create it with a <code>‹button›</code> element,
+										it looks like a plain icon and is the height of the icon.
+									</li>
+									<li><code>.stw-button--icon-container</code> looks like an icon and takes the
+										default space of a button (36px). It has no background or border.
+									</li>
+									<li><code>.stw-button--icon-border</code> includes a border. It is the default size
+										(36px).
+									</li>
+									<li><code>.stw-button--icon-border-filled</code> adds a background color and border
+										like the <code>.stw-button--neutral</code>.
+									</li>
+									<li><code>.stw-button--icon-small</code> changes the default size of 36px to the
+										size of 32px.
+									</li>
+									<li><code>.stw-button--icon-x-small</code> changes the default size of 36px to the
+										size of 20px.
+									</li>
+									<li>Use <code>.stw-button__icon--x-small</code> in an<code>.stw-icon--more
+										icon</code> button to indicate that more information is available..
+									</li>
+									<li>Use <code>.stw-button__icon--small</code> within
+										<code>.stw-button__icon--hint</code> on rows in which hovering over the parent
+										element or table row causes the button to brighten up.
+									</li>
+									<li>The normal sized <code>.stw-button__icon</code> is used in many places,
+										including small close icons on alerts.
+									</li>
+									<li>Use <code>.stw-button__icon--large</code> to create a large close button for
+										modals and toasts. It’s usually used with <code>.stw-button--inverse</code>.
+									</li>
+								</ul>
+								<p>The classes added to each button are added to the base <code>.stw-button</code>
+									class. The <code>&lt;svg&gt;</code> inside the buttons all have the base class of
+									<code>.stw-button__icon</code>.</p>
+
+								<p>A hint button is grayed out until its parent is hovered over. Then the hover and
+									focus states are just like a regular icon button.</p>
+
+								<p>The parent element must have the class <code>.stw-hint-parent</code>, and the icon
+									inside the button has the class <code>.stw-button__icon--hint</code>.</p>
+
+								<p>Use the small button with the down icon in rows and action menus. Add the class
+									<code>.stw-button--icon-x-small</code> on the button. Use <code>.stw-button__icon--small</code>
+									for the inside icon.</p>
+
+								<p></p><h4 class="stw-text-heading--label">Accessibility</h4>
+
+								<p></p>
+
+								<p>Icons without identifying text must have descriptive text in a <code>.stw-assistive-text</code>.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<h3 id="overview"
+				    class="stw-text-heading--large stw-p-top--x-large">Component Overview</h3>
+
+				<div><h4 class="stw-text-heading--label">Accessibility</h4>
+
+					<p>If an icon button doesn’t include a label, use a span with <code>.stw-assistive-text</code> to
+						describe the icon for screen readers.</p></div>
+				<div class="stw-table--overview">
+					<div class="stw-text-longform stw-m-bottom--medium"><h4
+							class="stw-p-top--xx-large stw-text-heading--label">Usage</h4>
+
+						<div>This table gives you a quick overview of the stw CSS classes that can be applied to create
+							buttons.
+						</div>
+					</div>
+					<div class="stw-scrollable--x">
+						<table class="stw-table stw-table--bordered stw-max-medium-table--stacked stw-no-row-hover">
+							<thead>
+							<tr class="stw-text-heading--label">
+								<th class="stw-theme--shade">Class Name</th>
+								<th colspan="2"
+								    class="stw-theme--shade">Usage
+								</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-button</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>button</code> or <code>link</code></p><strong>Outcome:</strong>
+
+									<p>Initializes a 2.25rem (36px) height button</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>
+										<svg aria-hidden="true"
+										     class="stw-icon stw-icon--x-small stw-icon-text-default">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink"
+											     xlink:href="svg/symbols.svg#check"></use>
+										</svg>
+										<span class="stw-assistive-text">Required</span></p>
+									<strong>Comments:</strong>
+
+									<p>This neutralizes all the base styles making it look like a text link</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-button--small</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button</code></p><strong>Outcome:</strong>
+
+									<p>Creates a smaller 2rem (32px) button</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row">
+									<code>.stw-button--neutral</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button</code></p><strong>Outcome:</strong>
+
+									<p>Creates the gray border with white background default style</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-button--brand</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button</code></p><strong>Outcome:</strong>
+
+									<p>Creates the brand blue stw style</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row">
+									<code>.stw-button--destructive</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button</code></p><strong>Outcome:</strong>
+
+									<p>Creates a red button style</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>The use case for this button is things like delete, cancel, and end call rather
+										than errors.</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row">
+									<code>.stw-button--inverse</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button</code></p><strong>Outcome:</strong>
+
+									<p>Creates the inverse style for dark backgrounds</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-button--icon</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button</code></p><strong>Outcome:</strong>
+
+									<p>Creates a button that looks like a plain icon</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>This is 1rem×1rem like an icon, not a regular button</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row">
+									<code>.stw-button--icon-bare</code>
+
+									<div><span class="stw-badge stw-shrink-none stw-align-middle badge--deprecated">Deprecated</span>
+									</div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button</code></p><strong>Outcome:</strong>
+
+									<p>Creates a button that looks like a plain icon</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>This is 1rem×1rem like an icon, not a regular button</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-button--icon-container</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button</code></p><strong>Outcome:</strong>
+
+									<p>Creates a button that looks like a plain icon</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>This is 2.25rem×2.25rem like a button</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row">
+									<code>.stw-button--icon-border</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button</code></p><strong>Outcome:</strong>
+
+									<p>Creates an icon button with a border</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>There is no background color until hover for this style</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-button--icon-border-filled</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button</code></p><strong>Outcome:</strong>
+
+									<p>Creates an icon button with a border</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>This is 2.25rem×2.25rem like a button</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row">
+									<code>.stw-button--icon-inverse</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button</code></p><strong>Outcome:</strong>
+
+									<p>Gives a white icon color on a dark background</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>When used alone it has a subtle hover. When used in a button-group it assumes the
+										hover state of the buttons next to it.</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row">
+									<code>.stw-button--icon-small</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button</code></p><strong>Outcome:</strong>
+
+									<p>Creates an icon button at the smaller 2rem (32px) size</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>Be aware that this sizes the button, not the icon</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row">
+									<code>.stw-button--icon-x-small</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button</code></p><strong>Outcome:</strong>
+
+									<p>Creates an icon button at the smaller 1.25rem (20px) size</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>Be aware that this sizes the button, not the icon</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row">
+									<code>.stw-button--icon-more</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button</code></p><strong>Outcome:</strong>
+
+									<p>Used for the style where only two icons are in a button</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>This is usually an icon with a down arrow icon next to it. Each svg within is
+										sized separately</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-button__icon</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>svg</code></p><strong>Outcome:</strong>
+
+									<p>Sets the size and color of the icon inside a button</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-button__icon--stateful</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>svg</code></p><strong>Outcome:</strong>
+
+									<p>This makes the icon the same color as the text in the button</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>This is not used in addition to <code>.stw-button__icon</code> but instead of
+									</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row">
+									<code>.stw-button__icon--left</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button__icon</code></p><strong>Outcome:</strong>
+
+									<p>Puts the icon on the left side of the button</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row">
+									<code>.stw-button__icon--right</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button__icon</code></p><strong>Outcome:</strong>
+
+									<p>Puts the icon on the right side of the button</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-button__icon--x-small</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button__icon</code></p><strong>Outcome:</strong>
+
+									<p>Creates a .5rem (8px) size icon</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>This is added to the icon inside the <code>.stw-button</code>, not the button
+										itself</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row">
+									<code>.stw-button__icon--small</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button__icon</code></p><strong>Outcome:</strong>
+
+									<p>Creates a .75rem (12px) size icon</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row">
+									<code>.stw-button__icon--large</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button__icon</code></p><strong>Outcome:</strong>
+
+									<p>Creates a 1.5rem (24px) size icon</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row">
+									<code>.stw-button__icon--hint</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>.stw-button__icon</code></p><strong>Outcome:</strong>
+
+									<p>Creates a grayed out icon until the parent is hovered</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>The parent must have the <code>.stw-hint-parent</code> class applied</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row">
+									<code>.stw-button-space-left</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied
+									to:</strong>
+
+									<p><code>button</code> parent</p><strong>Outcome:</strong>
+
+									<p>Adds space on the left of a button wrapped in a parent</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>Only required if the <code>.stw-button</code> is wrapped. ie- to include a
+										dropdown</p></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

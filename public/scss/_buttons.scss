@@ -1,0 +1,158 @@
+@import './imports';
+
+/**
+ * .stw-buttons
+ * --------------------------------------------------
+
+  $color-text-button-brand: rgb(255, 255, 255) !default;
+  $color-text-button-brand-hover: rgb(255, 255, 255) !default;
+  $color-text-button-brand-active: rgb(255, 255, 255) !default;
+  $color-text-button-brand-disabled: rgb(255, 255, 255) !default;
+  $color-text-button-default: rgb(0, 112, 210) !default;
+  $color-text-button-default-hover: rgb(0, 112, 210) !default;
+  $color-text-button-default-active: rgb(0, 112, 210) !default;
+  $color-text-button-default-disabled: rgb(216, 221, 230) !default;
+  $color-text-button-default-hint: rgb(159, 170, 181) !default;
+  $color-text-button-inverse: rgb(224, 229, 238) !default;
+  $color-text-button-inverse-disabled: rgba(255, 255, 255, 0.15) !default;
+  $color-background-button-brand: rgb(0, 112, 210) !default;
+  $color-background-button-brand-active: rgb(0, 57, 107) !default;
+  $color-background-button-brand-hover: rgb(0, 95, 178) !default;
+  $color-background-button-brand-disabled: rgb(224, 229, 238) !default;
+  $color-background-button-default: rgb(255, 255, 255) !default;
+  $color-background-button-default-hover: rgb(244, 246, 249) !default;
+  $color-background-button-default-focus: rgb(244, 246, 249) !default;
+  $color-background-button-default-active: rgb(238, 241, 246) !default;
+  $color-background-button-default-disabled: rgb(255, 255, 255) !default;
+  $color-background-button-icon: rgba(0, 0, 0, 0) !default;
+  $color-background-button-icon-hover: rgb(244, 246, 249) !default;
+  $color-background-button-icon-focus: rgb(244, 246, 249) !default;
+  $color-background-button-icon-active: rgb(238, 241, 246) !default;
+  $color-background-button-icon-disabled: rgb(255, 255, 255) !default;
+  $color-background-button-inverse: rgba(0, 0, 0, 0) !default;
+  $color-background-button-inverse-active: rgba(0, 0, 0, 0.24) !default;
+  $color-background-button-inverse-disabled: rgba(0, 0, 0, 0) !default;
+  $color-background-modal-button: rgba(0, 0, 0, 0.07) !default;
+  $color-background-modal-button-active: rgba(0, 0, 0, 0.16) !default;
+  $color-border-button-brand: rgb(0, 112, 210) !default;
+  $color-border-button-brand-disabled: rgba(0, 0, 0, 0) !default;
+  $color-border-button-default: rgb(216, 221, 230) !default;
+  $color-border-button-inverse-disabled: rgba(255, 255, 255, 0.15) !default;
+
+
+ */
+.#{$css-prefix}button, .#{$css-prefix}button-large, .#{$css-prefix}button-flat {
+  border: none;
+  border-radius: 2px;
+  //display: inline-block;
+  @include display-flex();
+  @include flex(1);
+  height: 36px;
+  line-height: 36px;
+  outline: 0;
+  padding: 0 2rem;
+  z-index: 10;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.#{$css-prefix}button.disabled, .disabled.#{$css-prefix}button-large, .#{$css-prefix}button-floating.disabled, .#{$css-prefix}button-large.disabled, .#{$css-prefix}button:disabled, .#{$css-prefix}button-large:disabled, .#{$css-prefix}button-floating:disabled {
+  background-color: #DFDFDF !important;
+  box-shadow: none;
+  color: #9F9F9F !important;
+  cursor: default;
+}
+
+.#{$css-prefix}button.disabled *, .disabled.#{$css-prefix}button-large *, .#{$css-prefix}button-floating.disabled *, .#{$css-prefix}button-large.disabled *, .#{$css-prefix}button:disabled *, .#{$css-prefix}button-large:disabled *, .#{$css-prefix}button-floating:disabled * {
+  pointer-events: none;
+}
+
+.#{$css-prefix}button.disabled:hover, .disabled.#{$css-prefix}button-large:hover, .#{$css-prefix}button-floating.disabled:hover, .#{$css-prefix}button-large.disabled:hover, .#{$css-prefix}button:disabled:hover, .#{$css-prefix}button-large:disabled:hover, .#{$css-prefix}button-floating:disabled:hover {
+  background-color: #DFDFDF;
+  color: #9F9F9F;
+}
+
+.#{$css-prefix}button i, .#{$css-prefix}button-large i, .#{$css-prefix}button-floating i, .#{$css-prefix}button-large i, .#{$css-prefix}button-flat i {
+  font-size: 1.3rem;
+  line-height: inherit;
+}
+
+.#{$css-prefix}button, .#{$css-prefix}button-large {
+  text-decoration: none;
+  color: #fff;
+  background-color: #26a69a;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+.#{$css-prefix}button:hover, .#{$css-prefix}button-large:hover {
+  background-color: #2bbbad;
+}
+
+.#{$css-prefix}button-floating {
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: 37px;
+  height: 37px;
+  line-height: 37px;
+  padding: 0;
+  background-color: #26a69a;
+  border-radius: 50%;
+  transition: .3s;
+  cursor: pointer;
+  vertical-align: middle;
+  i {
+    width: inherit;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 37px;
+  }
+  &:hover {
+    background-color: #26a69a;
+  }
+  &:before {
+    border-radius: 0;
+  }
+  &.#{$css-prefix}button-large {
+    width: 55.5px;
+    height: 55.5px;
+    i {
+      line-height: 55.5px;
+    }
+  }
+}
+
+.#{$css-prefix}button.#{$css-prefix}button-floating {
+  border: none;
+}
+
+.#{$css-prefix}button-flat {
+  box-shadow: none;
+  background-color: transparent;
+  color: #343434;
+  cursor: pointer;
+  &.disabled {
+    color: #b3b3b3;
+    cursor: default;
+  }
+}
+
+.#{$css-prefix}button-large {
+  height: 54px;
+  line-height: 56px;
+  i {
+    font-size: 1.6rem;
+  }
+}
+
+.#{$css-prefix}button-block {
+  display: block;
+}

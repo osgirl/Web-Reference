@@ -1,0 +1,110 @@
+@import "./imports";
+
+.stw-background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 2;
+}
+
+.background-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  .default & {
+    background-image: url(./images/default-mobile.jpg);
+
+    @include breakpoint($m) {
+      background-image: url("./images/default.jpg");
+    }
+  }
+
+  .alpha & {
+    background-image: url(./images/alpha-mobile.jpg);
+    @include breakpoint($m) {
+      background-image: url("./images/alpha.jpg");
+    }
+  }
+
+  .beta & {
+    background-image: url(./images/beta-mobile.jpg);
+    @include breakpoint($m) {
+      background-image: url("./images/beta.jpg");
+    }
+  }
+
+  .delta & {
+    background-image: url(./images/delta-mobile.jpg);
+    @include breakpoint($m) {
+      background-image: url("./images/delta.jpg");
+    }
+  }
+
+  .gamma & {
+    background-image: url(./images/gamma-mobile.jpg);
+    @include breakpoint($m) {
+      background-image: url("./images/gamma.jpg");
+    }
+  }
+
+  .epsilon & {
+    background-image: url(./images/epsilon-mobile.jpg);
+    @include breakpoint($m) {
+      background-image: url("./images/epsilon.jpg");
+    }
+  }
+  &.image-blurred {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+    .show-blur & {
+      opacity: 1;
+    }
+    @include breakpoint($m) {
+      background-image: url("./images/default-blurred.jpg");
+    }
+
+    .alpha & {
+      background-image: url(./images/alpha-mobile-blurred.jpg);
+      @include breakpoint($m) {
+        background-image: url("./images/alpha-blurred.jpg");
+      }
+    }
+
+    .beta & {
+      background-image: url(./images/beta-mobile-blurred.jpg);
+      @include breakpoint($m) {
+        background-image: url("./images/beta-blurred.jpg");
+      }
+    }
+
+    .delta & {
+      background-image: url(./images/delta-mobile-blurred.jpg);
+      @include breakpoint($m) {
+        background-image: url("./images/delta-blurred.jpg");
+      }
+    }
+
+    .gamma & {
+      background-image: url(./images/gamma-mobile-blurred.jpg);
+      @include breakpoint($m) {
+        background-image: url("./images/gamma-blurred.jpg");
+      }
+    }
+
+    .epsilon & {
+      background-image: url(./images/epsilon-mobile-blurred.jpg);
+      @include breakpoint($m) {
+        background-image: url("./images/epsilon-blurred.jpg");
+      }
+    }
+  }
+}

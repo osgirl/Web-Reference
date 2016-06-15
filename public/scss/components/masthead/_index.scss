@@ -1,0 +1,56 @@
+.#{$css-prefix}masthead {
+  padding: $spacing-medium $spacing-x-large;
+  background-color: #3D8C1C;
+  color: #fff;
+
+  h1 {
+    font: {
+      weight: 300;
+      size: 1.5rem;
+    }
+    line-height: $line-height-heading;
+  }
+}
+
+@include mq-medium-max {
+  .#{$css-prefix}masthead {
+    display: block;
+
+    .#{$css-prefix}media__figure {
+      display: none;
+    }
+
+    &-title {
+      flex: none;
+    }
+
+    &-actions {
+      padding-top: $spacing-medium;
+    }
+  }
+}
+
+@include mq-medium-min {
+  .#{$css-prefix}masthead {
+
+    .#{$css-prefix}media__figure {
+      @include square(6);
+      line-height: 6rem;
+      text-align: center;
+    }
+
+    &-actions {
+      padding-left: $spacing-x-large;
+    }
+  }
+}
+
+@include mq-large-min {
+  .#{$css-prefix}masthead {
+    height: 11.25rem;
+
+    h1 {
+      font-size: floor($font-size-x-large + $font-size-medium);
+    }
+  }
+}

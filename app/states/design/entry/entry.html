@@ -1,0 +1,148 @@
+<div class="stw-main stw-scroll-content stw-overflow-scroll">
+	<div class="stw-scroll">
+		<stw-masthead title="Data Entry"></stw-masthead>
+		<div class="stw-content stw-p-around--xx-large stw-design stw-design-layout">
+			<div class="stw-container--large"><p class="stw-text-introduction">Salesforce users need to add, change, and
+				delete information frequently. A wide variety of text entry and selection options clearly and
+				efficiently facilitates this experience.</p>
+
+				<h2 class="stw-text-heading--large">Basic Text Input</h2>
+
+				<p><strong>The simplest method of freeform data entry, for single and multiple lines of text.</strong>
+				</p>
+				<figure><img class="image"
+				             src="images/img-text-input.svg"
+				             alt=""></figure>
+				<p>To limit the amount of text, use a single­line input. To restrict the type of input, you can specify
+					the format, such as number or email address.</p>
+
+				<p>Multiline text areas allow the user to enter long­form plain text. You can’t specify a format to
+					restrict the type of content.</p>
+
+				<p>Label the input area above or to the left of the field. In most contexts, a stacked label (label on
+					top) is better for readability and clarity. Use horizontal labels only if you need to save vertical
+					real estate and have fewer than 10 fields.</p>
+
+				<p>To group related fields together, such as individual parts of an address, use compound inputs.</p>
+				<figure><img class="image"
+				             src="images/img-text-input-compound.svg"
+				             alt=""></figure>
+				<div class="stw-grid stw-wrap stw-nowrap--medium stw-grid--pull-padded-large stw-p-vertical--x-large">
+					<div class="stw-grid stw-grid--vertical stw-col--padded-large stw-medium-size--1-of-2">
+						<h2 class="stw-text-heading--medium">Sizing</h2>
+
+						<div><p>The default text size creates a visual hierarchy between the label text and the input
+							text. To conserve vertical space or when you have a long list of fields in a
+							width­-constrained sidebar, a smaller input size is also available.</p>
+
+							<p>The input width depends on the label placement. If the label is above the field, the
+								input width is 100% of the container. If the label is on the side, the label width is
+								33%, and the input width is 67%.</p></div>
+						<figure class="stw-grow"><img class="image"
+						                              src="images/img-text-input-sizing.svg"
+						                              alt=""></figure>
+					</div>
+					<div class="stw-grid stw-grid--vertical stw-col--padded-large stw-medium-size--1-of-2">
+						<h2 class="stw-text-heading--medium">Input Help</h2>
+
+						<div><p>To assist the users, you can add help text. If the explanation is lengthy, use an “info”
+							icon and tooltip. For brief explanations (shorter than a sentence), you can place the text
+							underneath the field.</p>
+
+							<p>You can also use placeholder text to provide an example of the type of input required.
+								For example, in a Name field, show a name in the correct format.</p></div>
+						<figure class="stw-grow"><img class="image"
+						                              src="images/img-text-input-help.svg"
+						                              alt=""></figure>
+					</div>
+				</div>
+				<h2 class="stw-text-heading--large">Complex Text Input</h2>
+
+				<p><strong>Complex text inputs provide users with additional assistance in specific types of data
+					entry.</strong></p>
+
+				<div class="stw-grid stw-wrap stw-nowrap--medium stw-grid--pull-padded-large stw-p-vertical--x-large">
+					<div class="stw-grid stw-grid--vertical stw-col--padded-large stw-medium-size--1-of-2">
+						<h2 class="stw-text-heading--medium">Date Pickers</h2>
+
+						<div><p>Instead of forcing the user to manually type a date, a datepicker provides a visual way
+							for the user to browse and select a single date or range of dates.</p></div>
+						<figure class="stw-grow"><img class="image"
+						                              src="images/img-datepicker.svg"
+						                              alt=""></figure>
+					</div>
+					<div class="stw-grid stw-grid--vertical stw-col--padded-large stw-medium-size--1-of-2">
+						<h2 class="stw-text-heading--medium">Lookups</h2>
+
+						<div><p>A lookup allows the user to search a database for records to fill a field. The lookup
+							can either limit the user to a single record or allow for multiple records to populate a
+							single field.</p></div>
+						<figure class="stw-grow"><img class="image"
+						                              src="images/img-lookup.svg"
+						                              alt=""></figure>
+					</div>
+				</div>
+				<h2 class="stw-text-heading--large">Selection Input</h2>
+
+				<p><strong>Selection inputs allow a user to choose between a limited number of options for a given
+					field.</strong></p>
+
+				<div class="stw-grid stw-wrap stw-nowrap--medium stw-grid--pull-padded-large stw-p-vertical--x-large">
+					<div class="stw-grid stw-grid--vertical stw-col--padded-large stw-medium-size--1-of-2">
+						<h2 class="stw-text-heading--medium">Checkboxes</h2>
+
+						<div><p>Use a single checkbox for Boolean fields in which the user can choose only between true
+							and false or on and off.</p></div>
+						<figure class="stw-grow"><img class="image"
+						                              src="images/img-checkbox.svg"
+						                              alt=""></figure>
+					</div>
+					<div class="stw-grid stw-grid--vertical stw-col--padded-large stw-medium-size--1-of-2">
+						<h2 class="stw-text-heading--medium">Radio Lists</h2>
+
+						<div><p>A radio list allows the user to select one option from a short list (fewer than 10
+							options). You must have enough space to present all options together to make comparison
+							easy. Typically, radio lists are presented as a standalone field, such as a poll within a
+							feed, and not used in a larger form.</p></div>
+						<figure class="stw-grow"><img class="image"
+						                              src="images/img-radio.svg"
+						                              alt=""></figure>
+					</div>
+				</div>
+				<div class="stw-grid stw-wrap stw-nowrap--medium stw-grid--pull-padded-large stw-p-vertical--x-large">
+					<div class="stw-grid stw-grid--vertical stw-col--padded-large stw-medium-size--1-of-2">
+						<h2 class="stw-text-heading--medium">Picklists</h2>
+
+						<div><p>Picklists, commonly known as dropdown menus, allow the user to select one option or
+							multiple options from a list. Picklists are used instead of radio lists and checkbox lists
+							inside of a larger form. They provide more flexibility in the number of options the user can
+							choose from.</p></div>
+						<figure class="stw-grow"><img class="image"
+						                              src="images/img-picklist.svg"
+						                              alt=""></figure>
+					</div>
+					<div class="stw-grid stw-grid--vertical stw-col--padded-large stw-medium-size--1-of-2">
+						<h2 class="stw-text-heading--medium">Dueling Picklists</h2>
+
+						<div><p>Use this control when the user needs to select more than one option and define the order
+							of the selected items.</p></div>
+						<figure class="stw-grow"><img class="image"
+						                              src="images/img-picklist-multi.svg"
+						                              alt=""></figure>
+					</div>
+				</div>
+				<h2 class="stw-text-heading--medium">Inline Edit</h2>
+
+				<p>Inline editing allows the user to edit some part of a record without making a major switch between
+					viewing and editing. This is a highly efficient method of updating a record. A user can make their
+					changes without losing context and they can immediately return to what they were doing before.</p>
+
+				<p>A field that can be edited inline will have a pencil icon next to it. The user can either double
+					click on the field value or click on the pencil icon to activate inline edit.</p>
+				<figure class="stw-grow"><img class="image"
+				                              src="images/img-inline-edit.svg"
+				                              alt=""></figure>
+			</div>
+		</div>
+	</div>
+</div>

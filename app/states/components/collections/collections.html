@@ -1,0 +1,133 @@
+<div class="stw-main stw-scroll-content stw-overflow-scroll">
+    <div class="stw-scroll">
+        <stw-masthead title="Collections"></stw-masthead>
+        <div class="stw-content stw-p-around--xx-large stw-design stw-design-layout">
+            <!-- content goes here -->
+            <div class="stw-main-content stw-col stw-size--1-of-1">
+
+                <p class="stw-text-introduction">Use list items to display a collection of items from either json or an
+                    external api, it's a great way of displaying data quickly.</p>
+
+                <section class="stw-m-bottom--xx-large stw-p-top--x-large" data-stw-status="dev-ready"><h2
+                        class="stw-text-heading--large stw-text-heading--callout stw-jump-anchor__container"
+                        type="h2"><span id="flavor-base" class="stw-jump-anchor" tabindex="-1"></span>Base<span
+                        class="stw-badge stw-m-left--medium stw-shrink-none stw-align-middle badge--dev-ready">dev ready</span>
+                </h2>
+
+                    <div class="stw-grid stw-wrap stw-grid--vertical-stretch"><h3 class="stw-assistive-text">
+                        Preview</h3>
+
+                        <div class="stw-col stw-size--1-of-1 stw-component-example">
+                            <div class="stw-scrollable--y stw-bleed">
+                                <div class="demo-only" style="height: 250px;">
+                                    <div class="stw-list">
+                                        <div class="stw-item"
+                                             ng-repeat="n in [42, 42, 43, 43, 44, 44, 45, 45, 46, 46, 47, 47, 48, 48] track by $index">
+                                            <div class="stw-item-header">
+                                                <h2>{{n}}</h2>
+                                                <span class="stw-item--divider"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="stw-assistive-text">Code</h3>
+
+                            <div class="stw-code--content stw-scrollable--x">
+                               <pre class="stw-prettify">
+                                     <div class="stw-list">
+                                         <div class="stw-item"
+                                              ng-repeat="n in [42, 42, 43, 43, 44, 44, 45, 45] track by $index">
+                                             <div class="stw-item-header">
+                                                 <h2>{{n}}</h2>
+                                                 <span class="stw-item--divider"></span>
+                                             </div>
+                                         </div>
+                                     </div>
+                               </pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <h3 id="overview" class="stw-text-heading--large stw-p-top--x-large">Component Overview</h3>
+
+                <div class="stw-table--overview">
+                    <div class="stw-text-longform stw-m-bottom--medium"><h4
+                            class="stw-p-top--xx-large stw-text-heading--label">Usage</h4>
+
+                        <div>This table gives you a quick overview of the stw CSS classes that can be applied to this
+                            component.
+                        </div>
+                    </div>
+                    <div class="stw-scrollable--x">
+                        <table class="stw-table stw-table--bordered stw-max-medium-table--stacked stw-no-row-hover">
+                            <thead>
+                            <tr class="stw-text-heading--label">
+                                <th class="stw-theme--shade">Class Name</th>
+                                <th colspan="2" class="stw-theme--shade">Usage</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th class="stw-cell-shrink stw-align-top" scope="row"><code>.stw-list</code>
+
+                                    <div></div>
+                                </th>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Applied
+                                    to:</strong>
+
+                                    <p><code>&lt;div&gt;</code></p><strong>Outcome:</strong>
+
+                                    <p>Creates a the container for a list element, which can accept children .stw-item
+                                        classes</p>
+
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col">
+                                    <strong>Required:</strong>
+
+                                    <p>
+                                        <svg aria-hidden="true"
+                                             class="stw-icon stw-icon--x-small stw-icon-text-default">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                 xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+                                        </svg>
+                                        <span class="stw-assistive-text">Required</span></p>
+                                    <strong>Comments:</strong>
+
+                                    <p>Can accept theme classes</p></td>
+                            </tr>
+                            <tr>
+                                <th class="stw-cell-shrink stw-align-top" scope="row"><code>.stw-item</code>
+
+                                    <div></div>
+                                </th>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Applied
+                                    to:</strong>
+
+                                    <p><code>&lt;div&gt;</code></p><strong>Outcome:</strong>
+
+                                    <p>Creates a collection of items</p>
+
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col">
+                                    <strong>Required:</strong>
+
+                                    <p>
+                                        <svg aria-hidden="true"
+                                             class="stw-icon stw-icon--x-small stw-icon-text-default">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                 xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+                                        </svg>
+                                        <span class="stw-assistive-text">Required</span></p>
+                                    <strong>Comments:</strong>
+
+                                    <p>Can accept child elements</p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+{
+    "name": "stwSvg",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./stwSvg.directive.js"
+}

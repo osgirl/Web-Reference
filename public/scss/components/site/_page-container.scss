@@ -1,0 +1,28 @@
+@include mq-medium-min {
+  // scss-lint:disable IdSelector
+  .#{$css-prefix}-body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+}
+
+.#{$css-prefix}content {
+  padding: $spacing-large;
+
+  @include mq-large-min {
+    padding: $spacing-xx-large 0 $spacing-xx-large $spacing-xx-large;
+  }
+}
+
+.#{$css-prefix}container--buffer {
+  padding: $spacing-large;
+
+  @include mq-large-min {
+    padding-left: ($spacing-x-large * 3);
+  }
+}
+
+@include mq-medium-min {
+  // scss-lint:disable IdSelector
+}

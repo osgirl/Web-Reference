@@ -1,0 +1,20 @@
+.stw-bar:before{
+  // Load up the themes
+  @each $theme in $theme-list {
+    .#{$theme} & {
+      background-image: url(./stwBackground/images/#{$theme}.jpg);
+      @include breakpoint($m){
+          background-image: url(./stwBackground/images/#{$theme}.jpg);
+      }
+    }
+  }
+}
+
+.stw-bar-content {
+  // Load up the themes
+  @each $theme in $theme-list {
+    .#{$theme} & {
+      border-top-color: color($theme, 'base');
+    }
+  }
+}

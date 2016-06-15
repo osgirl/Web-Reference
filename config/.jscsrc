@@ -1,0 +1,61 @@
+{
+  "safeContextKeyword": "self",
+  "requireCurlyBraces": [
+    "else",
+    "for",
+    "while",
+    "do",
+    "try",
+    "catch"
+  ],
+  "disallowKeywords": ["with"],
+  "validateJSDoc": {
+    "checkParamNames": true,
+    "checkRedundantParams": true
+  },
+  "disallowMultipleLineBreaks": true,
+  "disallowTrailingWhitespace": true,
+  "disallowKeywordsOnNewLine": ["else"],
+  "disallowMixedSpacesAndTabs": true,
+  "requireCapitalizedConstructors": true,
+  "disallowImplicitTypeConversion": [
+    "numeric",
+    "boolean",
+    "binary"
+  ],
+  "requireParenthesesAroundIIFE": true,
+  "requireCommaBeforeLineBreak": true,
+  "requireSpaceAfterKeywords": [
+    "if",
+    "else",
+    "for",
+    "while",
+    "do",
+    "switch",
+    "return",
+    "try",
+    "catch"
+  ],
+  "requireSpaceBeforeBinaryOperators": [
+    "+",
+    "-",
+    "/",
+    "*",
+    "=",
+    "==",
+    "===",
+    "!=",
+    "!=="
+  ],
+  "requireSpaceAfterBinaryOperators": [
+    "+",
+    "-",
+    "/",
+    "*",
+    "=",
+    "==",
+    "===",
+    "!=",
+    "!=="
+  ]
+}

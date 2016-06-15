@@ -1,0 +1,17 @@
+.#{$css-prefix}main {
+
+  @include mq-small-min {
+    flex: 1;
+    margin-left: 0;
+  }
+
+  @include mq-medium-min {
+    flex: 1 1 auto;
+    margin-left: 15rem;
+    min-height: calc(100vh - 5.375rem);
+  }
+
+  @include mq-large-min {
+    min-height: calc(100vh - 5rem);
+  }
+}

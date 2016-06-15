@@ -1,0 +1,61 @@
+@import "../imports";
+
+/**
+ * Masthead
+ * --------------------------------------------------
+ */
+
+.site-masthead {
+  padding: 1rem 2rem;
+  background-color: #16325c;
+  color: #fff;
+}
+
+.site-masthead h1 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.25
+}
+
+@include breakpoint($l) {
+  .site-masthead {
+    display: block
+  }
+
+  .site-masthead .#{$css-prefix}media__figure {
+    display: none
+  }
+
+  .site-masthead-title {
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none
+  }
+
+  .site-masthead-actions {
+    padding-top: 1rem
+  }
+
+  .site-masthead .#{$css-prefix}media__figure {
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    text-align: center
+  }
+
+  .site-masthead-actions {
+    padding-left: 2rem
+  }
+
+  .site-masthead {
+    height: 11.25rem
+  }
+
+  .site-masthead h1 {
+    font-size: 3rem
+  }
+}
+
+@media (min-width: 64em) {
+
+}

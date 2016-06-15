@@ -1,0 +1,53 @@
+
+.#{$css-prefix}content {
+  padding: 1.5rem
+}
+
+@include breakpoint($l) {
+  .#{$css-prefix}content {
+    padding: 3rem 0 3rem 3rem
+  }
+}
+
+.#{$css-prefix}text-introduction {
+  margin-bottom: 3rem;
+  font-size: 1.125rem;
+  font-weight: 300
+}
+
+.#{$css-prefix}grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative
+}
+
+.#{$css-prefix}grid--frame {
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden
+}
+
+.#{$css-prefix}grid--vertical {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+
+.#{$css-prefix}grid--vertical-reverse {
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse
+}
+
+.#{$css-prefix}grid--reverse {
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse
+}
+
+.#{$css-prefix}col, [class*=#{$css-prefix}col--padded] {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto
+}

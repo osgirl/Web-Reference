@@ -1,0 +1,90 @@
+<div class="stw-main stw-scroll-content stw-overflow-scroll">
+  <div class="stw-scroll">
+    <stw-masthead title="Code Examples"></stw-masthead>
+    <div class="stw-content stw-grid stw-wrap stw-large-nowrap">
+        <div class="stw-main-content stw-col stw-col--rule-right stw-size--1-of-1">
+          <div class="stw-section">
+            <h1 class="stw-text-heading--medium blue-text">Code Demonstration</h1>
+            <h2 class="stw-text-heading--small grey-text">Note: This should only be used within the Web Reference</h2>
+            <!--note: Falling back to default paragraph styling defined by body-->
+            <p class="stw-text-introduction">
+              This web reference includes a directive to show prettified code using <a
+                href="https://github.com/google/code-prettify" target="_blank">Google Code Prettify</a>, so that we can display the code used to create our components.
+            </p>
+            <p>
+              The prettifier is a directive which can prettify plain-formatted code, this includes plain HTML and
+              Angular expressions.
+            </p>
+
+          <div class="card blue">
+            <div class="card-content white-text">
+              <span class="card-title">Showing Syntax</span>
+              <p>
+                The simplest use of the syntax highlighter is to wrap the code to highlight in a <strong>pre</strong>
+                tag with the class <strong>stw-prettify</strong>. The highlighter auto-detects most common languages.
+              </p>
+              <div class="stw-row">
+                <div class="stw-col">
+                  <span class="title">Syntax</span>
+                  <pre class="stw-prettify">
+                    <pre class="stw-prettify">
+
+                        console.log("Hello World!");
+                    </pre>
+                  </pre>
+                </div>
+                <div class="stw-col">
+                  <span class="title">Output</span>
+                  <pre class="stw-prettify">
+                    console.log("Hello World!");
+                  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card blue">
+            <div class="card-content white-text">
+              <span class="card-title">Line Numbering and Language</span>
+              <p>You can display line numbers for larger blocks of code using the <strong>line-nums</strong> attribute, and set the syntax highlighting language explicitly using the <strong>language</strong> attribute.</p>
+              <p>Languages are specified as the common filename extension. You can see the supported languages <a href="https://github.com/google/code-prettify/blob/master/README.md#how-do-i-specify-the-language-of-my-code">here</a>.</p>
+              <div class="stw-row">
+                <div class="stw-col">
+                  <span class="title">Syntax</span>
+                  <pre class="stw-prettify">
+                    <pre class="stw-prettify" line-nums="true" langauge="html">
+
+                      [your code]
+                    </pre>
+                  </pre>
+                </div>
+              </div>
+              <div class="stw-row">
+                <div class="stw-col">
+                  <span class="title">Output</span>
+                  <pre class="stw-prettify" line-nums="true" langauge="html">
+                    <ul>
+                      <li>item 1</li>
+                      <li>item 2</li>
+                      <li>item 3</li>
+                      <li>item 4</li>
+                      <li>item 5</li>
+                      <li>item 6</li>
+                      <li>item 7</li>
+                      <li>item 8</li>
+                      <li>item 9</li>
+                      <li>item 10</li>
+                    </ul>
+                  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+

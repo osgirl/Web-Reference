@@ -1,0 +1,657 @@
+<div class="stw-main stw-scroll-content stw-overflow-scroll">
+	<div class="stw-scroll">
+		<stw-masthead title="Cards"></stw-masthead>
+        <div class="stw-content stw-grid stw-wrap stw-large-nowrap">
+            <div class="stw-main-content stw-col stw-size--1-of-1">
+                <p class="stw-text-introduction">Cards are used to apply a container around a related grouping of
+                    information.</p>
+                <section class="stw-m-bottom--xx-large stw-p-top--x-large" data-stw-status="dev-ready"><h2
+                        class="stw-text-heading--large stw-text-heading--callout stw-jump-anchor__container" type="h2">
+                    <span id="flavor-base" class="stw-jump-anchor" tabindex="-1"></span>Base<span
+                        class="stw-badge stw-m-left--medium stw-shrink-none stw-align-middle badge--dev-ready">dev ready</span>
+                </h2>
+
+                    <div class="stw-grid stw-wrap stw-grid--vertical-stretch"><h3 class="stw-assistive-text">
+                        Preview</h3>
+
+                        <div class="stw-col stw-size--1-of-1 stw-component-example">
+                            <div class="stw-scrollable--x stw-bleed">
+                                <div class="preview">
+                                    <div class="demo-only">
+                                        <div class="stw-card">
+                                            <div class="stw-card__header stw-grid">
+                                                <div class="stw-media stw-media--center stw-has-flexi-truncate">
+                                                    <div class="stw-media__figure">
+                                                        <svg aria-hidden="true" class="stw-icon stw-icon-standard-contact stw-icon--small">
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#contact"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="stw-media__body">
+                                                        <h2 class="stw-text-heading--small stw-truncate">Card Header (2)</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="stw-no-flex">
+                                                    <div class="stw-button-group">
+                                                        <button class="stw-button stw-button--neutral stw-button--small">Button</button>
+                                                        <button class="stw-button stw-button--icon-border-filled stw-toggle-visibility">
+                                                            <svg aria-hidden="true" class="stw-button__icon">
+                                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+                                                            </svg>
+                                                            <span class="stw-assistive-text">Show More</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="stw-card__body">
+                                                <table class="stw-table stw-table--bordered stw-max-medium-table--stacked-horizontal stw-no-row-hover">
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="stw-text-heading--label stw-size--1-of-4" scope="col">Name</th>
+                                                        <th class="stw-text-heading--label stw-size--1-of-4" scope="col">Company</th>
+                                                        <th class="stw-text-heading--label stw-size--1-of-4" scope="col">Title</th>
+                                                        <th class="stw-text-heading--label stw-size--1-of-4" scope="col">Email</th>
+                                                        <th class="row-action" scope="col">
+                                                            <button class="stw-button stw-button--icon-border-filled stw-button--icon-x-small">
+                                                                <svg aria-hidden="true" class="stw-button__icon stw-button__icon--hint stw-button__icon--small">
+                                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+                                                                </svg>
+                                                                <span class="stw-assistive-text">Show More</span>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="stw-hint-parent">
+                                                        <td class="stw-size--1-of-4" data-label="Name">Adam Choi</td>
+                                                        <td class="stw-size--1-of-4" data-label="Company">Company One</td>
+                                                        <td class="stw-size--1-of-4" data-label="Title">Director of Operations</td>
+                                                        <td class="stw-size--1-of-4" data-label="Email">adam@company.com</td>
+                                                        <td>
+                                                            <button class="stw-button stw-button--icon-border-filled stw-button--icon-x-small">
+                                                                <svg aria-hidden="true" class="stw-button__icon stw-button__icon--hint stw-button__icon--small">
+                                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+                                                                </svg>
+                                                                <span class="stw-assistive-text">Show More</span>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="stw-card__footer"><a href="#">View All <span class="stw-assistive-text">entity type</span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="stw-assistive-text">Code</h3>
+
+                            <div class="stw-code--content stw-scrollable--x"><pre class=" language-markup"><code
+                                    id="code-components-cards-base" class=" language-markup"> <span class="token tag"><span
+                                    class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-card<span
+                                    class="token punctuation">"</span></span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-card__header stw-grid<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-media stw-media--center stw-has-flexi-truncate<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-media__figure<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span
+                                    class="token attr-name">aria-hidden</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>true<span
+                                    class="token punctuation">"</span></span> <span class="token attr-name">class</span><span
+                                    class="token attr-value"><span class="token punctuation">=</span><span
+                                    class="token punctuation">"</span>stw-icon stw-icon-standard-contact stw-icon--small<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span
+                                    class="token attr-name"><span class="token namespace">xlink:</span>href</span><span
+                                    class="token attr-value"><span class="token punctuation">=</span><span
+                                    class="token punctuation">"</span>/assets/icons/standard-sprite/svg/symbols.svg#contact<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span
+                                        class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>use</span><span
+                                        class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-media__body<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span><span
+                                    class="token utility-class">stw-text-heading--small</span> <span
+                                    class="token utility-class">stw-truncate</span><span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Card
+                                Header (2)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span
+                                        class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-no-flex<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-button-group<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-button <span
+                                    class="token utility-class">stw-button--neutral</span> stw-button--small<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Button<span
+                                        class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-border-filled stw-toggle-visibility<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span
+                                    class="token attr-name">aria-hidden</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>true<span
+                                    class="token punctuation">"</span></span> <span class="token attr-name">class</span><span
+                                    class="token attr-value"><span class="token punctuation">=</span><span
+                                    class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span><span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span
+                                    class="token attr-name"><span class="token namespace">xlink:</span>href</span><span
+                                    class="token attr-value"><span class="token punctuation">=</span><span
+                                    class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#down<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span
+                                        class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>use</span><span
+                                        class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span><span
+                                    class="token utility-class">stw-assistive-text</span><span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Show
+                                More<span class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-card__body<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-table stw-table--bordered stw-max-medium-table--stacked-horizontal stw-no-row-hover<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span><span
+                                    class="token utility-class">stw-text-heading--label</span> <span
+                                    class="token utility-class">stw-size--1-of-4</span><span class="token punctuation">"</span></span> <span
+                                    class="token attr-name">scope</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>col<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Name<span
+                                        class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>th</span><span
+                                        class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span><span
+                                    class="token utility-class">stw-text-heading--label</span> <span
+                                    class="token utility-class">stw-size--1-of-4</span><span class="token punctuation">"</span></span> <span
+                                    class="token attr-name">scope</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>col<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Company<span
+                                        class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>th</span><span
+                                        class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span><span
+                                    class="token utility-class">stw-text-heading--label</span> <span
+                                    class="token utility-class">stw-size--1-of-4</span><span class="token punctuation">"</span></span> <span
+                                    class="token attr-name">scope</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>col<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Title<span
+                                        class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>th</span><span
+                                        class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span><span
+                                    class="token utility-class">stw-text-heading--label</span> <span
+                                    class="token utility-class">stw-size--1-of-4</span><span class="token punctuation">"</span></span> <span
+                                    class="token attr-name">scope</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>col<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Email<span
+                                        class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>th</span><span
+                                        class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>row-action<span
+                                    class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span
+                                    class="token attr-value"><span class="token punctuation">=</span><span
+                                    class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-border-filled stw-button--icon-x-small<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span
+                                    class="token attr-name">aria-hidden</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>true<span
+                                    class="token punctuation">"</span></span> <span class="token attr-name">class</span><span
+                                    class="token attr-value"><span class="token punctuation">=</span><span
+                                    class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span
+                                    class="token utility-class">stw-button__icon</span>--hint <span
+                                    class="token utility-class">stw-button__icon</span>--small<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span
+                                    class="token attr-name"><span class="token namespace">xlink:</span>href</span><span
+                                    class="token attr-value"><span class="token punctuation">=</span><span
+                                    class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#down<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span
+                                        class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>use</span><span
+                                        class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span><span
+                                    class="token utility-class">stw-assistive-text</span><span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Show
+                                More<span class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-hint-parent<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span><span
+                                    class="token utility-class">stw-size--1-of-4</span><span class="token punctuation">"</span></span> <span
+                                    class="token attr-name">data-label</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>Name<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Adam
+                                Choi<span class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>td</span><span
+                                        class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span><span
+                                    class="token utility-class">stw-size--1-of-4</span><span class="token punctuation">"</span></span> <span
+                                    class="token attr-name">data-label</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span
+                                    class="token punctuation">"</span>Company<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Company
+                                One<span class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>td</span><span
+                                        class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span><span
+                                    class="token utility-class">stw-size--1-of-4</span><span class="token punctuation">"</span></span> <span
+                                    class="token attr-name">data-label</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>Title<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Director
+                                of Operations<span class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>td</span><span
+                                        class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span><span
+                                    class="token utility-class">stw-size--1-of-4</span><span class="token punctuation">"</span></span> <span
+                                    class="token attr-name">data-label</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>Email<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>adam@company.com<span
+                                        class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>td</span><span
+                                        class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-border-filled stw-button--icon-x-small<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span
+                                    class="token attr-name">aria-hidden</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>true<span
+                                    class="token punctuation">"</span></span> <span class="token attr-name">class</span><span
+                                    class="token attr-value"><span class="token punctuation">=</span><span
+                                    class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span
+                                    class="token utility-class">stw-button__icon</span>--hint <span
+                                    class="token utility-class">stw-button__icon</span>--small<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span
+                                    class="token attr-name"><span class="token namespace">xlink:</span>href</span><span
+                                    class="token attr-value"><span class="token punctuation">=</span><span
+                                    class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#down<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span
+                                        class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>use</span><span
+                                        class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span><span
+                                    class="token utility-class">stw-assistive-text</span><span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Show
+                                More<span class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-card__footer<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span
+                                        class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;</span>a</span> <span
+                                        class="token attr-name">href</span><span class="token attr-value"><span
+                                        class="token punctuation">=</span><span class="token punctuation">"</span>#<span
+                                        class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>View
+                                All <span class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;</span>span</span> <span
+                                        class="token attr-name">class</span><span class="token attr-value"><span
+                                        class="token punctuation">=</span><span class="token punctuation">"</span><span
+                                        class="token utility-class">stw-assistive-text</span><span
+                                        class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>entity
+                                type<span class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span
+                                        class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>a</span><span
+                                        class="token punctuation">&gt;</span></span><span class="token tag"><span
+                                        class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                                        class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="stw-m-bottom--xx-large stw-p-top--x-large" data-stw-status="dev-ready"><h2
+                        class="stw-text-heading--large stw-text-heading--callout stw-jump-anchor__container" type="h2">
+                    <span id="flavor-empty" class="stw-jump-anchor" tabindex="-1"></span>Empty<span
+                        class="stw-badge stw-m-left--medium stw-shrink-none stw-align-middle badge--dev-ready">dev ready</span>
+                </h2>
+
+                    <div class="stw-grid stw-wrap stw-grid--vertical-stretch"><h3 class="stw-assistive-text">
+                        Preview</h3>
+
+                        <div class="stw-col stw-size--1-of-1 stw-large-size--5-of-6 stw-large-order--1 stw-component-example">
+                            <div class="stw-scrollable--x stw-bleed">
+                                <div class="preview">
+                                    <div class="demo-only">
+                                        <div class="stw-card">
+                                            <div class="stw-card__header stw-grid grid--flex-spread">
+                                                <h2 class="stw-text-heading--small stw-truncate">Card Header</h2>
+                                            </div>
+                                            <div class="stw-card__body stw-p-horizontal--small">
+                                                <div class="stw-text-align--center">
+                                                    <h3 class="stw-text-heading--small stw-p-top--large stw-p-bottom--large">No Related Contacts</h3>
+                                                    <button class="stw-button stw-button--neutral stw-button--small stw-m-bottom--x-large">Add Contact</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="stw-assistive-text">Code</h3>
+
+                            <div class="stw-code--content stw-scrollable--x"><pre class=" language-markup"><code
+                                    id="code-components-cards-empty" class=" language-markup"> <span class="token tag"><span
+                                    class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-card<span
+                                    class="token punctuation">"</span></span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-card__header stw-grid grid--flex-spread<span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span><span
+                                    class="token utility-class">stw-text-heading--small</span> <span
+                                    class="token utility-class">stw-truncate</span><span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Card
+                                Header<span class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>h2</span><span
+                                        class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-card__body <span
+                                    class="token utility-class">stw-p-horizontal--small</span><span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span><span
+                                    class="token utility-class">stw-text-align--center</span><span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span><span
+                                    class="token utility-class">stw-text-heading--small</span> <span
+                                    class="token utility-class">stw-p-top--large</span> <span
+                                    class="token utility-class">stw-p-bottom--large</span><span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>No
+                                Related Contacts<span class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>h3</span><span
+                                        class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span
+                                    class="token attr-name">class</span><span class="token attr-value"><span
+                                    class="token punctuation">=</span><span class="token punctuation">"</span>stw-button <span
+                                    class="token utility-class">stw-button--neutral</span> stw-button--small <span
+                                    class="token utility-class">stw-m-bottom--x-large</span><span
+                                    class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Add
+                                Contact<span class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span
+                                    class="token punctuation">&gt;</span></span>
+                            </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <h3 id="overview" class="stw-text-heading--large stw-p-top--x-large">Component Overview</h3>
+
+                <div><p>To initialize a card, apply the <code>.stw-card</code> class to a containing <code>
+                    &lt;div&gt;</code>. A card is made up of three sections, a header, a body, and a footer. The card header
+                    will get the <code>.stw-card__header</code> class. The card body will get the
+                    <code>.stw-card__body</code> class. The card footer will get the <code>.stw-card__footer</code> class.
+                </p>
+
+                    <p>The card body can consume either a <a href="/components/data-tables">Data Table</a> or a <a
+                            href="/components/tiles">Tile</a>.</p>
+
+                    <p>For available classes and options, see the <a href="#overview">card overview legend</a> below.</p>
+                </div>
+                <div class="stw-table--overview">
+                    <div class="stw-text-longform stw-m-bottom--medium"><h4
+                            class="stw-p-top--xx-large stw-text-heading--label">Usage</h4>
+
+                        <div>This table gives you a quick overview of the stw CSS classes that can be applied to this
+                            component.
+                        </div>
+                    </div>
+                    <div class="stw-scrollable--x">
+                        <table class="stw-table stw-table--bordered stw-max-medium-table--stacked stw-no-row-hover">
+                            <thead>
+                            <tr class="stw-text-heading--label">
+                                <th class="stw-theme--shade">Class Name</th>
+                                <th colspan="2" class="stw-theme--shade">Usage</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th class="stw-cell-shrink stw-align-top" scope="row"><code>.stw-card</code>
+
+                                    <div></div>
+                                </th>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Applied
+                                    to:</strong>
+
+                                    <p><code>&lt;div&gt;</code></p><strong>Outcome:</strong>
+
+                                    <p>Initializes card</p></td>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col">
+                                    <strong>Required:</strong>
+
+                                    <p>
+                                        <svg aria-hidden="true" class="stw-icon stw-icon--x-small stw-icon-text-default">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                 xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+                                        </svg>
+                                        <span class="stw-assistive-text">Required</span></p>
+                                    <strong>Comments:</strong>
+
+                                    <p>--</p></td>
+                            </tr>
+                            <tr>
+                                <th class="stw-cell-shrink stw-align-top" scope="row"><code>.stw-card__header</code>
+
+                                    <div></div>
+                                </th>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Applied
+                                    to:</strong>
+
+                                    <p><code>&lt;div&gt;</code></p><strong>Outcome:</strong>
+
+                                    <p>Initializes card header</p></td>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col">
+                                    <strong>Required:</strong>
+
+                                    <p>
+                                        <svg aria-hidden="true" class="stw-icon stw-icon--x-small stw-icon-text-default">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                 xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+                                        </svg>
+                                        <span class="stw-assistive-text">Required</span></p>
+                                    <strong>Comments:</strong>
+
+                                    <p>--</p></td>
+                            </tr>
+                            <tr>
+                                <th class="stw-cell-shrink stw-align-top" scope="row"><code>.stw-card__body</code>
+
+                                    <div></div>
+                                </th>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Applied
+                                    to:</strong>
+
+                                    <p><code>&lt;div&gt;</code></p><strong>Outcome:</strong>
+
+                                    <p>Initializes card body</p></td>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col">
+                                    <strong>Required:</strong>
+
+                                    <p>
+                                        <svg aria-hidden="true" class="stw-icon stw-icon--x-small stw-icon-text-default">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                 xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+                                        </svg>
+                                        <span class="stw-assistive-text">Required</span></p>
+                                    <strong>Comments:</strong>
+
+                                    <p>--</p></td>
+                            </tr>
+                            <tr>
+                                <th class="stw-cell-shrink stw-align-top" scope="row"><code>.stw-card__footer</code>
+
+                                    <div></div>
+                                </th>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Applied
+                                    to:</strong>
+
+                                    <p><code>&lt;div&gt;</code></p><strong>Outcome:</strong>
+
+                                    <p>Initializes card footer</p></td>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col">
+                                    <strong>Required:</strong>
+
+                                    <p>
+                                        <svg aria-hidden="true" class="stw-icon stw-icon--x-small stw-icon-text-default">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                 xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+                                        </svg>
+                                        <span class="stw-assistive-text">Required</span></p>
+                                    <strong>Comments:</strong>
+
+                                    <p>--</p></td>
+                            </tr>
+                            <tr>
+                                <th class="stw-cell-shrink stw-align-top" scope="row"><code>.stw-grid</code>
+
+                                    <div></div>
+                                </th>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Applied
+                                    to:</strong>
+
+                                    <p><code>.stw-card__header</code></p><strong>Outcome:</strong>
+
+                                    <p>Horizontally aligns text and actions on separate ends of card header</p></td>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col">
+                                    <strong>Required:</strong>
+
+                                    <p>No, optional element or modifier</p><strong>Comments:</strong>
+
+                                    <p>Only required if you have actions</p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  

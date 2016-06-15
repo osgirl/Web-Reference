@@ -1,0 +1,83 @@
+
+.#{$css-prefix}banner {
+  font-weight: $font-weight-regular;
+  white-space: nowrap;
+
+  a {
+    display: block;
+    color: $color-text-default;
+    padding: $spacing-large $spacing-x-large;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: rgba($color-background, 0.5);
+    }
+
+    &:active {
+      background-color: rgba($color-background, 0.75);
+    }
+  }
+
+  > a > span {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: $line-height-reset;
+    text-transform: lowercase;
+
+    &:first-child {
+      margin-right: $spacing-x-small;
+      width: 8.2234rem;
+      height: 3.25rem;
+      text-align: center;
+    }
+  }
+
+  @include mq-medium-min {
+    position: fixed;
+    top: 0;
+    border-right: $border-width-thin solid $color-border-separator;
+    width: 15rem;
+    height: 6rem;
+    text-align: left;
+    z-index: $elevation-2;
+
+    > a {
+      padding: {
+        top: 0;
+        bottom: 0;
+      }
+      height: $height-banner;
+      line-height: $height-banner;
+    }
+  }
+}
+
+.#{$css-prefix}logo {
+  width: 9.2375rem;
+  height: 3.25rem;
+  text-indent: -9999em;
+}
+
+.#{$css-prefix}skip-content a {
+  padding: {
+    top: $spacing-small;
+    bottom: $spacing-small;
+  }
+  background-color: $color-background-alt-2;
+
+  @include mq-medium-min {
+    position: absolute;
+    left: -9999em;
+    margin-top: -2.125rem;
+    width: 100%;
+    background: none;
+    padding-left: $spacing-x-large + $spacing-x-small + 3.9375rem;
+
+    &:focus {
+      left: 0;
+    }
+  }
+}

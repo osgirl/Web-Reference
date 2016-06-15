@@ -1,0 +1,941 @@
+<div class="stw-main stw-scroll-content stw-overflow-scroll">
+	<div class="stw-scroll">
+		<stw-masthead title="Data Tables"></stw-masthead>
+		<div class="stw-content stw-p-around--xx-large stw-design stw-design-layout">
+			<!-- content goes here -->
+			<div class="stw-main-content stw-col stw-col--rule-right stw-size--1-of-1 stw-large-size--6-of-6 stw-large-order--1">
+				<p class="stw-text-introduction">Data tables are an enhanced version of an HTML table and are used to
+					display tabular data.</p>
+				<section class="stw-m-bottom--xx-large stw-p-top--x-large"
+				         data-stw-status="dev-ready">
+					<h2 class="stw-text-heading--large stw-text-heading--callout stw-jump-anchor__container">
+						<span id="flavor-base"
+						      class="stw-jump-anchor"
+						      tabindex="-1"></span>Base<span class="stw-badge stw-m-left--medium stw-shrink-none stw-align-middle badge--dev-ready">dev ready</span>
+					</h2>
+
+					<div class="stw-grid stw-wrap stw-grid--vertical-stretch"><h3 class="stw-assistive-text">
+						Preview</h3>
+
+						<div class="stw-col stw-size--1-of-1 stw-large-size--6-of-6 stw-large-order--1 stw-component-example">
+							<div class="stw-scrollable--x stw-example--content"
+							     data-form-factor="desktop">
+								<div class="demo-only">
+									<table class="stw-table stw-table--bordered">
+										<thead>
+										<tr class="stw-text-heading--label">
+											<th class="stw-cell-shrink">
+												<label class="stw-checkbox">
+													<input type="checkbox" name="options">
+													<span class="stw-checkbox--faux"></span>
+													<span class="stw-assistive-text">Select All</span>
+												</label>
+											</th>
+											<th class="stw-is-sortable" scope="col">
+												<div class="stw-truncate">Opportunity Name
+													<button class="stw-button stw-button--icon-bare">
+														<svg aria-hidden="true" class="stw-button__icon stw-button__icon--small">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+														</svg>
+														<span class="stw-assistive-text">Sort</span>
+													</button>
+												</div>
+											</th>
+											<th class="stw-is-sortable" scope="col">
+												<div class="stw-truncate">Account Name
+													<button class="stw-button stw-button--icon-bare">
+														<svg aria-hidden="true" class="stw-button__icon stw-button__icon--small">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+														</svg>
+														<span class="stw-assistive-text">Sort</span>
+													</button>
+												</div>
+											</th>
+											<th class="stw-is-sortable" scope="col">
+												<div class="stw-truncate">Close Date
+													<button class="stw-button stw-button--icon-bare">
+														<svg aria-hidden="true" class="stw-button__icon stw-button__icon--small">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+														</svg>
+														<span class="stw-assistive-text">Sort</span>
+													</button>
+												</div>
+											</th>
+											<th class="stw-is-sortable" scope="col">
+												<div class="stw-truncate">Stage
+													<button class="stw-button stw-button--icon-bare">
+														<svg aria-hidden="true" class="stw-button__icon stw-button__icon--small">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+														</svg>
+														<span class="stw-assistive-text">Sort</span>
+													</button>
+												</div>
+											</th>
+											<th class="stw-is-sortable" scope="col">
+												<div class="stw-truncate">Confidence
+													<button class="stw-button stw-button--icon-bare">
+														<svg aria-hidden="true" class="stw-button__icon stw-button__icon--small">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+														</svg>
+														<span class="stw-assistive-text">Sort</span>
+													</button>
+												</div>
+											</th>
+											<th class="stw-is-sortable" scope="col">
+												<div class="stw-truncate">Amount
+													<button class="stw-button stw-button--icon-bare">
+														<svg aria-hidden="true" class="stw-button__icon stw-button__icon--small">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+														</svg>
+														<span class="stw-assistive-text">Sort</span>
+													</button>
+												</div>
+											</th>
+											<th class="stw-is-sortable" scope="col">
+												<div class="stw-truncate">Contact
+													<button class="stw-button stw-button--icon-bare">
+														<svg aria-hidden="true" class="stw-button__icon stw-button__icon--small">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+														</svg>
+														<span class="stw-assistive-text">Sort</span>
+													</button>
+												</div>
+											</th>
+											<th class="stw-cell-shrink"></th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr class="stw-hint-parent">
+											<td class="stw-cell-shrink" data-label="Select Row">
+												<label class="stw-checkbox">
+													<input type="checkbox" name="options">
+													<span class="stw-checkbox--faux"></span>
+													<span class="stw-assistive-text">Select Row</span>
+												</label>
+											</td>
+											<th class="stw-truncate" scope="row" data-label="Opportunity Name">Cloudhub</th>
+											<td class="stw-truncate" data-label="Account Name">Cloudhub</td>
+											<td class="" data-label="Close Date">4/14/2015</td>
+											<td class="stw-truncate" data-label="Prospecting">Prospecting</td>
+											<td class="" data-label="Confidence">20%</td>
+											<td class="" data-label="Amount">$25k</td>
+											<td class="stw-truncate" data-label="Contact"><a href="javascript:void(0);">jrogers@cloudhub.com</a></td>
+											<td class="stw-cell-shrink" data-label="Actions">
+												<button class="stw-button stw-button--icon-border-filled stw-button--icon-x-small">
+													<svg aria-hidden="true" class="stw-button__icon stw-button__icon--hint stw-button__icon--small">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+													</svg>
+													<span class="stw-assistive-text">Show More</span>
+												</button>
+											</td>
+										</tr>
+										<tr class="stw-hint-parent">
+											<td class="stw-cell-shrink" data-label="Select Row">
+												<label class="stw-checkbox">
+													<input type="checkbox" name="options">
+													<span class="stw-checkbox--faux"></span>
+													<span class="stw-assistive-text">Select Row</span>
+												</label>
+											</td>
+											<th class="stw-truncate" scope="row" data-label="Opportunity Name">Cloudhub + Anypoint Connectors</th>
+											<td class="stw-truncate" data-label="Account Name">Cloudhub</td>
+											<td class="" data-label="Close Date">4/14/2015</td>
+											<td class="stw-truncate" data-label="Prospecting">Prospecting</td>
+											<td class="" data-label="Confidence">20%</td>
+											<td class="" data-label="Amount">$25k</td>
+											<td class="stw-truncate" data-label="Contact"><a href="javascript:void(0);">jrogers@cloudhub.com</a></td>
+											<td class="stw-cell-shrink" data-label="Actions">
+												<button class="stw-button stw-button--icon-border-filled stw-button--icon-x-small">
+													<svg aria-hidden="true" class="stw-button__icon stw-button__icon--hint stw-button__icon--small">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+													</svg>
+													<span class="stw-assistive-text">Show More</span>
+												</button>
+											</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<h3 class="stw-assistive-text">Code</h3>
+
+							<div class="stw-code--content stw-scrollable--x"><pre class=" language-markup"><code id="code-components-data-tables-base"
+							                                                                                     class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-table stw-table--bordered<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-text-heading--label</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-cell-shrink<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-checkbox<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>options<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-checkbox--faux<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Select
+								All<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-is-sortable<span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Opportunity
+								Name
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-bare<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#arrowdown<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sort<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-is-sortable<span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Account
+								Name
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-bare<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#arrowdown<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sort<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-is-sortable<span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Close
+								Date
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-bare<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#arrowdown<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sort<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-is-sortable<span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Stage
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-bare<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#arrowdown<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sort<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-is-sortable<span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Confidence
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-bare<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#arrowdown<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sort<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-is-sortable<span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Amount
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-bare<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#arrowdown<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sort<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-is-sortable<span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Contact
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-bare<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#arrowdown<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sort<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-cell-shrink<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-hint-parent<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-cell-shrink<span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Select Row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-checkbox<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>options<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-checkbox--faux<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Select
+								Row<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Opportunity Name<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Cloudhub<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Account Name<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Cloudhub<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Close Date<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>4/14/2015<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Prospecting<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Prospecting<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Confidence<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>20%<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Amount<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>$25k<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Contact<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>javascript:void(0);<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>jrogers@cloudhub.com<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-cell-shrink<span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Actions<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-border-filled stw-button--icon-x-small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--hint <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#down<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Show
+								More<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-hint-parent<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-cell-shrink<span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Select Row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-checkbox<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>options<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-checkbox--faux<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Select
+								Row<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Opportunity Name<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Cloudhub
+								+ Anypoint
+								Connectors<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Account Name<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Cloudhub<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Close Date<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>4/14/2015<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Prospecting<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Prospecting<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Confidence<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>20%<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Amount<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>$25k<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Contact<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>javascript:void(0);<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>jrogers@cloudhub.com<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-cell-shrink<span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Actions<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-border-filled stw-button--icon-x-small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--hint <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#down<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Show
+								More<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span></code></pre>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="stw-m-bottom--xx-large stw-p-top--x-large"
+				         data-stw-status="prototype">
+					<h2 class="stw-text-heading--large stw-text-heading--callout stw-jump-anchor__container">
+						<span id="flavor-responsive"
+						      class="stw-jump-anchor"
+						      tabindex="-1"></span>Responsive<span class="stw-badge stw-m-left--medium stw-shrink-none stw-align-middle badge--prototype">prototype</span>
+					</h2>
+
+					<div class="stw-grid stw-wrap stw-grid--vertical-stretch"><h3 class="stw-assistive-text">
+						Preview</h3>
+
+						<div class="stw-col stw-size--1-of-4 stw-component-example">
+							<div class="stw-example--content"
+							     data-form-factor="mobile">
+								<div class="demo-only">
+									<table class="stw-table stw-table--bordered stw-max-medium-table--stacked-horizontal">
+										<thead>
+										<tr class="stw-text-heading--label">
+											<th class="stw-cell-shrink">
+												<label class="stw-checkbox">
+													<input type="checkbox" name="options">
+													<span class="stw-checkbox--faux"></span>
+													<span class="stw-assistive-text">Select All</span>
+												</label>
+											</th>
+											<th class="stw-is-sortable" scope="col">
+												<div class="stw-truncate">Opportunity Name
+													<button class="stw-button stw-button--icon-bare">
+														<svg aria-hidden="true" class="stw-button__icon stw-button__icon--small">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+														</svg>
+														<span class="stw-assistive-text">Sort</span>
+													</button>
+												</div>
+											</th>
+											<th class="stw-is-sortable" scope="col">
+												<div class="stw-truncate">Account Name
+													<button class="stw-button stw-button--icon-bare">
+														<svg aria-hidden="true" class="stw-button__icon stw-button__icon--small">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+														</svg>
+														<span class="stw-assistive-text">Sort</span>
+													</button>
+												</div>
+											</th>
+											<th class="stw-is-sortable" scope="col">
+												<div class="stw-truncate">Close Date
+													<button class="stw-button stw-button--icon-bare">
+														<svg aria-hidden="true" class="stw-button__icon stw-button__icon--small">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+														</svg>
+														<span class="stw-assistive-text">Sort</span>
+													</button>
+												</div>
+											</th>
+											<th class="stw-is-sortable" scope="col">
+												<div class="stw-truncate">Stage
+													<button class="stw-button stw-button--icon-bare">
+														<svg aria-hidden="true" class="stw-button__icon stw-button__icon--small">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+														</svg>
+														<span class="stw-assistive-text">Sort</span>
+													</button>
+												</div>
+											</th>
+											<th class="stw-is-sortable" scope="col">
+												<div class="stw-truncate">Confidence
+													<button class="stw-button stw-button--icon-bare">
+														<svg aria-hidden="true" class="stw-button__icon stw-button__icon--small">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+														</svg>
+														<span class="stw-assistive-text">Sort</span>
+													</button>
+												</div>
+											</th>
+											<th class="stw-is-sortable" scope="col">
+												<div class="stw-truncate">Amount
+													<button class="stw-button stw-button--icon-bare">
+														<svg aria-hidden="true" class="stw-button__icon stw-button__icon--small">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+														</svg>
+														<span class="stw-assistive-text">Sort</span>
+													</button>
+												</div>
+											</th>
+											<th class="stw-is-sortable" scope="col">
+												<div class="stw-truncate">Contact
+													<button class="stw-button stw-button--icon-bare">
+														<svg aria-hidden="true" class="stw-button__icon stw-button__icon--small">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+														</svg>
+														<span class="stw-assistive-text">Sort</span>
+													</button>
+												</div>
+											</th>
+											<th class="stw-cell-shrink"></th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr class="stw-hint-parent">
+											<td class="stw-cell-shrink" data-label="Select Row">
+												<label class="stw-checkbox">
+													<input type="checkbox" name="options">
+													<span class="stw-checkbox--faux"></span>
+													<span class="stw-assistive-text">Select Row</span>
+												</label>
+											</td>
+											<th class="stw-truncate" scope="row" data-label="Opportunity Name">Cloudhub</th>
+											<td class="stw-truncate" data-label="Account Name">Cloudhub</td>
+											<td class="" data-label="Close Date">4/14/2015</td>
+											<td class="stw-truncate" data-label="Prospecting">Prospecting</td>
+											<td class="" data-label="Confidence">20%</td>
+											<td class="" data-label="Amount">$25k</td>
+											<td class="stw-truncate" data-label="Contact"><a href="javascript:void(0);">jrogers@cloudhub.com</a></td>
+											<td class="stw-cell-shrink" data-label="Actions">
+												<button class="stw-button stw-button--icon-border-filled stw-button--icon-x-small">
+													<svg aria-hidden="true" class="stw-button__icon stw-button__icon--hint stw-button__icon--small">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+													</svg>
+													<span class="stw-assistive-text">Show More</span>
+												</button>
+											</td>
+										</tr>
+										<tr class="stw-hint-parent">
+											<td class="stw-cell-shrink" data-label="Select Row">
+												<label class="stw-checkbox">
+													<input type="checkbox" name="options">
+													<span class="stw-checkbox--faux"></span>
+													<span class="stw-assistive-text">Select Row</span>
+												</label>
+											</td>
+											<th class="stw-truncate" scope="row" data-label="Opportunity Name">Cloudhub + Anypoint Connectors</th>
+											<td class="stw-truncate" data-label="Account Name">Cloudhub</td>
+											<td class="" data-label="Close Date">4/14/2015</td>
+											<td class="stw-truncate" data-label="Prospecting">Prospecting</td>
+											<td class="" data-label="Confidence">20%</td>
+											<td class="" data-label="Amount">$25k</td>
+											<td class="stw-truncate" data-label="Contact"><a href="javascript:void(0);">jrogers@cloudhub.com</a></td>
+											<td class="stw-cell-shrink" data-label="Actions">
+												<button class="stw-button stw-button--icon-border-filled stw-button--icon-x-small">
+													<svg aria-hidden="true" class="stw-button__icon stw-button__icon--hint stw-button__icon--small">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+													</svg>
+													<span class="stw-assistive-text">Show More</span>
+												</button>
+											</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<h3 class="stw-assistive-text">Code</h3>
+
+							<div class="stw-code--content stw-scrollable--x"><pre class=" language-markup"><code id="code-components-data-tables-responsive"
+							                                                                                     class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-table stw-table--bordered stw-max-medium-table--stacked-horizontal<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-text-heading--label</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-cell-shrink<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-checkbox<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>options<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-checkbox--faux<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Select
+								All<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-is-sortable<span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Opportunity
+								Name
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-bare<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#arrowdown<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sort<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-is-sortable<span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Account
+								Name
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-bare<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#arrowdown<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sort<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-is-sortable<span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Close
+								Date
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-bare<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#arrowdown<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sort<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-is-sortable<span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Stage
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-bare<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#arrowdown<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sort<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-is-sortable<span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Confidence
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-bare<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#arrowdown<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sort<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-is-sortable<span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Amount
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-bare<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#arrowdown<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sort<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-is-sortable<span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Contact
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-bare<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#arrowdown<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sort<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-cell-shrink<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-hint-parent<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-cell-shrink<span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Select Row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-checkbox<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>options<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-checkbox--faux<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Select
+								Row<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Opportunity Name<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Cloudhub<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Account Name<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Cloudhub<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Close Date<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>4/14/2015<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Prospecting<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Prospecting<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Confidence<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>20%<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Amount<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>$25k<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Contact<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>javascript:void(0);<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>jrogers@cloudhub.com<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-cell-shrink<span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Actions<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-border-filled stw-button--icon-x-small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--hint <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#down<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Show
+								More<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-hint-parent<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-cell-shrink<span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Select Row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-checkbox<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>options<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-checkbox--faux<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Select
+								Row<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span> <span class="token attr-name">scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Opportunity Name<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Cloudhub
+								+ Anypoint
+								Connectors<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Account Name<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Cloudhub<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Close Date<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>4/14/2015<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Prospecting<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Prospecting<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Confidence<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>20%<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Amount<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>$25k<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-truncate</span><span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Contact<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>javascript:void(0);<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>jrogers@cloudhub.com<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-cell-shrink<span class="token punctuation">"</span></span> <span class="token attr-name">data-label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Actions<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-border-filled stw-button--icon-x-small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--hint <span class="token utility-class">stw-button__icon</span>--small<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/utility-sprite/svg/symbols.svg#down<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Show
+								More<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span></code></pre>
+							</div>
+							<div class="stw-text-longform"><p>When a table exceeds the width of its container, one
+								responsive option is to wrap the table in a <code>.stw-scrollable--x</code> class so
+								that the user can scroll horizontally. View the example small and medium form factor
+								tabs to see the effect.</p>
+
+								<p>When <code>.stw-max-medium-table--stacked</code> is applied to the “Grid” table, we
+									generate faux <code>&lt;th&gt;</code> labels using the <code>data-label</code>
+									applied to each cell, and stack the cells instead of lining them up horizontally.
+									This works up until the <strong>medium form factor</strong> breakpoint. After the
+									breakpoint is triggered, the table will lay out horizontally as normal.</p>
+
+								<p>When <code>.stw-max-medium-table--stacked</code> is applied to the “Grid” table, we
+									generate faux <code>&lt;th&gt;</code> labels using the <code>data-label</code>
+									applied to each cell, and stack the cells instead of lining them up horizontally.
+									This works up until the <strong>medium form factor</strong> breakpoint. After the
+									breakpoint is triggered, the table will lay out horizontally as normal.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<h3 id="overview"
+				    class="stw-text-heading--large stw-p-top--x-large">Component Overview</h3>
+
+				<div><p>To initialize a data table, apply the <code>.stw-table</code> class to the <code>table</code>
+					element. This class creates a <code>table</code> with formatted cells and allows you to use data
+					table utilities.</p><h4 class="stw-text-heading--label">Accessibility</h4>
+
+					<p>To create an accessible table, the top row of column headers (<code>th</code>) are placed in a
+						<code>thead</code>. Each one receives the <code>scope="col"</code> attribute. The first
+						non-actionable (meaning that doesn't contain a checkbox or menu) column in each row should be
+						marked as a <code>th</code> with a <code>scope="row"</code> attribute.</p></div>
+				<div class="stw-table--overview">
+					<div class="stw-text-longform stw-m-bottom--medium">
+						<h4 class="stw-p-top--xx-large stw-text-heading--label">Usage</h4>
+
+						<div>This table gives you a quick overview of the stw CSS classes that can be applied to this
+							component.
+						</div>
+					</div>
+					<div class="stw-scrollable--x">
+						<table class="stw-table stw-table--bordered stw-max-medium-table--stacked stw-no-row-hover">
+							<thead>
+							<tr class="stw-text-heading--label">
+								<th class="stw-theme--shade">Class Name</th>
+								<th colspan="2"
+								    class="stw-theme--shade">Usage
+								</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-table</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+
+									<p><code>&lt;table&gt;</code></p><strong>Outcome:</strong>
+
+									<p>Initializes data table</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>
+										<svg aria-hidden="true"
+										     class="stw-icon stw-icon--x-small stw-icon-text-default">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink"
+											     xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+										</svg>
+										<span class="stw-assistive-text">Required</span></p>
+									<strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-table--bordered</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+
+									<p><code>.stw-table</code></p><strong>Outcome:</strong>
+
+									<p>Adds borders to the table</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-table--striped</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+
+									<p><code>.stw-table</code></p><strong>Outcome:</strong>
+
+									<p>Adds stripes to alternating rows</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-table--fixed-layout</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+
+									<p><code>.stw-table</code></p><strong>Outcome:</strong>
+
+									<p>Styles for resizeable columns</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-is-selected</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+
+									<p><code>&lt;tr&gt;</code></p><strong>Outcome:</strong>
+
+									<p>Changes row to selected state</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-is-sortable</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+
+									<p><code>&lt;th&gt;</code></p><strong>Outcome:</strong>
+
+									<p>Enables user interactions for sorting a column</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-is-resizable</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+
+									<p><code>&lt;th&gt;</code></p><strong>Outcome:</strong>
+
+									<p>Enables table cell to be resized</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-cell-wrap</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+
+									<p><code>&lt;td&gt;</code></p><strong>Outcome:</strong>
+
+									<p>Forces text to wrap in a cell</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-cell-shrink</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+
+									<p><code>&lt;th&gt;</code>, <code>&lt;td&gt;</code></p><strong>Outcome:</strong>
+
+									<p>Shrinks cell to width of content</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>Use if cell contains a checkbox or action menu</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-no-row-hover</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+
+									<p><code>.stw-table</code></p><strong>Outcome:</strong>
+
+									<p>Removes hover state on row</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>Rows have a hover state by default</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-scrollable--x</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+
+									<p>parent <code>div</code></p><strong>Outcome:</strong>
+
+									<p>Creates a scrollable container for a table on smaller viewports</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-max-medium-table--stacked</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+
+									<p><code>.stw-table</code></p><strong>Outcome:</strong>
+
+									<p>Modifies table layout by stacking cells to accommodate smaller viewports</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-max-medium-table--stacked-horizontal</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+
+									<p><code>.stw-table</code></p><strong>Outcome:</strong>
+
+									<p>Modifies table layout by displaying the header and row data side by side for
+										smaller viewports</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-hint-parent</code>
+
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+
+									<p><code>&lt;tr&gt;</code></p><strong>Outcome:</strong>
+
+									<p>Highlights action overflow ribbons on row hover</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+
+									<p>When you have an overflow action menu</p></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

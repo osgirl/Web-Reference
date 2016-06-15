@@ -1,0 +1,204 @@
+<div class="stw-main stw-scroll-content stw-overflow-scroll">
+    <div class="stw-scroll">
+        <stw-masthead title="Images"></stw-masthead>
+        <div class="stw-content stw-grid stw-wrap stw-large-nowrap">
+            <div class="stw-main-content stw-col stw-size--1-of-1">
+                <p class="stw-text-introduction">Images are used to provide a visual representation of context. When an
+                    avatar isn’t available for an object, the object icon will always be displayed in it’s place.</p>
+                <section class="stw-m-bottom--xx-large stw-p-top--x-large" data-stw-status="dev-ready"><h2
+                        class="stw-text-heading--large stw-text-heading--callout stw-jump-anchor__container"
+                        type="h2"><span id="flavor-avatars" class="stw-jump-anchor" tabindex="-1"></span>Avatars<span
+                        class="stw-badge stw-m-left--medium stw-shrink-none stw-align-middle badge--dev-ready">dev ready</span>
+                </h2>
+
+                    <div class="stw-grid stw-wrap stw-grid--vertical-stretch"><h3 class="stw-assistive-text">
+                        Preview</h3>
+
+                        <div class="stw-col stw-size--1-of-1 stw-large-size--5-of-6 stw-large-order--1 stw-component-example">
+                            <div class="stw-scrollable--x stw-bleed">
+                                <iframe src="https://www.lightningdesignsystem.com/components/images/flavors/avatars/_avatar-default-large.html?iframe"
+                                        height="112" id="iframe-components-images-avatars"
+                                        name="components-images-avatars" scrolling="no"></iframe>
+                            </div>
+                            <h3 class="stw-assistive-text">Code</h3>
+
+                            <div class="stw-code--content stw-scrollable--x"><pre class=" language-markup"><code
+                                    id="code-components-images-avatars" class=" language-markup">
+                                <span class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span
+                                        class="token attr-value"><span class="token punctuation">=</span><span
+                                        class="token punctuation">"</span>stw-avatar stw-avatar--large<span
+                                        class="token punctuation">"</span></span><span
+                                        class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span
+                                        class="token attr-value"><span class="token punctuation">=</span><span
+                                        class="token punctuation">"</span>/assets/images/avatar2.jpg<span
+                                        class="token punctuation">"</span></span> <span
+                                        class="token attr-name">alt</span><span class="token attr-value"><span
+                                        class="token punctuation">=</span><span class="token punctuation">"</span>person name<span
+                                        class="token punctuation">"</span></span><span
+                                        class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span
+                                        class="token punctuation">&lt;/</span>span</span><span
+                                        class="token punctuation">&gt;</span></span>
+                            </code></pre>
+                            </div>
+                            <div class="stw-text-longform"><p>An avatar can be circular or a rounded rectangle,
+                                depending on usage. The default is a rounded rectangle and requires
+                                <code>.stw-avatar</code> as the base class. Use a circle for all people-oriented
+                                objects that could potentially render as avatars. For a fully round avatar, add the
+                                <code>.stw-avatar--circle</code> class. Four additional classes are available for
+                                sizing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <h3 id="overview" class="stw-text-heading--large stw-p-top--x-large">Component Overview</h3>
+
+                <div><h4 class="stw-text-heading--label">Accessibility</h4>
+
+                    <p>Every <code>&lt;img&gt;</code> you add to your stw needs to have an <code>alt</code> attribute.
+                        If the image is informational, set the <code>alt</code> equal to a descriptive alternative for
+                        that image. If the image is decorative or redundant to adjacent text, set <code>alt=""</code>,
+                        which conveys to assistive technology users that the image isn’t necessary for understanding the
+                        page. Avoid using generic strings like <strong>photo</strong>, <strong>image</strong>, or
+                        <strong>icon</strong> as alt values, as they don’t communicate valuable content to the user.</p>
+                </div>
+                <div class="stw-table--overview">
+                    <div class="stw-text-longform stw-m-bottom--medium"><h4
+                            class="stw-p-top--xx-large stw-text-heading--label">Usage</h4>
+
+                        <div>This table gives you a quick overview of the stw CSS classes that can be applied to create
+                            avatars.
+                        </div>
+                    </div>
+                    <div class="stw-scrollable--x">
+                        <table class="stw-table stw-table--bordered stw-max-medium-table--stacked stw-no-row-hover">
+                            <thead>
+                            <tr class="stw-text-heading--label">
+                                <th class="stw-theme--shade">Class Name</th>
+                                <th colspan="2" class="stw-theme--shade">Usage</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th class="stw-cell-shrink stw-align-top" scope="row"><code>.stw-avatar</code>
+
+                                    <div></div>
+                                </th>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Applied
+                                    to:</strong>
+
+                                    <p><code>span</code></p><strong>Outcome:</strong>
+
+                                    <p>Defines an image as an avatar</p></td>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Required:</strong>
+
+                                    <p>
+                                        <svg aria-hidden="true"
+                                             class="stw-icon stw-icon--x-small stw-icon-text-default">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                 xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+                                        </svg>
+                                        <span class="stw-assistive-text">Required</span></p>
+                                    <strong>Comments:</strong>
+
+                                    <p>By default avatars have a rounded square shape</p></td>
+                            </tr>
+                            <tr>
+                                <th class="stw-cell-shrink stw-align-top" scope="row">
+                                    <code>.stw-avatar--circle</code>
+
+                                    <div></div>
+                                </th>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Applied
+                                    to:</strong>
+
+                                    <p><code>.stw-avatar</code></p><strong>Outcome:</strong>
+
+                                    <p>Creates a circular avatar shape</p></td>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Required:</strong>
+
+                                    <p>No, optional element or modifier</p><strong>Comments:</strong>
+
+                                    <p>--</p></td>
+                            </tr>
+                            <tr>
+                                <th class="stw-cell-shrink stw-align-top" scope="row">
+                                    <code>.stw-avatar--x-small</code>
+
+                                    <div></div>
+                                </th>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Applied
+                                    to:</strong>
+
+                                    <p><code>.stw-avatar</code></p><strong>Outcome:</strong>
+
+                                    <p>Creates a 1.5rem×1.5rem icon</p></td>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Required:</strong>
+
+                                    <p>No, optional element or modifier</p><strong>Comments:</strong>
+
+                                    <p>--</p></td>
+                            </tr>
+                            <tr>
+                                <th class="stw-cell-shrink stw-align-top" scope="row"><code>.stw-avatar--small</code>
+
+                                    <div></div>
+                                </th>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Applied
+                                    to:</strong>
+
+                                    <p><code>.stw-avatar</code></p><strong>Outcome:</strong>
+
+                                    <p>Creates a 2.25rem×2.25rem icon</p></td>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Required:</strong>
+
+                                    <p>No, optional element or modifier</p><strong>Comments:</strong>
+
+                                    <p>--</p></td>
+                            </tr>
+                            <tr>
+                                <th class="stw-cell-shrink stw-align-top" scope="row">
+                                    <code>.stw-avatar--medium</code>
+
+                                    <div></div>
+                                </th>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Applied
+                                    to:</strong>
+
+                                    <p><code>.stw-avatar</code></p><strong>Outcome:</strong>
+
+                                    <p>Creates a 3rem×3rem icon</p></td>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Required:</strong>
+
+                                    <p>No, optional element or modifier</p><strong>Comments:</strong>
+
+                                    <p>--</p></td>
+                            </tr>
+                            <tr>
+                                <th class="stw-cell-shrink stw-align-top" scope="row"><code>.stw-avatar--large</code>
+
+                                    <div></div>
+                                </th>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Applied
+                                    to:</strong>
+
+                                    <p><code>.stw-avatar</code></p><strong>Outcome:</strong>
+
+                                    <p>Creates a 5rem×5rem icon</p></td>
+                                <td class="stw-size--1-of-3 stw-cell-wrap stw-align-top" scope="col"><strong>Required:</strong>
+
+                                    <p>No, optional element or modifier</p><strong>Comments:</strong>
+
+                                    <p>--</p></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

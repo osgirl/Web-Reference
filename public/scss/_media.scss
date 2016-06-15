@@ -1,0 +1,97 @@
+@import "../imports";
+
+/**
+ * Media
+ * --------------------------------------------------
+ */
+
+
+.#{$css-prefix}media {
+  @include display-flex();
+  @include flex(1);
+  @include align-items(flex-start);
+}
+
+.#{$css-prefix}media__figure {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: .75rem
+}
+
+.#{$css-prefix}media__body {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 0
+}
+
+.#{$css-prefix}media__body, .#{$css-prefix}media__body > :last-child {
+  margin-bottom: 0
+}
+
+.#{$css-prefix}media--small .#{$css-prefix}media__figure {
+  margin-right: .25rem
+}
+
+.#{$css-prefix}media--large .#{$css-prefix}media__figure {
+  margin-right: 1.5rem
+}
+
+.#{$css-prefix}media--small .#{$css-prefix}media__figure--reverse {
+  margin-left: .25rem
+}
+
+.#{$css-prefix}media--large .#{$css-prefix}media__figure--reverse {
+  margin-left: 1.5rem
+}
+
+.#{$css-prefix}media--center {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center
+}
+
+.#{$css-prefix}media__figure--reverse {
+  margin: 0 0 0 .75rem
+}
+
+.#{$css-prefix}media--reverse > .#{$css-prefix}media__figure {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1
+}
+
+.#{$css-prefix}media--reverse.#{$css-prefix}media--small .#{$css-prefix}media__figure {
+  margin-left: .25rem
+}
+
+.#{$css-prefix}media--double > .#{$css-prefix}media__figure {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1
+}
+
+.#{$css-prefix}media--double .#{$css-prefix}media__figure--reverse {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  margin: 0 0 0 1rem
+}
+
+.#{$css-prefix}media--double .#{$css-prefix}media__body {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2
+}
+
+@include breakpoint($l) {
+  .#{$css-prefix}media--responsive {
+    display: block
+  }
+
+  .#{$css-prefix}media--responsive .#{$css-prefix}media__figure {
+    margin: 0 0 .75rem
+  }
+}

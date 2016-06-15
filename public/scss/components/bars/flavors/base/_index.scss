@@ -1,0 +1,161 @@
+/**
+ * Bar (Headers and Footers)
+ * --------------------------------------------------
+ */
+
+$bar-height:                      55px !default;
+$bar-title-font-size:             17px !default;
+$bar-padding-portrait:            5px !default;
+$bar-padding-landscape:           5px !default;
+$bar-transparency:                1 !default;
+
+$bar-footer-height:               $bar-height !default;
+$bar-subheader-height:            $bar-height !default;
+$bar-subfooter-height:            $bar-height !default;
+
+$z-index-bar: 2 !default;;
+
+
+.#{$css-prefix}bar {
+  @include display-flex();
+  @include user-select(none);
+  @include box-sizing(border-box);
+
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 9;
+  padding: 5px;
+  width: 100%;
+  height: 55px;
+  border-width: 0;
+  border-style: solid;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  /* border-width: 1px will actually create 2 device pixels on retina */
+  /* this nifty trick sets an actual 1px border on hi-res displays */
+  background-size: 0;
+
+  &.item-input--inset {
+    .item-input--wrapper {
+      margin-top: -1px;
+
+      input {
+        padding-left: 8px;
+        width: 94%;
+        height: 28px;
+        background: transparent;
+      }
+    }
+  }
+
+  .#{$css-prefix}bar--title {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+
+    margin: 0 10px;
+
+    min-width: 30px;
+    height: $bar-height - 1;
+
+    text-align: center;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    line-height: $bar-height;
+
+    &.#{$css-prefix}bar--title--left {
+      text-align: left;
+    }
+
+    &.#{$css-prefix}bar--title--right {
+      text-align: right;
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+  .#{$css-prefix}bar--button {
+    z-index: 1;
+    padding: 0 8px;
+    min-width: initial;
+    min-height: 31px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 32px;
+
+    &.#{$css-prefix}bar--button-icon:before, .icon:before, &.icon:before, &.#{$css-prefix}bar--button-icon--left:before, &.#{$css-prefix}bar--button-icon--right:before {
+      padding-right: 2px;
+      padding-left: 2px;
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    &.button-icon {
+      font-size: 17px;
+
+      .icon:before, &:before, &.#{$css-prefix}bar--button-icon--left:before, &.stw-button-icon--right:before {
+        vertical-align: top;
+        font-size: 32px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  &.#{$css-prefix}bar--light {
+    border-color: #ddd;
+    background: white linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
+    color: #444;
+  }
+}
+
+.#{$css-prefix}bar--header {
+  top: 0;
+  border-top-width: 0;
+  border-bottom-width: 1px;
+}
+
+.#{$css-prefix}bar--footer {
+  position: absolute;
+  bottom: 0;
+  border-top-width: 1px;
+  border-bottom-width: 0;
+  background-position: top;
+  height: $bar-footer-height;
+}
+
+.#{$css-prefix}bar--subheader {
+  top: $bar-height;
+  display: block;
+
+  height: $bar-subheader-height;
+}
+
+.#{$css-prefix}subfooter {
+  bottom: $bar-footer-height;
+  display: block;
+
+  height: $bar-subfooter-height;
+}
+
+.#{$css-prefix}navbar--block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: $z-index-bar;
+}

@@ -1,0 +1,26 @@
+/**
+ * Lists
+ * --------------------------------------------------
+ */
+
+.list {
+  position: relative;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 0;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+    &.card {
+      margin-bottom: 40px;
+    }
+  }
+  &.stw-form {
+    &.stw-has-header-image {
+      top: 100px;
+    }
+    .item:last-child {
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "name": "stwSpinner",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./stwSpinner.directive.js"
+}

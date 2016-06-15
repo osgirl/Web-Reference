@@ -1,0 +1,87 @@
+// Severn Trent Water Design System 1.0.0
+@mixin button {
+  //@include flex-item(expand);
+  height: $line-height-button;
+  line-height: $line-height-button-small;
+  padding: {
+    left: $spacing-x-large;
+    right: $spacing-x-large;
+  }
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+}
+
+@mixin button-base {
+  border: $border-width-thin solid $color-border-button-default;
+
+  &:hover,
+  &:focus {
+    background-color: $color-background-button-default-hover;
+  }
+
+  &:active {
+    background-color: $color-background-button-default-active;
+  }
+}
+
+@mixin button-no-border {
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color-background-button-default-hover;
+  }
+
+  &:active {
+    background-color: $color-background-button-default-active;
+  }
+}
+
+@mixin button-brand {
+  background-color: $color-background-button-brand;
+  border: $border-width-thin solid $color-border-button-brand;
+  color: $color-text-button-brand;
+
+  &:link,
+  &:visited,
+  &:active {
+    color: $color-text-button-brand;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-background-button-brand-hover;
+    color: $color-text-button-brand-hover;
+  }
+
+  &:active {
+    background-color: $color-background-button-brand-active;
+  }
+}
+
+@mixin button-destructive { // @TODO - update when new tokens hit the repo
+  background-color: #c23934; //$color-background-destructive;
+  border: $border-width-thin solid #c23934; //$color-border-destructive;
+  color: $color-text-inverse;
+
+  &:link,
+  &:visited,
+  &:active {
+    color: $color-text-inverse;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #a61a14; //$color-background-destructive-hover;
+    color: $color-text-inverse;
+  }
+
+  &:active {
+    background-color: #870500; //$color-background-button-destructive-active;
+    border-color: #870500; //$color-border-destructive-active;
+  }
+}

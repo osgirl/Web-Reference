@@ -1,0 +1,124 @@
+.#{$css-prefix}design {
+  .image,
+  .image:only-of-type {
+    margin: {
+      top: $spacing-x-large;
+      bottom: $spacing-x-large;
+    }
+  }
+  figure {
+    @include mq-medium-max {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .#{$css-prefix}side-by-side {
+    > div {
+      @include mq-medium-min {
+        padding-right: $spacing-xx-large;
+      }
+    }
+
+    &--img-left {
+      > div {
+        @include mq-medium-min {
+          padding-right: 0;
+          padding-left: $spacing-xx-large;
+        }
+      }
+    }
+  }
+
+
+  .#{$css-prefix}text-heading--small,
+  strong {
+    color: #52a339;
+  }
+
+  // Diagrams
+  .#{$css-prefix}diagram-section-list {
+    position: relative;
+
+    strong {
+      color: $color-background-button-icon;
+    }
+
+    figure {
+      margin-bottom: $spacing-xx-large;
+
+      @include mq-large-min {
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .#{$css-prefix}diagram-section-top,
+  .#{$css-prefix}diagram-section-middle,
+  .#{$css-prefix}diagram-section-bottom {
+    @include mq-large-min {
+      &:before {
+        content: '';
+        position: absolute;
+      }
+    }
+  }
+
+  .#{$css-prefix}diagram-section-middle {
+    @include mq-large-min {
+      position: absolute;
+      padding-left: $spacing-xx-large;
+      right: 0;
+      top: 250px;
+
+      &:before {
+        left: -100px;
+        top: $font-size-medium;
+        height: 1px;
+        width: 140px;
+        background: $color-background-button-icon;
+      }
+    }
+  }
+
+  .#{$css-prefix}diagram-section-top,
+  .#{$css-prefix}diagram-section-bottom {
+    @include mq-large-min {
+      padding-left: 40%;
+    }
+  }
+
+  .#{$css-prefix}diagram-section-top {
+    @include mq-large-min {
+      &:before {
+        width: 120px;
+        height: 160px;
+        transform: translate3d(-160px, $font-size-medium, 0);
+        border-radius: 50%/50% 0 0 0;
+        border: {
+          top: $border-width-thin solid $color-background-button-icon;
+          left: $border-width-thin solid $color-background-button-icon;
+        }
+      }
+    }
+  }
+  .#{$css-prefix}diagram-section-bottom {
+    @include mq-large-min {
+      &:before {
+        width: 120px;
+        height: 140px;
+        transform: translate3d(-160px, -125px, 0);
+        border-radius: 50%/0 0 0 50%;
+        border: {
+          bottom: $border-width-thin solid $color-background-button-icon;
+          left: $border-width-thin solid $color-background-button-icon;
+        }
+      }
+    }
+  }
+
+  .#{$css-prefix}scale-example {
+    p {
+      line-height: 1.5;
+    }
+  }
+}

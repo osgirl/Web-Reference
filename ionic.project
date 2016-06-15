@@ -1,0 +1,7 @@
+{
+  "name": "web-reference",
+  "app_id": "",
+    "gulpStartupTasks": [
+      "watch"
+    ]
+}

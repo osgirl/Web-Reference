@@ -1,0 +1,25 @@
+// User select
+// --------------------------------------------------
+
+@mixin user-select($select) {
+  -webkit-user-select: $select;
+  -moz-user-select: $select;
+  -ms-user-select: $select;
+  user-select: $select;
+}
+
+// Text Mixins
+// --------------------------------------------------
+
+@mixin text-size-adjust($value: none) {
+  -webkit-text-size-adjust: $value;
+  -moz-text-size-adjust: $value;
+  text-size-adjust: $value;
+}
+@mixin tap-highlight-transparent() {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; // For some Androids
+}
+@mixin touch-callout($value: none) {
+  -webkit-touch-callout: $value;
+}

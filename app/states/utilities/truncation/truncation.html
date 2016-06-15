@@ -1,0 +1,551 @@
+<div class="stw-main stw-scroll-content stw-overflow-scroll">
+	<div class="stw-scroll">
+		<stw-masthead title="Modals"></stw-masthead>
+		<div class="stw-content stw-grid stw-wrap stw-large-nowrap">
+			<div class="stw-main-content stw-col stw-col--rule-right stw-size--1-of-1 stw-large-size--5-of-6 stw-large-order--1">
+				<p class="stw-text-introduction">Modals are used to display content in a layer above the app. This
+					paradigm is used in cases such as the creation or editing of a record, as well as various types of
+					messaging and wizards.</p>
+				<section class="stw-m-bottom--xx-large stw-p-top--x-large"
+				         data-stw-status="dev-ready">
+					<h2 class="stw-text-heading--large stw-text-heading--callout stw-jump-anchor__container"
+					    type="h2"><span id="flavor-base"
+					                    class="stw-jump-anchor"
+					                    tabindex="-1"></span>Base<span class="stw-badge stw-m-left--medium stw-shrink-none stw-align-middle badge--dev-ready">dev ready</span><span class="stw-badge stw-m-left--medium stw-shrink-none stw-align-middle badge--not-compatible">Not Compatible with S1 Mobile</span>
+					</h2>
+					
+					<div class="stw-grid stw-wrap stw-grid--vertical-stretch"><h3 class="stw-assistive-text">
+						Preview</h3>
+						
+						<div class="stw-col stw-size--1-of-1 stw-large-size--5-of-6 stw-large-order--1 stw-component-example">
+							<div class="stw-scrollable--x stw-example--content">
+								<div class="preview">
+									<div class="demo-only" style="height:640px;">
+										<div class="stw-modal stw-fade-in-open" aria-hidden="false" role="dialog">
+											<div class="stw-modal__container">
+												<div class="stw-modal__header">
+													<button class="stw-button stw-button--icon-inverse stw-modal__close">
+														<svg aria-hidden="true" class="stw-button__icon stw-button__icon--large">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/action-sprite/svg/symbols.svg#close"></use>
+														</svg>
+														<span class="stw-assistive-text">Close</span>
+													</button>
+													<h2 class="stw-text-heading--medium">Modal Header</h2>
+												</div>
+												<div class="stw-modal__content stw-p-around--medium">
+													<div>
+														<p>Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam incididunt duis in sint irure nisi. Mollit officia cillum Lorem ullamco minim nostrud elit officia tempor esse quis. Cillum sunt ad dolore
+															quis aute consequat ipsum magna exercitation reprehenderit magna. Tempor cupidatat consequat elit dolor adipisicing.</p>
+														<p>Dolor eiusmod sunt ex incididunt cillum quis nostrud velit duis sit officia. Lorem aliqua enim laboris do dolor eiusmod officia. Mollit incididunt nisi consectetur esse laborum eiusmod pariatur proident. Eiusmod et adipisicing culpa deserunt
+															nostrud ad veniam nulla aute est. Labore esse esse cupidatat amet velit id elit consequat minim ullamco mollit enim excepteur ea.</p>
+													</div>
+												</div>
+												<div class="stw-modal__footer">
+													<button class="stw-button stw-button--neutral">Cancel</button>
+													<button class="stw-button stw-button--neutral stw-button--brand">Save</button>
+												</div>
+											</div>
+										</div>
+										<div class="stw-backdrop stw-backdrop--open"></div>
+									</div>
+								</div>
+							</div>
+							<h3 class="stw-assistive-text">Code</h3>
+							
+							<div class="stw-code--content stw-scrollable--x"><pre class=" language-markup"><code id="code-components-modals-base"
+							                                                                                       class=" language-markup">
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-modal stw-fade-in-open<span class="token punctuation">"</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dialog<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-modal__container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-modal__header<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button stw-button--icon-inverse stw-modal__close<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-button__icon</span> <span class="token utility-class">stw-button__icon</span>--large<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xmlns:</span>xlink</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://www.w3.org/1999/xlink<span class="token punctuation">"</span></span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/assets/icons/action-sprite/svg/symbols.svg#close<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-assistive-text</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Close<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token utility-class">stw-text-heading--medium</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Modal
+								Header<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-modal__content <span class="token utility-class">stw-p-around--medium</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Sit
+								nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id
+								consequat veniam incididunt duis in sint irure nisi. Mollit officia cillum Lorem ullamco
+								minim nostrud elit officia tempor esse quis. Cillum sunt ad dolore
+								quis aute consequat ipsum magna exercitation reprehenderit magna. Tempor cupidatat
+								consequat elit dolor
+								adipisicing.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Dolor
+								eiusmod sunt ex incididunt cillum quis nostrud velit duis sit officia. Lorem aliqua enim
+								laboris do dolor eiusmod officia. Mollit incididunt nisi consectetur esse laborum
+								eiusmod pariatur proident. Eiusmod et adipisicing culpa deserunt
+								nostrud ad veniam nulla aute est. Labore esse esse cupidatat amet velit id elit
+								consequat minim ullamco mollit enim excepteur
+								ea.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-modal__footer<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button <span class="token utility-class">stw-button--neutral</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Cancel<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-button <span class="token utility-class">stw-button--neutral</span> stw-button--brand<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Save<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+								<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stw-backdrop stw-backdrop--open<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+							</code></pre>
+							</div>
+						</div>
+					</div>
+				</section>
+				<h3 id="overview"
+				    class="stw-text-heading--large stw-p-top--x-large">Component Overview</h3>
+				
+				<div><p>Default modals are used in the vast majority of cases. They are as wide as 50% of the viewport,
+					but include a minimum and maximum width to avoid going too narrow or too wide.</p>
+					
+					<p>Modals always have an equal amount of space at the top and bottom to account for the height of
+						the close button.</p>
+					
+					<p>Modals grow according to how much content is within, but once the modal reaches full height
+						(including the previously mentioned space on top and bottom), the content area will begin to
+						scroll. (This scrolling is currently not available in Mobile.)</p>
+					
+					<p>Modals can have a tagline in the header, simply by adding a paragraph after the heading.</p>
+					
+					<p>By default, the content area of the modal does not have spacing. This allows for content such as
+						Tables to be full-width to the modal. To get spacing when you need it, apply a padding utility (<code>.stw-p-around--medium</code>).
+					</p>
+					
+					<p>Modal headers can also have taglines, if you need to provide additional context. This tagline can
+						also contain links, or the whole thing could be a link in and of itself.</p>
+					
+					<p>Large modals call for large amounts of content. The height follows the same behavior and styles
+						of other modals. The width changes to 90% of the viewport, and uses a wider minimum width and no
+						maximum width.</p>
+					
+					<p>These are modals that require a linearly directional paradigm of navigation (“Next” and “Back”,
+						etc.) — the actionable buttons in the modal footer live on the left and right, rather than all
+						on the right. These can either be within a large or default modal, depending on the use
+						case.</p><h4 class="stw-text-heading--label">Accessibility</h4>
+					
+					<p>Modals, by definition, trap focus. This means that if a user presses Tab or Shift+Tab while their
+						keyboard focus is in the modal, their focus should stay in and cycle through the modal’s
+						content. Focus shouldn’t return to the underlying page until the user presses the Esc key,
+						presses an explicit “Cancel” or “Close” button in the modal, or performs another action that
+						closes the modal.</p>
+					
+					<p>Expected markup:</p>
+					<ul>
+						<li>Modal has <code>role="dialog"</code></li>
+						<li>When the modal is open, everything behind it has HTML attribute
+							<code>aria-hidden="true"</code>, so assistive technology won't read out the underlying page.
+							The best way to do this is to give the modal and the page separate wrapper elements and
+							toggle <code>aria-hidden="true"</code>/<code>aria-hidden="false"</code> on the main page's
+							wrapper depending on whether or not the modal is open.
+						</li>
+						<li>Modal contains an HTML heading</li>
+						<li>Modal has an <code>aria-labelledby</code> attribute whose value is the id of the modal’s
+							heading
+						</li>
+					</ul>
+					<p>Expected keyboard interactions:</p>
+					<ul>
+						<li>Esc key closes the modal and moves focus to whatever triggered the modal to open</li>
+						<li>Tab key at bottom of modal cycles focus back to first focusable element at top of modal</li>
+						<li>Shift+Tab keys at top of modal cycle focus back to last focusable element at bottom of
+							modal
+						</li>
+						<li>Enter key submits modal’s form data, if applicable</li>
+					</ul>
+				</div>
+				<div class="stw-table--overview">
+					<div class="stw-text-longform stw-m-bottom--medium">
+						<h4 class="stw-p-top--xx-large stw-text-heading--label">Usage</h4>
+						
+						<div>This table gives you a quick overview of the STW CSS classes that can be applied to create
+							modals.
+						</div>
+					</div>
+					<div class="stw-scrollable--x">
+						<table class="stw-table stw-table--bordered stw-max-medium-table--stacked stw-no-row-hover">
+							<thead>
+							<tr class="stw-text-heading--label">
+								<th class="stw-theme--shade">Class Name</th>
+								<th colspan="2"
+								    class="stw-theme--shade">Usage
+								</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-modal</code>
+									
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+									
+									<p><code>&lt;div&gt;</code></p><strong>Outcome:</strong>
+									
+									<p>Positions the modal to stretch to page edges</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+									
+									<p>
+										<svg aria-hidden="true"
+										     class="stw-icon stw-icon--x-small stw-icon-text-default">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink"
+											     xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+										</svg>
+										<span class="stw-assistive-text">Required</span></p>
+									<strong>Comments:</strong>
+									
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-fade-in-open</code>
+									
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+									
+									<p><code>.stw-modal</code></p><strong>Outcome:</strong>
+									
+									<p>Allows the modal to be visible.</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+									
+									<p>
+										<svg aria-hidden="true"
+										     class="stw-icon stw-icon--x-small stw-icon-text-default">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink"
+											     xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+										</svg>
+										<span class="stw-assistive-text">Required</span></p>
+									<strong>Comments:</strong>
+									
+									<p>Apply this class to a modal with JavaScript to make it visible.</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-modal--large</code>
+									
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+									
+									<p><code>.stw-modal</code></p><strong>Outcome:</strong>
+									
+									<p>Widens the modal to take more horizontal space</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+									
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+									
+									<p>--</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-modal__container</code>
+									
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+									
+									<p><code>&lt;div&gt;</code></p><strong>Outcome:</strong>
+									
+									<p>Centers and sizes the modal horizontally and confines modal within viewport
+										height</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+									
+									<p>
+										<svg aria-hidden="true"
+										     class="stw-icon stw-icon--x-small stw-icon-text-default">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink"
+											     xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+										</svg>
+										<span class="stw-assistive-text">Required</span></p>
+									<strong>Comments:</strong>
+									
+									<p>This should be nested immediately inside <code>.stw-modal</code> with nothing
+										else nested on the same level.</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-modal__header</code>
+									
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+									
+									<p><code>&lt;div&gt;</code></p><strong>Outcome:</strong>
+									
+									<p>Creates the Modal Header container.</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+									
+									<p>
+										<svg aria-hidden="true"
+										     class="stw-icon stw-icon--x-small stw-icon-text-default">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink"
+											     xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+										</svg>
+										<span class="stw-assistive-text">Required</span></p>
+									<strong>Comments:</strong>
+									
+									<p>This should be nested immediately inside <code>.stw-modal__container</code> as
+										the first element.</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-modal__close</code>
+									
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+									
+									<p><code>.stw-button</code></p><strong>Outcome:</strong>
+									
+									<p>Positions the close button to the top right outside of the modal.</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+									
+									<p>
+										<svg aria-hidden="true"
+										     class="stw-icon stw-icon--x-small stw-icon-text-default">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink"
+											     xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+										</svg>
+										<span class="stw-assistive-text">Required</span></p>
+									<strong>Comments:</strong>
+									
+									<p>Use JavaScript to make clicking this button remove the modal. This button
+										contains a Close Action Icon.</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-modal__content</code>
+									
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+									
+									<p><code>&lt;div&gt;</code></p><strong>Outcome:</strong>
+									
+									<p>Creates the scrollable content area for the modal.</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+									
+									<p>
+										<svg aria-hidden="true"
+										     class="stw-icon stw-icon--x-small stw-icon-text-default">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink"
+											     xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+										</svg>
+										<span class="stw-assistive-text">Required</span></p>
+									<strong>Comments:</strong>
+									
+									<p>Either <code>.stw-modal__content</code> or <code>.stw-modal__menu</code> must
+										be used. If you’re using this class, you do not need the other. This should be
+										nested immediately inside <code>.stw-modal_container</code> and immediately
+										after <code>.stw-modal__header</code>.</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-modal__menu</code>
+									
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+									
+									<p><code>&lt;div&gt;</code></p><strong>Outcome:</strong>
+									
+									<p>Creates the shaded menu area for the modal.</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+									
+									<p>
+										<svg aria-hidden="true"
+										     class="stw-icon stw-icon--x-small stw-icon-text-default">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink"
+											     xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+										</svg>
+										<span class="stw-assistive-text">Required</span></p>
+									<strong>Comments:</strong>
+									
+									<p>Either <code>.stw-modal__menu</code> or <code>.stw-modal__content</code> must
+										be used. If you’re using this class, you do not need the other. This should be
+										nested immediately inside <code>.stw-modal_container</code> and immediately
+										after <code>.stw-modal__header</code>.</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-modal__footer</code>
+									
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+									
+									<p><code>&lt;div&gt;</code></p><strong>Outcome:</strong>
+									
+									<p>Creates the Modal Footer container.</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+									
+									<p>
+										<svg aria-hidden="true"
+										     class="stw-icon stw-icon--x-small stw-icon-text-default">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink"
+											     xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+										</svg>
+										<span class="stw-assistive-text">Required</span></p>
+									<strong>Comments:</strong>
+									
+									<p>This should be nested immediately inside <code>.stw-modal_container</code> and
+										immediately after <code>.stw-modal__container</code>. Nothing should follow it.
+										Note that by default, elements will be aligned to the right.</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-modal__footer--directional</code>
+									
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+									
+									<p><code>.stw-modal__footer</code></p><strong>Outcome:</strong>
+									
+									<p>Makes buttons inside the footer spread to both left and right.</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+									
+									<p>No, optional element or modifier</p><strong>Comments:</strong>
+									
+									<p>This is only needed when you have two buttons that indicate a back and forward
+										navigation.</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-backdrop</code>
+									
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+									
+									<p><code>&lt;div&gt;</code></p><strong>Outcome:</strong>
+									
+									<p>Creates the shaded backdrop used behind the modal.</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+									
+									<p>
+										<svg aria-hidden="true"
+										     class="stw-icon stw-icon--x-small stw-icon-text-default">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink"
+											     xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+										</svg>
+										<span class="stw-assistive-text">Required</span></p>
+									<strong>Comments:</strong>
+									
+									<p>This should follow after the <code>.stw-modal</code> as an empty element.</p>
+								</td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-modal-backdrop</code>
+									
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+									
+									<p><code>&lt;div&gt;</code></p><strong>Outcome:</strong>
+									
+									<p>Creates the shaded backdrop used behind the modal.</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+									
+									<p>
+										<svg aria-hidden="true"
+										     class="stw-icon stw-icon--x-small stw-icon-text-default">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink"
+											     xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+										</svg>
+										<span class="stw-assistive-text">Required</span></p>
+									<strong>Comments:</strong>
+									
+									<p>Deprecated</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-backdrop--open</code>
+									
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+									
+									<p><code>.stw-modal-backdrop</code></p><strong>Outcome:</strong>
+									
+									<p>Allows the backdrop to be visible.</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+									
+									<p>
+										<svg aria-hidden="true"
+										     class="stw-icon stw-icon--x-small stw-icon-text-default">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink"
+											     xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+										</svg>
+										<span class="stw-assistive-text">Required</span></p>
+									<strong>Comments:</strong>
+									
+									<p>Apply this class to a modal backdrop with JavaScript to make it visible.</p></td>
+							</tr>
+							<tr>
+								<th class="stw-cell-shrink stw-align-top"
+								    scope="row"><code>.stw-modal-backdrop--open</code>
+									
+									<div></div>
+								</th>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Applied to:</strong>
+									
+									<p><code>.stw-modal-backdrop</code></p><strong>Outcome:</strong>
+									
+									<p>Allows the backdrop to be visible.</p></td>
+								<td class="stw-size--1-of-3 stw-cell-wrap stw-align-top"
+								    scope="col"><strong>Required:</strong>
+									
+									<p>
+										<svg aria-hidden="true"
+										     class="stw-icon stw-icon--x-small stw-icon-text-default">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink"
+											     xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use>
+										</svg>
+										<span class="stw-assistive-text">Required</span></p>
+									<strong>Comments:</strong>
+									
+									<p>Deprecated</p></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+</div>

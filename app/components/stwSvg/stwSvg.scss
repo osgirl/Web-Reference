@@ -1,0 +1,19 @@
+[stw-svg] {
+    display: block;
+
+    .icon-state-hover {
+        display: none;
+    }
+
+    .desktop &:hover,
+    .desktop a:hover & ,
+    .active & {
+        .icon-state-normal {
+            display: none;
+        }
+        .icon-state-hover {
+            display: block;
+        }
+    }
+
+}

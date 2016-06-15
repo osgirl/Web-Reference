@@ -1,0 +1,223 @@
+<div class="">
+	<header class="stw-banner"
+	        role="banner"><a href=""><span class="stw-logo">STW</span>
+	</a>
+		<div class="stw-skip-content"><a href="#navigation">Skip to Navigation</a></div>
+	</header>
+	<nav class="stw-navigation"
+	     role="navigation">
+		<ul class="stw-list--vertical stw-has-block-links">
+			<li class="stw-list__item">
+				<a href="" ui-sref="showcase" ng-class="{ 'stw-is-selected': isActive('/showcase') }"><span class="stw-media stw-media--center">
+					<span class="stw-media__body">Showcase</span></span></a></li>
+			<li class="stw-list__item is-closed"
+			    data-stw-nav-children="true"><a href=""
+			                                    stw-accordian=""><span
+					class="stw-media stw-media--center"><span class="stw-media__body">Design</span><span
+					class="stw-media__figure--reverse"><svg aria-hidden="true"
+			                                                class="stw-icon icon__svg icon-utility-down stw-icon--small stw-icon-text-default">
+				<use xmlns:xlink="http://www.w3.org/1999/xlink"
+				     xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+			</svg></span></span></a>
+				<ul class="stw-list--vertical stw-has-block-links stw-is-nested">
+					<li class="stw-list__item"><a href=""
+					                              ng-class="{ 'stw-is-selected': isActive('/overview') }"><span class="stw-media stw-media--center"><span
+							class="stw-media__body">Overview</span></span></a></li>
+					<li class="stw-list__item"><a href="" ui-sref="color"
+					                              ng-class="{ 'stw-is-selected': isActive('/color') }"><span class="stw-media stw-media--center"><span
+							class="stw-media__body">Color</span></span></a></li>
+					<li class="stw-list__item"><a href=""
+					                              ui-sref="style"
+					                              ng-class="{ 'stw-is-selected': isActive('/style') }"><span
+							class="stw-media stw-media--center"><span
+							class="stw-media__body">Markup &amp; Style</span></span></a></li>
+					<li class="stw-list__item"><a href="" ui-sref="entry"
+					                              ng-class="{ 'stw-is-selected': isActive('/entry') }"><span
+							class="stw-media stw-media--center"><span
+							class="stw-media__body">Data Entry</span></span></a></li>
+					<li class="stw-list__item"><a href=""
+					                              ng-class="{ 'stw-is-selected': isActive('/display') }"><span
+							class="stw-media stw-media--center"><span
+							class="stw-media__body">Displaying Data</span></span></a></li>
+					<li class="stw-list__item"><a href=""
+					                              ui-sref="layout"
+					                              ng-class="{ 'stw-is-selected': isActive('/layout') }"><span class="stw-media stw-media--center"><span
+							class="stw-media__body">Layout</span></span></a></li>
+					<li class="stw-list__item"><a ui-sref="code"
+					                              ng-class="{ 'stw-is-selected': isActive('/code') }"><span class="stw-media stw-media--center"><span
+							class="stw-media__body">Code Snippets</span></span></a></li>
+					<li class="stw-list__item"><a href=""
+					                              ng-class="{ 'stw-is-selected': isActive('/messaging') }"><span
+							class="stw-media stw-media--center"><span class="stw-media__body">Messaging</span></span></a>
+					</li>
+					<li class="stw-list__item"><a href=""><span class="stw-media stw-media--center"><span
+							class="stw-media__body">Motion</span></span></a></li>
+					<li class="stw-list__item"><a href=""
+					                              ng-class="{ 'stw-is-selected': isActive('/navigation') }"><span
+							class="stw-media stw-media--center"><span
+							class="stw-media__body">Navigation</span></span></a></li>
+					<li class="stw-list__item"><a href=""
+					                              ng-class="{ 'stw-is-selected': isActive('/typography') }"><span
+							class="stw-media stw-media--center"><span
+							class="stw-media__body">Typography</span></span></a></li>
+				</ul>
+			</li>
+			<li class="stw-list__item is-closed"
+			    data-stw-nav-children="true"><a href=""
+			                                    stw-accordian=""><span
+					class="stw-media stw-media--center"><span class="stw-media__body">Components</span><span
+					class="stw-media__figure--reverse"><svg aria-hidden="true"
+			                                                class="stw-icon icon__svg icon-utility-right stw-icon--small stw-icon-text-default">
+				<use xmlns:xlink="http://www.w3.org/1999/xlink"
+				     xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#right"></use>
+			</svg></span></span></a>
+				<ul class="stw-list--vertical stw-has-block-links stw-is-nested">
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="badges"
+					                                   ng-class="{ 'stw-is-selected': isActive('/badges') }"><span
+							class="stw-media stw-media--center"><span class="stw-media__body">Badges</span></span></a>
+					</li>
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="breadcrumbs"
+					                                   ng-class="{ 'stw-is-selected': isActive('/breadcrumbs') }"><span
+							class="stw-media stw-media--center"><span
+							class="stw-media__body">Breadcrumbs</span></span></a></li>
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="buttons"
+					                                   ng-class="{ 'stw-is-selected': isActive('/buttons') }"><span
+							class="stw-media stw-media--center"><span class="stw-media__body">Buttons</span></span></a>
+					</li>
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="button-groups"
+					                                   ng-class="{ 'stw-is-selected': isActive('/button-groups') }"><span
+							class="stw-media stw-media--center"><span class="stw-media__body">Button Groups</span></span></a>
+					</li>
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="cards"
+					                                   ng-class="{ 'stw-is-selected': isActive('/cards') }"><span
+							class="stw-media stw-media--center"><span class="stw-media__body">Cards</span></span></a>
+					</li>
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="creative"
+					                                   ng-class="{ 'stw-is-selected': isActive('/creative') }"><span
+							class="stw-media stw-media--center"><span class="stw-media__body">Creative</span></span></a>
+					</li>
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="collections"
+					                                   ng-class="{ 'stw-is-selected': isActive('/collections') }"><span
+							class="stw-media stw-media--center"><span class="stw-media__body">Collections</span></span></a>
+					</li>
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="tables"
+					                                   ng-class="{ 'stw-is-selected': isActive('/tables') }"><span
+							class="stw-media stw-media--center"><span
+							class="stw-media__body">Data Tables</span></span></a></li>
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="forms"
+					                                   ng-class="{ 'stw-is-selected': isActive('/forms') }"><span
+							class="stw-media stw-media--center"><span class="stw-media__body">Forms</span></span></a>
+					</li>
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="grid-system"
+					                                   ng-class="{ 'stw-is-selected': isActive('/grid-system') }"><span
+							class="stw-media stw-media--center"><span
+							class="stw-media__body">Grid System</span></span></a></li>
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="icons"
+					                                   ng-class="{ 'stw-is-selected': isActive('/icons') }"><span
+							class="stw-media stw-media--center"><span class="stw-media__body">Icons</span></span></a>
+					</li>
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="images"
+					                                   ng-class="{ 'stw-is-selected': isActive('/images') }"><span
+							class="stw-media stw-media--center"><span class="stw-media__body">Images</span></span></a>
+					</li>
+					<li class="stw-list__item"
+					    data-stw-status="prototype"><a ui-sref="lookups"><span
+							class="stw-media stw-media--center"><span class="stw-media__body">Lookups</span></span></a>
+					</li>
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="media-objects"><span
+							class="stw-media stw-media--center"><span class="stw-media__body">Media Objects</span></span></a>
+					</li>
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="menus"
+					                                   ng-class="{ 'stw-is-selected': isActive('/menus') }"><span
+							class="stw-media stw-media--center"><span class="stw-media__body">Menus</span></span></a>
+					</li>
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="modals"
+					                                   ng-class="{ 'stw-is-selected': isActive('/modals') }"><span
+							class="stw-media stw-media--center"><span class="stw-media__body">Modals</span></span></a>
+					</li>
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="page-headers"
+					                                   ng-class="{ 'stw-is-selected': isActive('/page-headers') }"><span
+							class="stw-media stw-media--center"><span class="stw-media__body">Page Headers</span></span></a>
+					</li>
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="spinners"><span
+							class="stw-media stw-media--center"><span class="stw-media__body">Spinners</span></span></a>
+					</li>
+					<li class="stw-list__item"
+					    data-stw-status="dev-ready"><a ui-sref="tabs"
+					                                   ng-class="{ 'stw-is-selected': isActive('/tabs') }"><span
+							class="stw-media stw-media--center"><span class="stw-media__body">Tabs</span></span></a>
+					</li>
+					<li class="stw-list__item stw-has-divider--top-space is-closed"
+					    data-stw-nav-children="true"><a
+							href=""
+							stw-accordian=""><span class="stw-media stw-media--center"><span
+							class="stw-media__body">Utilities</span><span class="stw-media__figure--reverse"><svg
+							aria-hidden="true"
+							class="stw-icon icon__svg icon-utility-right stw-icon--small stw-icon-text-default">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink"
+						     xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#right"></use>
+					</svg></span></span></a>
+						<ul class="stw-list--vertical stw-has-block-links stw-is-nested">
+							<li class="stw-list__item"><a ui-sref="floats"
+							                              ng-class="{ 'stw-is-selected': isActive('/floats') }"><span
+									class="stw-media stw-media--center"><span
+									class="stw-media__body">Floats</span></span></a></li>
+							<li class="stw-list__item"><a ui-sref="lists"
+							                              ng-class="{ 'stw-is-selected': isActive('/lists') }"><span
+									class="stw-media stw-media--center"><span class="stw-media__body">Lists</span></span></a>
+							</li>
+							<li class="stw-list__item"><a ui-sref="scrollable"
+							                              ng-class="{ 'stw-is-selected': isActive('/scrollable') }"><span
+									class="stw-media stw-media--center"><span
+									class="stw-media__body">Scrollable</span></span></a></li>
+							<li class="stw-list__item"><a ui-sref="sizing"
+							                              ng-class="{ 'stw-is-selected': isActive('/sizing') }"><span
+									class="stw-media stw-media--center"><span
+									class="stw-media__body">Sizing</span></span></a></li>
+							<li class="stw-list__item"><a ui-sref="spacing"
+							                              ng-class="{ 'stw-is-selected': isActive('/spacing') }"><span
+									class="stw-media stw-media--center"><span
+									class="stw-media__body">Spacing</span></span></a></li>
+							<li class="stw-list__item"><a ui-sref="text"
+							                              ng-class="{ 'stw-is-selected': isActive('/text') }"><span
+									class="stw-media stw-media--center"><span class="stw-media__body">Text</span></span></a>
+							</li>
+							<li class="stw-list__item"><a ui-sref="themes"
+							                              ng-class="{ 'stw-is-selected': isActive('/themes') }"><span
+									class="stw-media stw-media--center"><span
+									class="stw-media__body">Themes</span></span></a></li>
+							<li class="stw-list__item"><a ui-sref="truncation"
+							                              ng-class="{ 'stw-is-selected': isActive('/truncation') }"><span
+									class="stw-media stw-media--center"><span
+									class="stw-media__body">Truncation</span></span></a></li>
+							<li class="stw-list__item"><a ui-sref="visibility"
+							                              ng-class="{ 'stw-is-selected': isActive('/visibility') }"><span
+									class="stw-media stw-media--center"><span
+									class="stw-media__body">Visibility</span></span></a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="stw-list__item">
+				<a href="" ui-sref="voice-tone" ng-class="{ 'stw-is-selected': isActive('/navigation') }"><span class="stw-media stw-media--center">
+					<span class="stw-media__body">Voice and Tone</span></span></a></li>
+		</ul>
+	</nav>
+</div>

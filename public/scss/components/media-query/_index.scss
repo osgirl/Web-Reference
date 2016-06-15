@@ -1,0 +1,27 @@
+
+.#{$css-prefix}mq {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $color-background-guidance;
+  color: $color-background-path-incomplete;
+  padding: 4px;
+  z-index: 110;
+}
+
+.#{$css-prefix}mq--indicator {
+  position: absolute;
+  top: -999em;
+  left: -999em;
+
+  z-index: 1;
+
+  @include mq-medium-min {
+    z-index: 2;
+  }
+
+  @include mq-large-min {
+    z-index: 3;
+  }
+
+}

@@ -1,0 +1,192 @@
+@import "../imports";
+
+/**
+ * Bar (Headers and Footers)
+ * --------------------------------------------------
+ */
+
+.#{$css-prefix}bar-header, #{$css-prefix}header {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 9;
+  padding: 0;
+  @include box-sizing(border-box);
+  @include display-flex();
+  @include flex-direction(row);
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+  width: 100%;
+  height: $stw-header-mobile-height;
+  /** border-width: 1px will actually create 2 device pixels on retina **/
+  /** this nifty trick sets an actual 1px border on hi-res displays **/
+  background-size: 0;
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  &.white {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  &.transparent {
+    background-color: transparent;
+    .navigation {
+      border: none;
+      color: white;
+    }
+  }
+  &.cyan {
+    background-color: cyan;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+@include breakpoint($l) {
+  .stw.bar.#{$css-prefix}bar-header, .#{$css-prefix}bar {
+    //height: $#{$css-prefix}header-tablet-height;
+  }
+}
+
+@include breakpoint($m) {
+  .#{$css-prefix}bar.#{$css-prefix}bar-header, .#{$css-prefix}bar {
+    //height: $#{$css-prefix}header-tablet-height;
+  }
+}
+
+.#{$css-prefix}bar {
+  @include display-flex();
+  @include user-select(none);
+  @include box-sizing(border-box);
+
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 9;
+  padding: 5px;
+  width: 100%;
+  height: $stw-header-mobile-height;
+  border-width: 0;
+  border-style: solid;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  /* border-width: 1px will actually create 2 device pixels on retina */
+  /* this nifty trick sets an actual 1px border on hi-res displays */
+  background-size: 0;
+  .title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    margin: 5px;
+    min-width: 30px;
+    height: 43px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 44px;
+    &.title-left {
+      text-align: left;
+    }
+    &.title-right {
+      text-align: right;
+    }
+    a {
+      color: inherit;
+    }
+  }
+  &.#{$css-prefix}bar-clear {
+    border: none;
+    background: none;
+    color: #000;
+    .button, .title {
+      color: #000;
+    }
+  }
+  &.#{$css-prefix}bar-white {
+    border: none;
+    background: none;
+    color: white;
+    .button, .title {
+      color: white;
+    }
+  }
+  &.#{$css-prefix}bar-blue {
+    background-color: #00b9ff;
+    border-bottom: 0;
+    .title, .button {
+      color: white;
+    }
+  }
+  .button {
+    z-index: 1;
+    padding: 0 8px;
+    min-width: initial;
+    min-height: 31px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 32px;
+    &.button-icon:before, .icon:before, &.icon:before, &.icon-left:before, &.icon-right:before {
+      padding-right: 2px;
+      padding-left: 2px;
+      font-size: 20px;
+      line-height: 32px;
+    }
+    &.button-icon {
+      font-size: 17px;
+      .icon:before, &:before, &.icon-left:before, &.icon-right:before {
+        vertical-align: top;
+        font-size: 32px;
+        line-height: 32px;
+      }
+    }
+  }
+  &.#{$css-prefix}bar-light {
+    border-color: #ddd;
+    background: white linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
+    color: #444;
+  }
+}
+
+.#{$css-prefix}bar-header {
+  top: 0;
+  border-top-width: 0;
+  border-bottom-width: 1px;
+}
+
+.#{$css-prefix}bar-footer {
+  position: absolute;
+  bottom: 0;
+  border-top-width: 1px;
+  border-bottom-width: 0;
+  background-position: top;
+  height: 44px;
+}
+
+.#{$css-prefix}subheader {
+  top: 55px;
+  display: block;
+  height: 44px;
+}
+
+.#{$css-prefix}subfooter {
+  bottom: 44px;
+  display: block;
+  height: 44px;
+}
+
+.#{$css-prefix}nav-bar-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9;
+}

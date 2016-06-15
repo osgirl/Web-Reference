@@ -1,0 +1,83 @@
+/**
+ * #{$css-prefix}items
+ * --------------------------------------------------
+ */
+
+.#{$css-prefix}item {
+  border-color: #ddd;
+  background-color: #fff;
+  color: #444;
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: -1px;
+  padding: 16px;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 16px;
+  &.#{$css-prefix}item-white {
+    color: #fff;
+  }
+
+  h2 {
+    margin: 0 0 2px 0;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  h3 {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+  }
+  h4 {
+    margin: 0 0 4px 0;
+    font-size: 12px;
+  }
+  h5, h6 {
+    margin: 0 0 3px 0;
+    font-size: 10px;
+  }
+  p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+  h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child {
+    margin-bottom: 0;
+  }
+
+  .#{$css-prefix}item-header {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
+    .#{$css-prefix}item--divider {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      min-height: 30px;
+      background-color: #f5f5f5;
+      color: #222;
+      font-weight: 500;
+    }
+
+    .#{$css-prefix}item-header--footer {
+      bottom: 0;
+    }
+
+  }
+
+}
+
+.platform-ios .#{$css-prefix}item-divider-platform, .#{$css-prefix}item-divider-ios {
+  padding-top: 26px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 13px;
+  background-color: #efeff4;
+  color: #555;
+}
+
+.platform-android .#{$css-prefix}item-divider-platform, .#{$css-prefix}item-divider-android {
+  font-weight: 300;
+  font-size: 13px;
+}

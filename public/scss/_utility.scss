@@ -1,0 +1,257 @@
+/**
+ * Utility Classes
+ * --------------------------------------------------
+ */
+
+.hide {
+  display: none;
+}
+
+.opacity-hide {
+  opacity: 0;
+}
+
+.show {
+  display: block;
+}
+
+.opacity-show {
+  opacity: 1;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.disable-pointer-events {
+  pointer-events: none;
+}
+
+.stretch {
+  width: 100%;
+}
+
+.enable-pointer-events {
+  pointer-events: auto;
+}
+
+.disable-user-behavior {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-drag: none;
+  -ms-touch-action: none;
+  -ms-content-zooming: none;
+}
+
+.click-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 99999;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  overflow: hidden;
+}
+
+.click-block-hide {
+  -webkit-transform: translate3d(-9999px, 0, 0);
+  transform: translate3d(-9999px, 0, 0);
+}
+
+.no-resize {
+  resize: none;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.ui-center-container {
+  width: 100%;
+  height: 300px;
+  margin: 20px auto 20px;
+  clear: both;
+}
+
+.ui-center {
+  height: 70%;
+  width: 90%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  &.is-fixed {
+    position: fixed;
+    z-index: 999;
+  }
+  &.is-resizable {
+    min-width: 20%;
+    max-width: 80%;
+    min-height: 20%;
+    max-height: 80%;
+    resize: both;
+    overflow: auto;
+  }
+  &.is-responsive {
+    width: 60%;
+    height: 60%;
+    min-width: 200px;
+    max-width: 400px;
+    padding: 20px;
+    top: 0;
+  }
+  &.is-logo-image img {
+    width: 96px;
+    height: 96px;
+    margin: auto;
+    display: block;
+  }
+  &.is-image {
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .image-container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+}
+
+.block {
+  display: block;
+  clear: both;
+  &:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ".";
+  }
+}
+
+.full-image {
+  max-width: 100%;
+  &.min-height-200 {
+    min-height: 200px;
+  }
+  &.max-height-200 {
+    max-height: 200px;
+  }
+  &.min-height-250 {
+    min-height: 250px;
+  }
+  &.max-height-250 {
+    max-height: 250px;
+  }
+  &.min-height-300 {
+    min-height: 300px;
+  }
+  &.max-height-300 {
+    max-height: 300px;
+  }
+  &.min-height-350 {
+    min-height: 350px;
+  }
+  &.max-height-350 {
+    max-height: 350px;
+  }
+}
+
+.cover {
+  background-size: cover;
+}
+
+.contain {
+  background-size: contain;
+}
+
+.clearfix {
+  *zoom: 1;
+  &:before {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  &:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+}
+
+.valign-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  .valign {
+    display: block;
+  }
+}
+
+.z-depth-0 {
+  box-shadow: none !important;
+}
+
+.z-depth-1, nav, .card-panel, .card, .toast, .button, .button-large, .button-floating, .dropdown-content, .collapsible, .side-nav {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.z-depth-1-half, .button:hover, .button-large:hover, .button-floating:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.z-depth-2 {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.z-depth-3 {
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.z-depth-4, .modal {
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+}
+
+.z-depth-5 {
+  box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+}
+
+.hoverable {
+  transition: box-shadow .25s;
+  box-shadow: 0;
+  &:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
